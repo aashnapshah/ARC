@@ -152,7 +152,6 @@ ukb <- ukb_processed %>%
   ) %>%
   dplyr::filter(!is.na(RIDRETH))
 
-# Write output in a reproducible format
 write.table(
   ukb,
   file = sprintf("processed/ukb_yixuan_%s.csv", Sys.Date()),
