@@ -1,0 +1,142 @@
+Predictor Name,Column Name,Category
+Baseline,"Age, Sex",Baseline
+RIDAGEYR,Age,Baseline
+RIAGENDR,Female,Baseline
+RIDRETH_Black,Black,Race
+RIDRETH_Hispanic,Hispanic,Race
+RIDRETH_Other,Other,Race
+RIDRETH_Asian,Asian,Race
+RIDRETH_South.Asian,South Asian,Race
+RIDRETH_White,White,Race
+BMXHT,Height,Anthropometrics
+BMXSIT,Sitting Height,Anthropometrics
+BMXARML,Arm Length,Anthropometrics
+BMXLEG,Leg Length,Anthropometrics
+BMXWT,Weight,Anthropometrics
+BMXBMI,BMI,Anthropometrics
+BMXWAIST,Waist Circ,Anthropometrics
+BMXARMC,Arm Circ,Anthropometrics
+DMD_IncPovRatio,Poverty Index,Sociodemographics
+DMD_HH_Size,Household Size,Sociodemographics
+DMD_Married,Married,Sociodemographics
+DMD_Born_US,Native Born,Sociodemographics
+DMD_Born_UK,Native Born,Sociodemographics
+DMD_Finish_HS,Education,Sociodemographics
+DMD_English_Lang,English Lang,Sociodemographics
+DMD_Health_Ins,Insurance,Sociodemographics
+DMD_Priv_Ins,Private Health Insurance,Sociodemographics
+DMD_Veteran,Veteran Status,Sociodemographics
+DMD_Military_HC,Military,Sociodemographics
+DMD_Home_Smoke,Home Smoke,Exposures
+DMD_Work_Smoke,Work Smoke,Exposures
+DMD_Work_Air,Fumes/Exhaust at Work,Exposures
+RIDRETH_South Asian,South Asian,Race
+BMXHIP,Hip Circ,Anthropometrics
+DMD_YEARS_IN_UK,Number of Years in UK,Sociodemographics
+DMD_Mom_Smoked,Mother Smoked During Pregnancy,Exposures
+DMD_PM10,Exposure to PM10,Exposures
+DMD_PM2 5,Exposure to PM2.5,Exposures
+DMD_PM2 5_10,PM 2.5-10,Exposures
+DMD_PM2.5 10,PM 2.5-10,
+DMD_PM2.5_10,PM 2.5-10,Exposures
+DMD_Work_Fumes,Worked with Fumes,Exposures
+DMD_Work_Exhaust,Worked with Exhaust,Exposures
+DMD_Work_Smoking_Exp,Workplace Smoking Exposure,Exposures
+DMD_Work_Breathing_Probs,Breathing Problems at Work,Exposures
+OCQ_Mineral_Dust_YR,Years Exposed to Mineral Dust,Exposures
+OCQ_Organic_Dust_YR,Years Exposed to Organic Dust,Exposures
+OCQ_Exhaust_Fumes_YR,Years Exposed to Exhaust Dust,Exposures
+OCQ_Other_Fumes_YR,Years Exposed to Other Fumes,Exposures
+OCQ_Dust_Mask,Wears Dust Mask at Work,Exposures
+OCQ_Eye_Mask,Wears Eye Protection at Work,Exposures
+OCQ_Respirator_Mask,Wears Respirator at Work,Exposures
+OCQ_SHS_Smell,Hours of Smoke Smell at Work,Exposures
+OCQ_Work_Mask,Protective Mask at Work,Exposures
+OCQ_Work_Air,Fumes/Exhaust at Work,Exposures
+OCQ_Work_Smoke,Work Smoke,Exposures
+BMXHT10_Shorter,Shorter,Anthropometrics at 10
+BMXHT10_Taller,Taller,Anthropometrics at 10
+BMXHT10_About average,Average Height,Anthropometrics at 10
+BMXWT10_About average,Average Weight,Anthropometrics at 10
+BMXWT10_Thinner,Thinner,Anthropometrics at 10
+BMXWT10_Plumper,Plumper,Anthropometrics at 10
+BMXHT10_Prefer not to answer,Prefer Not to Answer Height,Anthropometrics at 10
+BMXWT10_Prefer not to answer,Prefer Not to Answer Weight,Anthropometrics at 10
+BMXWT10_Do not know,Do Not Know Weight,Anthropometrics at 10
+BMXHT10_Do not know,Do Not Know Height ,Anthropometrics at 10
+DMD_INC,Income,Sociodemographics
+DMD_INC_Four or more,"52,000 - 100,000",Sociodemographics
+DMD_INC_Three,"31,000 - 51,999",Sociodemographics
+DMD_INC_Two,"18,000 - 30,999",Sociodemographics
+DMD_INC_One,"< 18,000",Sociodemographics
+DMD_INC_None,No Income,Sociodemographics
+DMD_INC_Prefer not to answer,Prefer Not to Answer Income,Sociodemographics
+DMD_INC_Do not know,Do Not Know Income,Sociodemographics
+DMD_BORN_SubRegion_Australia and New Zealand,Australia and New Zealand,Ancestry
+DMD_BORN_SubRegion_Central Asia,Central Asia,Ancestry
+DMD_BORN_SubRegion_Eastern Africa,Eastern Africa,Ancestry
+DMD_BORN_SubRegion_Eastern Asia,Eastern Asia,Ancestry
+DMD_BORN_SubRegion_Eastern Europe,Eastern Europe,Ancestry
+DMD_BORN_SubRegion_Latin America and the Caribbean,Latin America and the Caribbean,Ancestry
+DMD_BORN_SubRegion_Melanesia,Melanesia,Ancestry
+DMD_BORN_SubRegion_Northern Africa,Northern Africa,Ancestry
+DMD_BORN_SubRegion_Northern America,Northern America,Ancestry
+DMD_BORN_SubRegion_Northern Europe,Northern Europe,Ancestry
+DMD_BORN_SubRegion_Oceania,Oceania,Ancestry
+DMD_BORN_SubRegion_Polynesia,Polynesia,Ancestry
+DMD_BORN_SubRegion_South America,South America,Ancestry
+DMD_BORN_SubRegion_South eastern Asia,South-Eastern Asia,Ancestry
+DMD_BORN_SubRegion_Southeast Asia,Southeast Asia,Ancestry
+DMD_BORN_SubRegion_Southern Africa,Southern Africa,Ancestry
+DMD_BORN_SubRegion_Southern Asia,Southern Asia,Ancestry
+DMD_BORN_SubRegion_Southern Europe,Southern Europe,Ancestry
+DMD_BORN_SubRegion_Sub Saharan Africa,Sub-Saharan Africa,Ancestry
+DMD_BORN_SubRegion_Western Africa,Western Africa,Ancestry
+DMD_BORN_SubRegion_Western Asia,Western Asia,Ancestry
+DMD_BORN_SubRegion_Western Europe,Western Europe,Ancestry
+GenPC_1,Genetic PC 1,Genetics
+GenPC_2,Genetic PC 2,Genetics
+GenPC_3,Genetic PC 3,Genetics
+GenPC_4,Genetic PC 4,Genetics
+GenPC_5,Genetic PC 5,Genetics
+GenPC_6,Genetic PC 6,Genetics
+GenPC_7,Genetic PC 7,Genetics
+GenPC_8,Genetic PC 8,Genetics
+GenPC_9,Genetic PC 9,Genetics
+GenPC_10,Genetic PC 10,Genetics
+GenPC_11,Genetic PC 11,Genetics
+GenPC_12,Genetic PC 12,Genetics
+GenPC_13,Genetic PC 13,Genetics
+GenPC_14,Genetic PC 14,Genetics
+GenPC_15,Genetic PC 15,Genetics
+GenPC_16,Genetic PC 16,Genetics
+GenPC_17,Genetic PC 17,Genetics
+GenPC_18,Genetic PC 18,Genetics
+GenPC_19,Genetic PC 19,Genetics
+GenPC_20,Genetic PC 20,Genetics
+GenPC_21,Genetic PC 21,Genetics
+GenPC_22,Genetic PC 22,Genetics
+GenPC_23,Genetic PC 23,Genetics
+GenPC_24,Genetic PC 24,Genetics
+GenPC_25,Genetic PC 25,Genetics
+GenPC_26,Genetic PC 26,Genetics
+GenPC_27,Genetic PC 27,Genetics
+GenPC_28,Genetic PC 28,Genetics
+GenPC_29,Genetic PC 29,Genetics
+GenPC_30,Genetic PC 30,Genetics
+GenPC_31,Genetic PC 31,Genetics
+GenPC_32,Genetic PC 32,Genetics
+GenPC_33,Genetic PC 33,Genetics
+GenPC_34,Genetic PC 34,Genetics
+GenPC_35,Genetic PC 35,Genetics
+GenPC_36,Genetic PC 36,Genetics
+GenPC_37,Genetic PC 37,Genetics
+GenPC_38,Genetic PC 38,Genetics
+GenPC_39,Genetic PC 39,Genetics
+GenPC_40,Genetic PC 40,Genetics
+ratio_score,PRS: FEV1/FVC,PRS
+ratio_score_norm,Ratio Score Normalized,PRS
+fev1_score,PRS: FEV1,PRS
+fev1_score_norm,FEV1 Score Normalized,PRS
+composite_normal,Composite Normalized,PRS
+composite,PRS: Composite,PRS

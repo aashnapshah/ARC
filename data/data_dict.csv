@@ -1,0 +1,118 @@
+,Description
+RIDAGEYR,Age
+RIAGENDR,Female
+RIDRETH_Black,Black
+RIDRETH_Hispanic,Hispanic
+RIDRETH_Other,Other
+RIDRETH_Asian,Asian
+RIDRETH_South.Asian,South Asian
+RIDRETH_White,White
+BMXHT,Height
+BMXSIT,Sitting Height
+BMXARML,Arm Length
+BMXLEG,Leg Length
+BMXWT,Weight
+BMXBMI,BMI
+BMXWAIST,Waist Circumference
+BMXARMC,Arm Circumference
+DMD_IncPovRatio,Poverty Index
+DMD_HH_Size,Household Size
+DMD_Married,Married
+DMD_Born_US,Born in US
+DMD_Finish_HS,Finished High School
+DMD_English_Lang,English Language
+DMD_Health_Ins,Health Insurance
+DMD_Priv_Ins,Private Health Insurance
+DMD_Veteran,Veteran Status
+DMD_Military_HC,Military
+DMD_Home_Smoke,Smoking in Home
+RIDRETH_South Asian,South Asian
+BMXHIP,Hip Circumference
+DMD_YEARS_IN_UK,Number of Years in UK
+DMD_Mom_Smoked,Mother Smoked During Pregnancy
+DMD_PM10,Exposure to PM10
+DMD_PM2 5,Exposure to PM2.5
+DMD_PM2 5_10,Exposure to PM2.5 and PM10
+DMD_Work_Fumes,Worked with Fumes
+DMD_Work_Exhaust,Worked with Exhaust
+DMD_Work_Smoking_Exp,Workplace Smoking Exposure
+DMD_Work_Breathing_Probs,Breathing Problems at Work
+BMXHT10_Shorter,Shorter
+BMXHT10_Taller,Taller
+BMXHT10_About average,Average Height
+BMXWT10_About average,Average Weight
+BMXWT10_Thinner,Thinner
+BMXWT10_Plumper,Plumper
+BMXHT10_Prefer not to answer,Prefer Not to Answer Height
+BMXWT10_Prefer not to answer,Prefer Not to Answer Weight
+BMXWT10_Do not know,Do Not Know Weight
+BMXHT10_Do not know,Do Not Know Height 
+DMD_INC_Four or more,"52,000 - 100,000"
+DMD_INC_Three,"31,000 - 51,999"
+DMD_INC_Two,"18,000 - 30,999"
+DMD_INC_One,"< 18,000"
+DMD_INC_None,No Income
+DMD_INC_Prefer not to answer,Prefer Not to Answer Income
+DMD_INC_Do not know,Do Not Know Income
+DMD_BORN_SubRegion_Australia and New Zealand,Australia and New Zealand
+DMD_BORN_SubRegion_Central Asia,Central Asia
+DMD_BORN_SubRegion_Eastern Africa,Eastern Africa
+DMD_BORN_SubRegion_Eastern Asia,Eastern Asia
+DMD_BORN_SubRegion_Eastern Europe,Eastern Europe
+DMD_BORN_SubRegion_Latin America and the Caribbean,Latin America and the Caribbean
+DMD_BORN_SubRegion_Melanesia,Melanesia
+DMD_BORN_SubRegion_Northern Africa,Northern Africa
+DMD_BORN_SubRegion_Northern America,Northern America
+DMD_BORN_SubRegion_Northern Europe,Northern Europe
+DMD_BORN_SubRegion_Oceania,Oceania
+DMD_BORN_SubRegion_Polynesia,Polynesia
+DMD_BORN_SubRegion_South America,South America
+DMD_BORN_SubRegion_South eastern Asia,South-Eastern Asia
+DMD_BORN_SubRegion_Southeast Asia,Southeast Asia
+DMD_BORN_SubRegion_Southern Africa,Southern Africa
+DMD_BORN_SubRegion_Southern Asia,Southern Asia
+DMD_BORN_SubRegion_Southern Europe,Southern Europe
+DMD_BORN_SubRegion_Sub Saharan Africa,Sub-Saharan Africa
+DMD_BORN_SubRegion_Western Africa,Western Africa
+DMD_BORN_SubRegion_Western Asia,Western Asia
+DMD_BORN_SubRegion_Western Europe,Western Europe
+GenPC_1,Genetic PC 1
+GenPC_2,Genetic PC 2
+GenPC_3,Genetic PC 3
+GenPC_4,Genetic PC 4
+GenPC_5,Genetic PC 5
+GenPC_6,Genetic PC 6
+GenPC_7,Genetic PC 7
+GenPC_8,Genetic PC 8
+GenPC_9,Genetic PC 9
+GenPC_10,Genetic PC 10
+GenPC_11,Genetic PC 11
+GenPC_12,Genetic PC 12
+GenPC_13,Genetic PC 13
+GenPC_14,Genetic PC 14
+GenPC_15,Genetic PC 15
+GenPC_16,Genetic PC 16
+GenPC_17,Genetic PC 17
+GenPC_18,Genetic PC 18
+GenPC_19,Genetic PC 19
+GenPC_20,Genetic PC 20
+GenPC_21,Genetic PC 21
+GenPC_22,Genetic PC 22
+GenPC_23,Genetic PC 23
+GenPC_24,Genetic PC 24
+GenPC_25,Genetic PC 25
+GenPC_26,Genetic PC 26
+GenPC_27,Genetic PC 27
+GenPC_28,Genetic PC 28
+GenPC_29,Genetic PC 29
+GenPC_30,Genetic PC 30
+GenPC_31,Genetic PC 31
+GenPC_32,Genetic PC 32
+GenPC_33,Genetic PC 33
+GenPC_34,Genetic PC 34
+GenPC_35,Genetic PC 35
+GenPC_36,Genetic PC 36
+GenPC_37,Genetic PC 37
+GenPC_38,Genetic PC 38
+GenPC_39,Genetic PC 39
+GenPC_40,Genetic PC 40
