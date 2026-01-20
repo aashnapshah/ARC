@@ -1,0 +1,12 @@
+.Rproj.user
+.Rhistory
+.RData
+.Ruserdata
+data/
+figures/
+models/
+logs/
+.Rproj 
+processed/
+tables/
+scratch/
