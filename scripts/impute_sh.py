@@ -40,6 +40,8 @@ NHANES_III_MAP = {
         'BMPHTIN': 'BMXHT',
         'DMARACER': 'RIDRETH',
         'RIDRETH1': 'RIDRETH',
+        'BMPARML': 'BMXARML',
+        
     }
 
 def to_numeric(X):
@@ -58,14 +60,6 @@ def to_numeric(X):
             X[col] = X[col].astype(int)
     return X
 
-
-# def cm_to_inch(x):
-#     cm_to_inch = 1 / 2.54
-#     cols = ['BMXHT', 'BMXLEG', 'BMPSITHT']
-#     for col in cols:
-#         if col in x.columns:
-#             x[col] = x[col] * cm_to_inch
-#     return x
     
 def nhanes4(path, features, target, race_col):
     all_cols = set(features) | {target, race_col, "SEQN"}
@@ -145,9 +139,12 @@ def run_experiment(
 ):
     features = features + [race_col] if race_adj else features
     # set age to 18-65
-    nh3 = nh3[nh3['RIDAGEYR'] >= 16]
-    nh4 = nh4[nh4['RIDAGEYR'] >= 16]
-    df_train, df_test = train_test_split(nh3, test_size=test_size, random_state=seed, stratify=nh3[race_col])
+    nh3['bin_sh'] = pd.qcut(nh3['BMPSITHT'], q=4, labels=False, duplicates='drop')
+    nh3['black'] = nh3['RIDRETH'] == 2
+    print(nh3['bin_sh'].value_counts())
+    print(nh3['black'].value_counts())
+    strat_cols = ['bin_sh', 'black']
+    df_train, df_test = train_test_split(nh3, test_size=test_size, random_state=seed, stratify=nh3[strat_cols])
     sample_weights = compute_ipw(df_train[race_col])
     X_train, y_train = df_train[features], df_train[target]
     X_test, y_test = df_test[features], df_test[target]
@@ -165,7 +162,7 @@ def summ_stats(df):
     print("-" * 75)
     print(f"{'Race':<18} {str(df['RIDRETH'].unique())}")
     print(f"{'Sex':<18} {str(df['RIAGENDR'].unique())}")
-    print(f"{'Age':<18} {df['RIDAGEYR'].min():<15.2f} {df['RIDAGEYR'].max():<10.2f} {df['RIDAGEYR'].mean():<12.2f} {df['RIDAGEYR'].std():<12.2f}")
+    #print(f"{'Age':<18} {df['RIDAGEYR'].min():<15.2f} {df['RIDAGEYR'].max():<10.2f} {df['RIDAGEYR'].mean():<12.2f} {df['RIDAGEYR'].std():<12.2f}")
     print(f"{'Leg Length':<18} {df['BMXLEG'].min():<15.2f} {df['BMXLEG'].max():<10.2f} {df['BMXLEG'].mean():<12.2f} {df['BMXLEG'].std():<12.2f}")
     print(f"{'Height':<18} {df['BMXHT'].min():<15.2f} {df['BMXHT'].max():<10.2f} {df['BMXHT'].mean():<12.2f} {df['BMXHT'].std():<12.2f}")
     if "BMPSITHT" in df.columns:
@@ -175,7 +172,8 @@ def main(args):
     print('IMPUTE PATH: ', args.impute_path)
     nh3 = process_data(args.train_path, args.features, args.target, args.race_col)    
     nh4 = process_data(args.impute_path, args.features, args.target, args.race_col)
-
+    # nh4 = nh4[nh4['RIDAGEYR'] >= 18]
+    # nh3 = nh3[nh3['RIDAGEYR'] >= 18]
     summ_stats(nh3)
     summ_stats(nh4)
     
@@ -198,7 +196,15 @@ def main(args):
         pred_df['model'] = model_name
         pred_df['race_adj'] = race_adj
         imputed_rows.append(pred_df)
-        
+        if not race_adj:
+            preds = pred_df['imputed_value']
+            print('-'*100)
+            print('Model: ', model_name, 'Race Adj: ', race_adj)
+            print(preds.mean(), preds.std(), preds.min(), preds.max())
+            print(preds.groupby(pred_df['RIDRETH']).mean())
+         #   print(preds.groupby(pred_df['RIDRETH']).std())
+            # print(preds.groupby(pred_df['RIDRETH']).min()
+            # print(preds.groupby(pred_df['RIDRETH']).max())
         for key, value in metrics.items():
             metric_row = {"model": model_name, "race_adj": race_adj, "race": key}
             for k, v in value.items():
@@ -208,7 +214,6 @@ def main(args):
 
     # Save CSVs
     df = pd.concat(imputed_rows)
-    print(df.head())
     df.to_csv(f"{args.save_path}/tables/imputed_results.csv", index=False)
     pd.DataFrame(metrics_rows).to_csv(f"{args.save_path}/tables/metrics.csv", index=False)
     print(pd.DataFrame(metrics_rows))
@@ -219,7 +224,7 @@ if __name__ == "__main__":
     parser.add_argument("--impute_path", type=str, default="../data/raw/nhanes/nhanes4")
     parser.add_argument("--save_path", type=str, default="../results/imputed_sh")
     parser.add_argument("--seed", type=int, default=42)
-    parser.add_argument("--features", type=list, default=['RIAGENDR', 'RIDAGEYR', 'BMXLEG', 'BMXHT'])
+    parser.add_argument("--features", type=list, default=['RIDAGEYR', 'RIAGENDR', 'BMXLEG', 'BMXHT', 'BMXARML'])
     parser.add_argument("--target", type=str, default="BMPSITHT")
     parser.add_argument("--race_col", type=str, default="RIDRETH")
     parser.add_argument("--models", type=list, default=["_linreg", "_xgboost"])

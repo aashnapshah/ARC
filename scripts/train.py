@@ -63,7 +63,7 @@ def evaluate(model, X_test, y_test, group_col=None, groups=None):
     return pd.DataFrame(results)[['group', 'n', 'mae', 'mse', 'r2']]
 
 def process_data(data_dir, cohort):
-    path = os.path.join(data_dir, f'{cohort}_ref_imp.csv')
+    path = os.path.join(data_dir, f'{cohort}/{cohort}_ref.csv')
     df = pd.read_csv(path)
     print('-'*100)
     cols = ['sex', 'race', 'age', 'fev1', 'fvc', 'fev1_fvc', 'height', 'sit_height', 'waist_circ', 'immigrant', 'hs_grad', 'smoke_exposure']
@@ -122,7 +122,7 @@ def run_experiment(train_df, test_dfs, features, target, race_col, save_path=Non
 
 def main(args):
     train_cohort = ['ukb', 'nh', 'nh3', 'nh4']
-    feats = ['height', 'sit_height', 'waist_circ', 'immigrant', 'hs_grad', 'smoke_exposure']
+    feats = ['height', 'sit_height', 'waist_circ', 'immigrant', 'inc_pov_bin', 'hs_grad', 'smoke_exposure']
     for train_cohort in train_cohort:
         train_df, test_dfs = get_data_dict(args.data_dir, features=feats, targets=args.targets, race_col=args.race_col, train_cohort=train_cohort)
         all_targets_results = []
