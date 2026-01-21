@@ -44,36 +44,44 @@ NHANES_III_MAP = {
 
 def to_numeric(X):
     for col in X:
-        if X[col].dtype == "object" or pd.api.types.is_categorical_dtype(X[col]):
+        if col.lower() == 'seqn':
+            continue
+        col_lower = col.lower()
+        if col_lower in ["riagendr", "is_female", "sex"]:
+            if set(X[col].dropna().unique()).intersection({1, 2}):  # e.g., NHANES: 1=Male, 2=Female
+                X[col] = (X[col] == 2).astype(int)
+            else:
+                X[col] = X[col].astype(str).str.strip().str.lower().map({'female': 1, 'male': 0})
+        elif X[col].dtype == "object" or pd.api.types.is_categorical_dtype(X[col]):
             X[col] = pd.Categorical(X[col]).codes
         elif pd.api.types.is_bool_dtype(X[col]):
             X[col] = X[col].astype(int)
     return X
 
-def cm_to_inch(x):
-    cm_to_inch = 1 / 2.54
-    cols = ['BMXHT', 'BMXLEG', 'BMPSITHT']
-    for col in cols:
-        if col in x.columns:
-            x[col] = x[col] * cm_to_inch
-    return x
+
+# def cm_to_inch(x):
+#     cm_to_inch = 1 / 2.54
+#     cols = ['BMXHT', 'BMXLEG', 'BMPSITHT']
+#     for col in cols:
+#         if col in x.columns:
+#             x[col] = x[col] * cm_to_inch
+#     return x
     
 def nhanes4(path, features, target, race_col):
-    all_cols = set(features) | {target, race_col, "SEQN", "RIDRETH1"}
-    bmx_df = pd.read_csv(f"{path}/BMX_E.csv", usecols=lambda c: c in all_cols)
-    demo_df = pd.read_csv(f"{path}/DEMO_E.csv", usecols=lambda c: c in all_cols)
-    df = demo_df.merge(bmx_df, on="SEQN", how="inner").rename(columns={"RIDRETH1": "RIDRETH"})
-    return df
+    all_cols = set(features) | {target, race_col, "SEQN"}
+    # bmx_df = pd.read_csv(f"{path}/BMX_E.csv", usecols=lambda c: c in all_cols)
+    # demo_df = pd.read_csv(f"{path}/DEMO_E.csv", usecols=lambda c: c in all_cols)
+    # df = demo_df.merge(bmx_df, on="SEQN", how="inner").rename(columns={"RIDRETH1": "RIDRETH"})
+    path = f"../data/raw/nh4/nh4_2023-07-18.csv"
+    nh_ref = pd.read_csv(path, sep="\t", usecols=lambda c: c in all_cols).rename(columns={"SEQN": "seqn"})
+    return nh_ref
 
 def process_data(path, features, target, race_col=None, include_race=False):
     if 'nhanes3' in path:
         df = pd.read_csv(path, na_values=["", " ", "  ", "   ", "    ", "     "], keep_default_na=True)
         df = df.rename(columns=NHANES_III_MAP)
     elif 'nhanes4' in path:
-        if 'nh4_ref' in path:
-            df = pd.read_csv(path) #.rename(columns={"RIDRETH1": "RIDRETH"})
-        else:
-            df = nhanes4(path, features, target, race_col)
+        df = nhanes4(path, features, target, race_col)
     else:
         raise ValueError(f"Invalid path: {path}")
     df = df.replace([-9999, -99999, -999999, -9999999, -99999999, -999999999, 8888, 88888, 9999, 99999], np.nan)
@@ -81,7 +89,6 @@ def process_data(path, features, target, race_col=None, include_race=False):
     if include_race and race_col is not None:
         features = features + [race_col]
     df = to_numeric(df)
-    df = cm_to_inch(df)
     cols = features + [target]
     cols = [col for col in cols if col in df.columns]
     df = df.dropna(subset=cols)
@@ -130,29 +137,27 @@ def _mice(X_train, y_train, X_test, sample_weights=None):
     return model
 
 def run_experiment(
-    nh3, nh4, nh4_ref, 
+    nh3, nh4, 
     features, target, race_col, race_adj=False, seed=42,
     test_size=0.3,
     balance_mode="ipw",
     mfunc=_xgboost   
 ):
     features = features + [race_col] if race_adj else features
-    
+    # set age to 18-65
+    nh3 = nh3[nh3['RIDAGEYR'] >= 16]
+    nh4 = nh4[nh4['RIDAGEYR'] >= 16]
     df_train, df_test = train_test_split(nh3, test_size=test_size, random_state=seed, stratify=nh3[race_col])
     sample_weights = compute_ipw(df_train[race_col])
-    
     X_train, y_train = df_train[features], df_train[target]
     X_test, y_test = df_test[features], df_test[target]
-    
     model = mfunc(X_train, y_train, X_test, sample_weights)
     y_pred = model.predict(X_test)
     metrics = evaluate(y_test, y_pred, groups=df_test[race_col])    
     imputed_y = model.predict(nh4[features])
-    imputed_y = dict(zip(nh4.SEQN, imputed_y))
-    
-    imputed_y_ref = model.predict(nh4_ref[features])
-    imputed_y_ref = dict(zip(nh4_ref.index, imputed_y_ref))
-    return metrics, imputed_y, imputed_y_ref, model  # <-- also return the fitted model
+    pred_df = nh4[['seqn',race_col]] 
+    pred_df['imputed_value'] = imputed_y
+    return metrics, pred_df, model  
 
 def summ_stats(df):
     df = df.rename(columns=NHANES_III_MAP)
@@ -166,76 +171,53 @@ def summ_stats(df):
     if "BMPSITHT" in df.columns:
         print(f"{'Sitting Height':<18} {df['BMPSITHT'].min():<15.2f} {df['BMPSITHT'].max():<10.2f} {df['BMPSITHT'].mean():<12.2f} {df['BMPSITHT'].std():<12.2f} {df['BMPSITHT'].median():<12.2f}")
     
-def main(args):  
-    results_dict = {}
-    metrics_dict = {}
-    
+def main(args):      
+    print('IMPUTE PATH: ', args.impute_path)
     nh3 = process_data(args.train_path, args.features, args.target, args.race_col)    
     nh4 = process_data(args.impute_path, args.features, args.target, args.race_col)
-    nh4_ref = process_data(args.impute_ref_path, args.features, args.target, args.race_col)
 
     summ_stats(nh3)
     summ_stats(nh4)
-    summ_stats(nh4_ref)
     
     m_funcs = [eval(m) for m in args.models]
     pairs = list(product(m_funcs, args.race_adj))
 
-    metrics_dict = {m_func.__name__: {race_adj: {} for race_adj in args.race_adj} for m_func in m_funcs}
-
     metrics_rows = []
     imputed_rows = []
-    imputed_rows_ref = []
     
-    # Add: create models save folder if it does not exist
     models_dir = os.path.join(args.save_path, "models")
     os.makedirs(models_dir, exist_ok=True)
 
     for m_func, race_adj in pairs:
-        metrics, imputed_y, imputed_y_ref, model = run_experiment(
-            nh3, nh4, nh4_ref, args.features, args.target, args.race_col, 
+        metrics, pred_df, model = run_experiment(
+            nh3, nh4, args.features, args.target, args.race_col, 
             race_adj=race_adj, balance_mode="ipw", mfunc=m_func
         )
         model_name = m_func.__name__
-        metrics_dict[model_name][race_adj] = metrics
-        # Save the fitted model
-        save_name = f"{model_name}_raceadj_{str(race_adj)}.joblib"
-        save_path_model = os.path.join(models_dir, save_name)
-        joblib.dump(model, save_path_model)
-
-        # Prepare rows for CSV
-        for idx, value in imputed_y_ref.items():
-            imputed_rows_ref.append({
-                "IDX": idx,
-                "imputed_value": value,
-                "model": model_name,
-                "race_adj": race_adj
-            })
-
-        for seqn, value in imputed_y.items():
-            imputed_rows.append({
-                "SEQN": seqn,
-                "imputed_value": value,
-                "model": model_name,
-                "race_adj": race_adj
-            })
+ 
+        pred_df['model'] = model_name
+        pred_df['race_adj'] = race_adj
+        imputed_rows.append(pred_df)
+        
+        for key, value in metrics.items():
+            metric_row = {"model": model_name, "race_adj": race_adj, "race": key}
+            for k, v in value.items():
+                metric_row.update({k: v})
             
-        metric_row = {"model": model_name, "race_adj": race_adj, **metrics}
-        metrics_rows.append(metric_row)
+            metrics_rows.append(metric_row)
 
     # Save CSVs
-    pd.DataFrame(imputed_rows_ref).to_csv(f"{args.save_path}/imputed_results_ref.csv", index=False)
-    pd.DataFrame(imputed_rows).to_csv(f"{args.save_path}/imputed_results.csv", index=False)
-    pd.DataFrame(metrics_rows).to_csv(f"{args.save_path}/metrics.csv", index=False)
-
+    df = pd.concat(imputed_rows)
+    print(df.head())
+    df.to_csv(f"{args.save_path}/tables/imputed_results.csv", index=False)
+    pd.DataFrame(metrics_rows).to_csv(f"{args.save_path}/tables/metrics.csv", index=False)
+    print(pd.DataFrame(metrics_rows))
     
 if __name__ == "__main__":
     parser = argparse.ArgumentParser()
     parser.add_argument("--train_path", type=str, default="../data/raw/nhanes/nh3_adult_youth_exam/nhanes3_exam_processed.csv")
     parser.add_argument("--impute_path", type=str, default="../data/raw/nhanes/nhanes4")
-    parser.add_argument("--impute_ref_path", type=str, default="../data/processed/nhanes4/nh4_ref.csv")
     parser.add_argument("--save_path", type=str, default="../results/imputed_sh")
-    
     parser.add_argument("--seed", type=int, default=42)
     parser.add_argument("--features", type=list, default=['RIAGENDR', 'RIDAGEYR', 'BMXLEG', 'BMXHT'])
     parser.add_argument("--target", type=str, default="BMPSITHT")
