@@ -1,0 +1,51 @@
+cohort,target,group,title,coef,std_err,p
+NH3,FEV1,Anthropometrics,Arm Circumference,-50.58,12.67,0.0
+NH3,FEV1,Anthropometrics,Arm Length,121.72,14.66,0.0
+NH3,FEV1,Anthropometrics,BMI,-87.27,12.33,0.0
+NH3,FEV1,Anthropometrics,Height,302.03,15.64,0.0
+NH3,FEV1,Anthropometrics,Sit Height,354.39,14.36,0.0
+NH3,FEV1,Anthropometrics,Upper Leg Length,120.72,14.07,0.0
+NH3,FEV1,Anthropometrics,Waist Circumference,-55.88,12.68,0.0
+NH3,FEV1,Anthropometrics,Weight,9.29,13.39,0.488
+NH3,FEV1,Baseline,Sex,-1030.87,26.56,0.0
+NH3,FEV1,Demographics,English Language,149.16,32.19,0.0
+NH3,FEV1,Demographics,Health Insurance,115.65,36.15,0.001
+NH3,FEV1,Demographics,High School Graduate,166.1,26.91,0.0
+NH3,FEV1,Demographics,Household Size,-79.33,13.42,0.0
+NH3,FEV1,Demographics,Immigrant,-214.71,30.32,0.0
+NH3,FEV1,Demographics,Income:Poverty,250.57,32.45,0.0
+NH3,FEV1,Demographics,Married,138.45,27.32,0.0
+NH3,FEV1,Demographics,Military Health,-21.74,74.07,0.769
+NH3,FEV1,Demographics,Poverty Ratio,136.59,12.09,0.0
+NH3,FEV1,Demographics,Private Insurance,200.72,27.89,0.0
+NH3,FEV1,Demographics,Veteran,139.09,42.71,0.001
+NH3,FEV1,Exposures,Smoke Exposure,-90.79,29.06,0.002
+NH3,FEV1,Race,Asian,0.0,0.0,
+NH3,FEV1,Race,Black,-366.21,28.15,0.0
+NH3,FEV1,Race,Hispanic,-59.37,28.28,0.036
+NH3,FEV1,Race,Other,-289.6,54.71,0.0
+NH3,FVC,Anthropometrics,Arm Circumference,-69.4,16.98,0.0
+NH3,FVC,Anthropometrics,Arm Length,173.29,19.6,0.0
+NH3,FVC,Anthropometrics,BMI,-123.03,16.51,0.0
+NH3,FVC,Anthropometrics,Height,421.53,20.76,0.0
+NH3,FVC,Anthropometrics,Sit Height,491.98,18.98,0.0
+NH3,FVC,Anthropometrics,Upper Leg Length,178.62,18.76,0.0
+NH3,FVC,Anthropometrics,Waist Circumference,-77.78,17.0,0.0
+NH3,FVC,Anthropometrics,Weight,10.99,17.95,0.54
+NH3,FVC,Baseline,Sex,-1336.93,35.61,0.0
+NH3,FVC,Demographics,English Language,207.12,43.14,0.0
+NH3,FVC,Demographics,Health Insurance,171.23,48.43,0.0
+NH3,FVC,Demographics,High School Graduate,234.35,36.04,0.0
+NH3,FVC,Demographics,Household Size,-100.03,18.01,0.0
+NH3,FVC,Demographics,Immigrant,-285.8,40.66,0.0
+NH3,FVC,Demographics,Income:Poverty,354.79,43.41,0.0
+NH3,FVC,Demographics,Married,195.8,36.6,0.0
+NH3,FVC,Demographics,Military Health,-9.93,99.32,0.92
+NH3,FVC,Demographics,Poverty Ratio,199.72,16.09,0.0
+NH3,FVC,Demographics,Private Insurance,296.11,37.27,0.0
+NH3,FVC,Demographics,Veteran,229.68,57.16,0.0
+NH3,FVC,Exposures,Smoke Exposure,-114.66,38.98,0.003
+NH3,FVC,Race,Asian,0.0,0.0,
+NH3,FVC,Race,Black,-501.82,37.65,0.0
+NH3,FVC,Race,Hispanic,-108.38,37.88,0.004
+NH3,FVC,Race,Other,-385.45,73.37,0.0
