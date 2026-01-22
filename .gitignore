@@ -20,3 +20,4 @@ projects/
 *.ipynb_checkpoints*
 .R*
 .DS_Store
+.RDataTmp
