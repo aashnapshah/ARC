@@ -17,4 +17,6 @@ logs/
 helpers/    
 projects/
 ._*
-.ipynb_checkpoints*
+*.ipynb_checkpoints*
+.R*
+.DS_Store
