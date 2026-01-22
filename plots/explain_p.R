@@ -3,157 +3,150 @@ library("boot")
 library('tidyverse')
 library('reticulate')
 library('ggplot2')
+library('grid')
 library('sysfonts')
 library('showtext')
 
-font_add_google("Open Sans", "Open Sans")
-font_add_google("Work Sans", "Work Sans")
+library(reticulate)
+source_python(normalizePath("../data/dicts/col_dict.py"))
+titles_dict <- py_to_r(titles_dict)
 
+
+font_add_google("Work Sans", "Work Sans")
 font = 'Work Sans'
 font_size = 20
 showtext_auto()
 
-setwd("/n/groups/patel/aashna/PFT-ML-2024/")
-
-# combine datasets
-col_desc_dict <- read.csv("data/predictor_category_map.csv")
-col_cat_dict <- read.csv("data/column_description_dictionary.csv")
-
-# Define a custom color palette for race
 custom_colors <- c('Asian' = '#FFD166', 'Black' = '#FF6F61', 'White' = '#A6D854', 'Hispanic' = '#C94CC2', 'Other' = '#118AB2')
 custom_shapes <- c('+' = 4, '-' = 16)
 
-model_labels <- c(
-  'Baseline' = 'Age, Sex',
-  '+ BMXHT' = '+ Height',
-  '+ BMXWAIST' = '+ Waist Circumference',
-  '+ BMXSIT' = '+ Sitting Height',
-  '+ BMXHIP' = '+ Hip Circumference',
-  '+ BMXARML' = '+ Arm Length',
-  '+ DMD_IncPovRatio' = '+ Income to Poverty Ratio',
-  '+ BMXARMC' = '+ Arm Circumference',
-  '+ BMXBMI' = '+ Body Mass Index',
-  '+ DMD_English_Lang' = '+ English Language',
-  '+ DMD_Born_US' = '+ Native Born',
-  '+ BMXLEG' = '+ Leg Length',
-  '+ DMD_Health_Ins' = '+ Health Insurance',
-  '+ DMD_Veteran' = '+ Military Veteran',
-  '+ BMXWT' = '+ Body Weight',
-  '+ DMD_PM2.5_10' = '+ PM2.5 Exposure',
-  '+ DMD_Born_UK' = '+ Native Born',
-  '+ DMD_Military_HC' = '+ Military Healthcare',
-  '+ DMD_Married' = '+ Marital Status',
-  '+ DMD_Home_Smoke' = '+ Home Smoking Exposure',
-  '+ DMD_Finish_HS' = '+ High School Completion',
-  '+ DMD_HH_Size' = '+ Household Size',
-  '+ DMD_Work_Smoke' = '+ Work Smoking Exposure',
-  '+ DMD_INC' = '+ Income',
-  '+ OCQ_Work_Smoke' = '+ Work Smoking Exposure'
-)
+# Function to combine UKB and NHANES cohorts for race-specific plots
+combine_cohorts <- function(df1, df2, num=10, ch1='NHANES', ch2='UKB'){
+  df1$dataset = ch1
+  df2$dataset = ch2
+  df = rbind(df1, df2)
 
-combine_cohorts <- function(df_ukb, df_nhanes, num=10){
-  
-  # add a new column specificying the dataset (ukb or nhanes) and then combine them
-  df_ukb$dataset = 'UKB'
-  df_nhanes$dataset = 'NHANES'
-  # combine datasets
-  df = rbind(df_ukb, df_nhanes)
-  df$Covariate <- gsub("_spline", "", df$Covariate)
-  df$Model <- gsub("_spline", "", df$Model)
-  
-  ridreth_df <- df %>%
-    filter(startsWith(Covariate, 'RIDRETH')) %>%
-    select(Covariate, Model, Estimate, `Std. Error`, dataset, MSE)
-  
-  # Remove "RIDRETH_" from Covariate names
-  ridreth_df$Covariate <- gsub('RIDRETH_', '', ridreth_df$Covariate)
-  ridreth_df$Model_ <- model_labels[ridreth_df$Model]
-  ridreth_df$index <- paste(ridreth_df$Model_, ridreth_df$dataset, sep = " - ")
-  ridreth_df$index <- factor(ridreth_df$index, levels = unique(ridreth_df$index))
-  
-  #group by covariate and get fraction explained after addition of new estimate then ungroup
-  
-  ridreth_df <- ridreth_df %>%
-    group_by(Covariate, dataset) %>%
-    mutate(Fraction = (Estimate[2] - Estimate) / Estimate[2]) %>%
-    ungroup()
-  
-  # group by dataset and only keep the first 12 uniwue models
-  ridreth_df$dataset <- factor(ridreth_df$dataset, levels = c('UKB', 'NHANES'))
-  ridreth_df <- ridreth_df %>%
-    group_by(Covariate, dataset) %>%
-    distinct(Model_, .keep_all = TRUE) %>%
+  race_df <- df %>%
+    filter(startsWith(index, 'race_')) %>%
+    filter(!grepl('_adj', index)) %>%
+    select(group, cov, index, coef, std_err, dataset, target)  %>%
+    filter(!(startsWith(index, 'race_3') & dataset == 'UKB')) %>%
+    filter(!(startsWith(index, 'race_2') & dataset == 'NHANES-III'))
+
+  race_df <- race_df %>%
+    arrange(index, dataset) %>%
+    group_by(index, target, dataset)
+
+  race_df <- race_df %>%
+    mutate(fraction = 100*(coef[1] - coef) / coef[1]) %>% # baseline in coef[1]
+    ungroup() 
+
+  race_df$dataset <- factor(race_df$dataset, levels = c(ch1, ch2))
+
+  race_df <- race_df %>%
+    group_by(index, dataset) %>%
+    distinct(cov, .keep_all = TRUE) %>%
     slice_head(n=num) %>%
     ungroup()
-  
 
-  return(ridreth_df)
+  race_df <- race_df %>%
+    mutate(
+      cov_ds = paste0(cov, " - ", dataset),
+      index_ds = paste0(index, " - ", dataset)
+    ) %>%
+    group_by(dataset) %>%
+    mutate(
+      cov_ds = factor(cov_ds, levels = unique(cov_ds)),
+      index_ds = factor(index_ds, levels = unique(index_ds))
+    ) %>%
+    ungroup()
+  
+  print(race_df)
+  return(race_df)
 }
 
-
-# Define a custom color palette for race
-custom_colors <- c('Asian' = '#FFD166', 'Black' = '#FF6F61', 'White' = '#A6D854', 'Hispanic' = '#C94CC2', 'Other' = '#118AB2')
-custom_shapes <- c('+' = 4, '-' = 16)
-
-plot_race_adj <- function(df, pft) {
-  # Create the plot
-  p <- ggplot(df, aes(x = index, y = Estimate, ymin = Estimate - `Std. Error`, ymax = Estimate + `Std. Error`, 
-                              color = Covariate, group = Covariate)) +
+plot_race_adj <- function(df, pft, fraction=FALSE) {
+  ch_levels <- unique(as.character(df$dataset))
+  df$cov_ds <- titles_dict[df$cov]
+  ch1 <- ch_levels[1]
+  ch2 <- ch_levels[2]
+  if (fraction == TRUE) {
+    y <- "fraction"
+    y_label <- paste0("Race-Adjusted Difference Explained in ", pft, " (%)")
+    p <- ggplot(df, aes(x = cov_ds, y = fraction,  color = index, group = index))
+  } else {
+    y <- "coef"
+    y_label <- paste0("Race-Adjusted Difference Explained in ", pft, " (L)")
+    p <- ggplot(df, aes(x = cov_ds, y = coef, color = index, group = index)) + 
+        geom_errorbar(aes(ymin = coef - std_err, ymax = coef + std_err), width = 0.5, alpha = 0.3, linewidth = 0.5) 
+  } 
+  p <- p +
     geom_point(size = 2, alpha = 1) +
-    geom_errorbar(width = 0.5, alpha = 0.3) +
-    geom_line() +
+    geom_line(linewidth = 0.6) + 
     facet_wrap(dataset ~ ., nrow = 2, scales = "free_x", strip.position = "right") +
     scale_shape_manual(values = custom_shapes) +
-    scale_color_manual(values = custom_colors) +
-    labs(x = "Covariate", y = paste("Race-Adjusted Difference Explained in",pft,"(L)"), color = "Race") +
-    theme_minimal(base_family = font, base_size = font_size+2) + 
-    theme(axis.text.x = element_text(angle = 45, hjust = 0.95, size = font_size, color = 'black', 
-                                     margin = margin(t = 0, r = 0, b = 0, l = 0)),
-          axis.text.y = element_text(hjust = 1, size = font_size, color = 'black'),
-          legend.position = "top",
-          legend.box.spacing = unit(0, "pt"),# The spacing between the plotting area and the legend box (unit)
-          legend.margin=margin(0,0,0,0), #rtical spacing between legend and plot panels
-          legend.title = element_blank(), #element_text(size = font_size, family = font, color = 'black'),  # Centered title
-          legend.text = element_text(size = font_size, family = font, color = 'black'),
-          panel.border = element_rect(color = "gray", fill = NA, size = 1.0),
-          panel.grid.minor = element_blank(),  # Remove minor grid lines
-          panel.grid.major = element_line(color = "gray", size = 0.05),
-          panel.spacing = unit(1, "lines"),  # Increase space between panels
-          strip.text = element_text(size = font_size))
-  
-  
-  p <- p + scale_x_discrete(labels = function(x) gsub(" - NHANES| - UKB", "", x))
+    #scale_color_manual(values = custom_colors) +
+    labs(x = "Feature", y = y_label, color = "Race") +
+    theme_minimal(base_family = font, base_size = font_size+2) +
+    theme(
+      axis.text.x = element_text(angle = 45, hjust = 0.95, size = font_size, color = 'black',
+                                margin = margin(t = 0, r = 0, b = 0, l = 0)),
+      axis.text.y = element_text(hjust = 1, size = font_size, color = 'black'),
+      legend.position = "top",
+      legend.box.spacing = unit(0, "pt"),
+      legend.margin = margin(0,0,0,0),
+      legend.title = element_blank(),
+      legend.text = element_text(size = font_size, family = font, color = 'black'),
+      panel.border = element_rect(color = "gray", fill = NA, linewidth = 1.0), # updated
+      panel.grid.minor = element_blank(),
+      panel.grid.major = element_line(color = "gray", linewidth = 0.05),        # updated
+      panel.spacing = unit(1, "lines"),
+      strip.text = element_text(size = font_size)
+    )
+
+  p <- p + scale_x_discrete(labels = function(x) gsub(paste0(" - ", ch1, "| - ", ch2), "", x))
   return(p)
-} 
+}
 
+# Helper: save a ggplot to PDF at 300 dpi, ensuring directory exists
+save_plot_pdf <- function(plot, out_path, width = 12, height = 8, dpi = 300) {
+  out_dir <- dirname(out_path)
+  if (!dir.exists(out_dir)) {
+    dir.create(out_dir, recursive = TRUE, showWarnings = FALSE)
+  }
+  ggplot2::ggsave(
+    filename = out_path,
+    plot = plot,
+    width = width,
+    height = height,
+    units = 'in',
+    dpi = dpi,
+    device = grDevices::cairo_pdf
+  )
+  print(paste0('Saved plot to ', out_path))
+}
 
-plot_race_adj_frac <- function(df, pft) {
-  # Create the plot
-  p <- ggplot(df, aes(x = index, y = Fraction*100,
-                      color = Covariate, group = Covariate)) +
-    geom_point(size = 2, alpha = 1) +
-    geom_line() +
-    facet_wrap(dataset ~ ., nrow = 2, scales = "free_x", strip.position = "right") +
-    scale_shape_manual(values = custom_shapes) +
-    scale_color_manual(values = custom_colors) +
-    labs(x = "Covariate", y = paste("Race-Adjusted Difference Explained in", pft, "(%)"), color = "Race") +
-    theme_minimal(base_family = font, base_size = font_size+2) + 
-    theme(axis.text.x = element_text(angle = 45, hjust = 0.95, size = font_size, color = 'black',
-                        margin = margin(t = 0, r = 0, b = 0, l = 0)),
-          axis.text.y = element_text(hjust = 1, size = font_size, color = 'black'),
-          legend.position = "top",
-          legend.box.spacing = unit(0, "pt"),# The spacing between the plotting area and the legend box (unit)
-          legend.margin=margin(0,0,0,0), #rtical spacing between legend and plot panels
-          legend.title = element_blank(), #element_text(size = font_size, family = font, color = 'black'),  # Centered title
-          legend.text = element_text(size = font_size, family = font, color = 'black'),
-          panel.border = element_rect(color = "gray", fill = NA, size = 1.0),
-          panel.grid.minor = element_blank(),  # Remove minor grid lines
-          panel.grid.major = element_line(color = "gray", size = 0.05),
-          panel.spacing = unit(1, "lines"),  # Increase space between panels
-          strip.text = element_text(size = font_size))
-  
-  
-  p <- p + scale_x_discrete(labels = function(x) gsub(" - NHANES| - UKB", "", x))
-  return(p)
-} 
+data_dir = '../results/explain/tables/'
+plot_dir = '../results/explain/figures/'
 
+df_ukb = read.csv(paste0(data_dir, 'ukb_cont.csv'))
+df_nh3 = read.csv(paste0(data_dir, 'nh3_cont.csv'))
+df_nh4 = read.csv(paste0(data_dir, 'nh4_cont.csv'))
+df_nh = read.csv(paste0(data_dir, 'nh_cont.csv'))
+
+df = combine_cohorts(df_ukb, df_nh, num = 10, ch1='UKB', ch2='NHANES')
+df2 = combine_cohorts(df_nh3, df_nh4, num = 10, ch1='NHANES-III', ch2='NHANES-IV')
+
+targets = c('fev1', 'fvc')
+for (i in seq_along(list(df, df2))) {
+
+  df <- list(df, df2)[[i]]
+  name <- c('main', 'supplemental')[i]
+  for (target in targets) {
+    subset_df <- df %>% filter(target == target)
+    p_l <- plot_race_adj(subset_df, target, fraction=FALSE)
+    p_pct <- plot_race_adj(subset_df, target, fraction=TRUE)
+    save_plot_pdf(p_l,   file.path(plot_dir, paste0('explain_mL_', target, '_', name, '.pdf')), width = 12, height = 8, dpi = 300)
+    save_plot_pdf(p_pct, file.path(plot_dir, paste0('explain_pct_', target, '_', name, '.pdf')), width = 12, height = 8, dpi = 300)
+  } 
+}
