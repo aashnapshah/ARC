@@ -21,3 +21,8 @@ projects/
 .R*
 .DS_Store
 .RDataTmp
+.RDataTmp
+.RData
+.Rhistory
+.Rproj.user/
+.ipynb_checkpoints/
