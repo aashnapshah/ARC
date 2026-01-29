@@ -22,7 +22,9 @@ DMARETHN_MAP = {
     1: "Non-Hispanic white",
     2: "Non-Hispanic black",
     3: "Mexican American",
-    8: "Other"
+    8: "Other",
+    0: "Other"
+    
 }
 
 RIDRETH_MAP = {
@@ -35,12 +37,14 @@ RIDRETH_MAP = {
 
 NHANES_III_MAP = {
         'HSSEX': 'RIAGENDR',
+        'IS_FEMALE': 'RIAGENDR',
         'HSAGEIR': 'RIDAGEYR',
         'BMPLEG': 'BMXLEG',
         'BMPHTIN': 'BMXHT',
         'DMARACER': 'RIDRETH',
         'RIDRETH1': 'RIDRETH',
         'BMPARML': 'BMXARML',
+        'BMXSITHT': 'BMXSITHT',
         
     }
 
@@ -71,9 +75,11 @@ def nhanes4(path, features, target, race_col):
     return nh_ref
 
 def process_data(path, features, target, race_col=None, include_race=False):
-    if 'nhanes3' in path:
-        df = pd.read_csv(path, na_values=["", " ", "  ", "   ", "    ", "     "], keep_default_na=True)
+    if 'nh3' in path:
+        df = pd.read_csv(path) #, na_values=["", " ", "  ", "   ", "    ", "     "], keep_default_na=True)
         df = df.rename(columns=NHANES_III_MAP)
+        # inches to cm
+       # df['BMXHT'] = df['BMXHT'] * 2.54
     elif 'nhanes4' in path:
         df = nhanes4(path, features, target, race_col)
     else:
@@ -182,7 +188,7 @@ def run_experiment(
 ):
     features = features + [race_col] if race_adj else features
     # set age to 18-65
-    nh3['bin_sh'] = pd.qcut(nh3['BMPSITHT'], q=4, labels=False, duplicates='drop')
+    nh3['bin_sh'] = pd.qcut(nh3['BMXSITHT'], q=4, labels=False, duplicates='drop')
     nh3['black'] = nh3['RIDRETH'] == 2
     print(nh3['bin_sh'].value_counts())
     print(nh3['black'].value_counts())
@@ -215,8 +221,8 @@ def summ_stats(df):
     #print(f"{'Age':<18} {df['RIDAGEYR'].min():<15.2f} {df['RIDAGEYR'].max():<10.2f} {df['RIDAGEYR'].mean():<12.2f} {df['RIDAGEYR'].std():<12.2f}")
     print(f"{'Leg Length':<18} {df['BMXLEG'].min():<15.2f} {df['BMXLEG'].max():<10.2f} {df['BMXLEG'].mean():<12.2f} {df['BMXLEG'].std():<12.2f}")
     print(f"{'Height':<18} {df['BMXHT'].min():<15.2f} {df['BMXHT'].max():<10.2f} {df['BMXHT'].mean():<12.2f} {df['BMXHT'].std():<12.2f}")
-    if "BMPSITHT" in df.columns:
-        print(f"{'Sitting Height':<18} {df['BMPSITHT'].min():<15.2f} {df['BMPSITHT'].max():<10.2f} {df['BMPSITHT'].mean():<12.2f} {df['BMPSITHT'].std():<12.2f} {df['BMPSITHT'].median():<12.2f}")
+    if "BMXSITHT" in df.columns:
+        print(f"{'Sitting Height':<18} {df['BMXSITHT'].min():<15.2f} {df['BMXSITHT'].max():<10.2f} {df['BMXSITHT'].mean():<12.2f} {df['BMXSITHT'].std():<12.2f} {df['BMXSITHT'].median():<12.2f}")
     
 def main(args):      
     print('IMPUTE PATH: ', args.impute_path)
@@ -278,12 +284,12 @@ def main(args):
     
 if __name__ == "__main__":
     parser = argparse.ArgumentParser()
-    parser.add_argument("--train_path", type=str, default="../data/raw/nhanes/nh3_adult_youth_exam/nhanes3_exam_processed.csv")
+    parser.add_argument("--train_path", type=str, default="../data/raw/nh3/nh3_2023-07-18.csv")
     parser.add_argument("--impute_path", type=str, default="../data/raw/nhanes/nhanes4")
     parser.add_argument("--save_path", type=str, default="../results/imputed_sh")
     parser.add_argument("--seed", type=int, default=42)
-    parser.add_argument("--features", type=list, default=['RIDAGEYR', 'RIAGENDR', 'BMXLEG', 'BMXHT'])
-    parser.add_argument("--target", type=str, default="BMPSITHT")
+    parser.add_argument("--features", type=list, default=['RIDAGEYR', 'RIAGENDR', 'BMXLEG', 'BMXHT', 'BMXARML'])
+    parser.add_argument("--target", type=str, default="BMXSITHT")
     parser.add_argument("--race_col", type=str, default="RIDRETH")
     parser.add_argument("--models", type=list, default=["_linreg", "_xgboost"])
     parser.add_argument("--race_adj", type=list, default=[False, True])
