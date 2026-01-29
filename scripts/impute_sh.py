@@ -130,6 +130,49 @@ def _mice(X_train, y_train, X_test, sample_weights=None):
     model.fit(X_train_imp, y_train, sample_weight=sample_weights)
     return model
 
+# Added function to compute bootstrapped CIs for metrics
+def compute_bootstrap_metrics(y_true, y_pred, groups, func_dict, n_bootstrap=1000, random_seed=42):
+    """
+    func_dict: {"mae": mean_absolute_error, ...}
+    Returns:
+        boot_dict: {group: {metric: (mean, lower, upper)}}
+    """
+    rng = np.random.RandomState(random_seed)
+    group_ids = pd.Series(groups).values if groups is not None else np.zeros(len(y_true))
+    unique_groups = ["All"] + [g for g in np.unique(group_ids)]
+    results = {}
+    for grp in unique_groups:
+        if grp == "All":
+            mask = np.ones(len(y_true), dtype=bool)
+        else:
+            mask = group_ids == grp
+
+        arr_true = np.array(y_true)[mask]
+        arr_pred = np.array(y_pred)[mask]
+        n = len(arr_true)
+        boot_metrics = {k: [] for k in func_dict}
+        if n == 0:
+            continue
+        for i in range(n_bootstrap):
+            idx = rng.choice(np.arange(n), size=n, replace=True)
+            yt_bs = arr_true[idx]
+            yp_bs = arr_pred[idx]
+            for m, func in func_dict.items():
+                try:
+                    val = func(yt_bs, yp_bs)
+                except Exception:
+                    val = np.nan
+                boot_metrics[m].append(val)
+        group_result = {}
+        for m in func_dict:
+            arr = np.array(boot_metrics[m])
+            group_result[m+'_mean'] = np.nanmean(arr)
+            group_result[m+'_ci_lower'] = np.nanpercentile(arr, 2.5)
+            group_result[m+'_ci_upper'] = np.nanpercentile(arr, 97.5)
+        group_result["n"] = n
+        results[DMARETHN_MAP.get(grp, str(grp))] = group_result
+    return results
+
 def run_experiment(
     nh3, nh4, 
     features, target, race_col, race_adj=False, seed=42,
@@ -151,10 +194,17 @@ def run_experiment(
     model = mfunc(X_train, y_train, X_test, sample_weights)
     y_pred = model.predict(X_test)
     metrics = evaluate(y_test, y_pred, groups=df_test[race_col])    
+    # Bootstrap CIs
+    func_dict = {
+        "mae": mean_absolute_error,
+        "mse": mean_squared_error,
+        "r2": r2_score
+    }
+    metrics_boot = compute_bootstrap_metrics(y_test, y_pred, df_test[race_col], func_dict, n_bootstrap=1000)
     imputed_y = model.predict(nh4[features])
-    pred_df = nh4[['seqn',race_col]] 
+    pred_df = nh4[['seqn', race_col]] 
     pred_df['imputed_value'] = imputed_y
-    return metrics, pred_df, model  
+    return metrics, metrics_boot, pred_df, model  
 
 def summ_stats(df):
     df = df.rename(columns=NHANES_III_MAP)
@@ -187,7 +237,7 @@ def main(args):
     os.makedirs(models_dir, exist_ok=True)
 
     for m_func, race_adj in pairs:
-        metrics, pred_df, model = run_experiment(
+        metrics, metrics_boot, pred_df, model = run_experiment(
             nh3, nh4, args.features, args.target, args.race_col, 
             race_adj=race_adj, balance_mode="ipw", mfunc=m_func
         )
@@ -205,15 +255,23 @@ def main(args):
          #   print(preds.groupby(pred_df['RIDRETH']).std())
             # print(preds.groupby(pred_df['RIDRETH']).min()
             # print(preds.groupby(pred_df['RIDRETH']).max())
+        # Add bootstrapped metrics for each group
         for key, value in metrics.items():
             metric_row = {"model": model_name, "race_adj": race_adj, "race": key}
+            # Add original metrics
             for k, v in value.items():
                 metric_row.update({k: v})
-            
+            # Add bootstrap means and ci if available
+            if key in metrics_boot:
+                for m in ["mae", "mse", "r2"]:
+                    metric_row[f"{m}_mean_bs"] = metrics_boot[key].get(f"{m}_mean", np.nan)
+                    metric_row[f"{m}_ci_lower"] = metrics_boot[key].get(f"{m}_ci_lower", np.nan)
+                    metric_row[f"{m}_ci_upper"] = metrics_boot[key].get(f"{m}_ci_upper", np.nan)
             metrics_rows.append(metric_row)
 
     # Save CSVs
     df = pd.concat(imputed_rows)
+    os.makedirs(f"{args.save_path}/tables", exist_ok=True)
     df.to_csv(f"{args.save_path}/tables/imputed_results.csv", index=False)
     pd.DataFrame(metrics_rows).to_csv(f"{args.save_path}/tables/metrics.csv", index=False)
     print(pd.DataFrame(metrics_rows))
@@ -224,7 +282,7 @@ if __name__ == "__main__":
     parser.add_argument("--impute_path", type=str, default="../data/raw/nhanes/nhanes4")
     parser.add_argument("--save_path", type=str, default="../results/imputed_sh")
     parser.add_argument("--seed", type=int, default=42)
-    parser.add_argument("--features", type=list, default=['RIDAGEYR', 'RIAGENDR', 'BMXLEG', 'BMXHT', 'BMXARML'])
+    parser.add_argument("--features", type=list, default=['RIDAGEYR', 'RIAGENDR', 'BMXLEG', 'BMXHT'])
     parser.add_argument("--target", type=str, default="BMPSITHT")
     parser.add_argument("--race_col", type=str, default="RIDRETH")
     parser.add_argument("--models", type=list, default=["_linreg", "_xgboost"])

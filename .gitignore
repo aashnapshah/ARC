@@ -12,7 +12,6 @@ logs/
 .Rproj 
 scratch/
 plots/
-notebooks/
 logs/
 helpers/    
 projects/

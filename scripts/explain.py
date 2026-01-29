@@ -1,4 +1,5 @@
 # Cleaned and Dynamic Refactor of race_adjusted.R Logic (Python)
+# Debug Edition: Diagnose missing anthropometric columns
 
 import os
 import pandas as pd
@@ -17,35 +18,34 @@ def mse(model):
 def rss(model):
     return np.sum(model.resid**2)
 
-# Re-write get_predictors to use only vars in the dict for each category
 def get_predictors(df, groups=['anthropometrics', 'sociodemographics', 'exposures']):
     predictors = []
     for group in groups:
         valid_cols = groups_list_dict[group]
         intersection = set(valid_cols) & set(df.columns)
+        # remove leg_len
+        intersection = [col for col in intersection if not col.endswith('leg_len')]
         predictors.extend([col for col in intersection if not (col.endswith('adj') or col.endswith('old'))])
     return predictors
 
 def get_params(model, col, outcome, formula=None):
     cols = ['index', 'coef', 'std_err', 't', 'p', 'ci_lower', 'ci_upper']
-    res = model.summary2().tables[1].reset_index() 
+    res = model.summary2().tables[1].reset_index()
     res.columns = cols
     if formula is None:
         pred = 'baseline'
         group = 'baseline'
         n_vars = 1
-    else:   
+    else:
         col = col.replace('bs(', '').replace(')', '')
+        col = col.replace(", df=3", "")
         pred = col
         group = None
-        # Determine which group pred belongs to
         for g in ['anthropometrics', 'exposures', 'sociodemographics']:
             if pred in groups_list_dict[g]:
                 group = g
                 break
-        
-        # get the last part of the formula after ' ~ ... + '
-        n_vars = len(formula.split(' ~ ')[1].split(' + ')) if ' ~ ' in formula else 1
+        n_vars = len(formula.split(' ~ ')[1].split(' + race_4 + ')[1].split(' + ')) if ' ~ ' in formula else 1
     res['group'] = group
     res['cov'] = pred
     res['val'] = None
@@ -54,9 +54,9 @@ def get_params(model, col, outcome, formula=None):
     res['rss'] = rss(model)
     res['n_vars'] = n_vars
     return res[['target', 'group', 'cov', 'val'] + cols + ['mse', 'rss', 'n_vars']]
-    
+
 def get_base_formula(df, outcome):
-    variables = ["sex", "age", "sex*age"] 
+    variables = ["sex", "age", "sex*age"]
     race_cols = [col for col in df.columns if col.startswith('race_') and not col.endswith('_adj')]
     variables += race_cols
     return f"{outcome} ~ {' + '.join(variables)}"
@@ -84,7 +84,7 @@ def stepwise_select(df, base_formula, predictors, loss=mse):
         remaining.remove(candidate)
         results.append({'formula_vars': selected.copy(), 'metric': candidate_score})
     return selected, results
-    
+
 def run_stepwise_df(cohort_name, df, outcome, groups, base_formula, reset=False):
     model = ols(base_formula, data=df).fit()
     result = get_params(model, 'Baseline', outcome)
@@ -97,6 +97,8 @@ def run_stepwise_df(cohort_name, df, outcome, groups, base_formula, reset=False)
             cols = get_predictors(df, groups)
         else:
             cols = get_predictors(df, [group])
+        # Print group predictors for debugging
+        print(f"Predictors for group {group}: {cols}")
         sel_vars, _ = stepwise_select(df, base_formula, cols, loss=mse)
         for idx in range(len(sel_vars)):
             use_vars = sel_vars[:idx + 1]
@@ -107,7 +109,6 @@ def run_stepwise_df(cohort_name, df, outcome, groups, base_formula, reset=False)
             model = ols(formula, data=df).fit()
             try:
                 formula_rhs = formula.split(' ~ ')[1]
-                # try to isolate only after 'race_4 + ' if present
                 if 'race_4 + ' in formula_rhs:
                     formula_rhs = formula_rhs.split('race_4 + ')[1]
             except Exception:
@@ -119,19 +120,20 @@ def run_stepwise_df(cohort_name, df, outcome, groups, base_formula, reset=False)
             base_formula = formula
             break
         print('-'*100)
+
     return result
 
 def fraction_calc(df, reset=None, num=10):
     def frac_calc(group):
-        # Set the order for how the group appears - here, by 'n_vars' ascending, so group is in stepwise order
         race, target = group['index'].iloc[0], group['target'].iloc[0]
         baseline_row = df.query('index == @race and target == @target and group == "baseline"')
         baseline_coef = baseline_row['coef'].iloc[0]
         group = group.sort_values('n_vars', ascending=True).reset_index(drop=True)
         group['fraction'] = 100 * (baseline_coef - group['coef']) / baseline_coef
-        rest_rows = group.iloc[1:].sort_values('n_vars', ascending=True).reset_index(drop=True)
+        rest_rows = group.sort_values('n_vars', ascending=True).reset_index(drop=True)
         out = pd.concat([baseline_row, rest_rows], ignore_index=True)
-        return out.fillna(0)
+        out['fraction'] = out['fraction'].fillna(0)
+        return out
     cols = ['index', 'target', 'group'] if reset == 'reset' else ['target', 'index']
     df = df.groupby(cols, as_index=False).apply(lambda group: frac_calc(group).reset_index(drop=True)).reset_index(drop=True)
     return df
@@ -150,13 +152,14 @@ def process_df(df, ds, reset=None):
     df['cov'] = df['cov']
     df = df.rename(columns={'[0.025': 'ci_low', '0.975]': 'ci_high'})
     df = df.drop_duplicates(subset=['target', 'index', 'cov'], keep='first')
+    print(df)
     return df[['n_vars', 'group', 'target', 'index', 'cov', 'fraction', 'coef', 'std_err', 't', 'p', 'mse']].reset_index(drop=True)
 
 def main(args):
     output_types = [ 'reset', 'cont' ]
     for cohort in args.cohorts:
         results_dict = {suffix: pd.DataFrame() for suffix in output_types}
-        
+
         for target in args.target_pfts:
             print('\n\n------------------------------------------------------------------------------------------------')
             print(f"{'Cohort':<20}: {cohort}")
@@ -167,10 +170,10 @@ def main(args):
             for suffix in output_types:
                 res = run_stepwise_df(cohort, df, target, args.groups, base_formula, reset=suffix)
                 results_dict[suffix] = pd.concat([results_dict[suffix], res], ignore_index=True)
-        
+
         for suffix in output_types:
             results_dict[suffix].to_csv(f"{args.out_dir}/raw/{cohort}_{suffix}.csv", index=False)
-        
+
         for suffix in output_types:
             processed = process_df(results_dict[suffix], cohort, reset=suffix)
             processed.to_csv(f"{args.out_dir}/processed/{cohort}_{suffix}.csv", index=False)
