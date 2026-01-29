@@ -43,24 +43,66 @@ def _xgboost(X_train, y_train, sample_weights=None):
 def metrics(y_true, y_pred):
     return {
         "n": len(y_true),
-        "mae": f"{mean_absolute_error(y_true, y_pred):.2f}",
-        "mse": f"{mean_squared_error(y_true, y_pred):.2f}",
-        "r2": f"{r2_score(y_true, y_pred):.2f}"
+        "mae": mean_absolute_error(y_true, y_pred),
+        "mse": mean_squared_error(y_true, y_pred),
+        "r2": r2_score(y_true, y_pred)
     }
 
-def evaluate(model, X_test, y_test, group_col=None, groups=None):
+def ci_low_high(arr, alpha=0.05):
+    lower = np.percentile(arr, 100*alpha/2)
+    upper = np.percentile(arr, 100*(1-alpha/2))
+    return lower, upper
+
+def bootstrap_metrics(y_true, y_pred, n_bootstraps=1000, seed=42):
+    n = len(y_true)
+    rng = np.random.RandomState(seed)
+    maes, mses, r2s = [], [], []
+    for _ in range(n_bootstraps):
+        idx = rng.choice(np.arange(n), size=n, replace=True)
+        y_true_bs = y_true[idx]
+        y_pred_bs = y_pred[idx]
+        maes.append(mean_absolute_error(y_true_bs, y_pred_bs))
+        mses.append(mean_squared_error(y_true_bs, y_pred_bs))
+        try:
+            r2s.append(r2_score(y_true_bs, y_pred_bs))
+        except Exception:
+            r2s.append(np.nan)
+    mae_mean, mae_ci = np.mean(maes), ci_low_high(maes)
+    mse_mean, mse_ci = np.mean(mses), ci_low_high(mses)
+    r2_mean, r2_ci  = np.nanmean(r2s), ci_low_high([x for x in r2s if not np.isnan(x)])
+    return {
+        "mae": f"{mae_mean:.2f}",
+        "mae_ci_lower": f"{mae_ci[0]:.2f}",
+        "mae_ci_upper": f"{mae_ci[1]:.2f}",
+        "mse": f"{mse_mean:.2f}",
+        "mse_ci_lower": f"{mse_ci[0]:.2f}",
+        "mse_ci_upper": f"{mse_ci[1]:.2f}",
+        "r2": f"{r2_mean:.2f}",
+        "r2_ci_lower": f"{r2_ci[0]:.2f}",
+        "r2_ci_upper": f"{r2_ci[1]:.2f}",
+        "n": n
+    }
+
+def evaluate(model, X_test, y_test, group_col=None, groups=None, n_bootstraps=1000, seed=42):
     y_pred = model.predict(X_test)
     results = []
-    overall_metrics = metrics(y_test, y_pred)
-    overall_metrics.update({"group": "All"})
-    results.append(overall_metrics)
+    # Overall
+    overall_stats = bootstrap_metrics(y_test, y_pred, n_bootstraps=n_bootstraps, seed=seed)
+    overall_stats.update({"group": "All"})
+    results.append(overall_stats)
+    # Per group
     unique_groups = np.unique(groups)
     for val in unique_groups:
         mask = groups == val
-        group_metrics = metrics(y_test[mask], y_pred[mask])
-        group_metrics.update({"group": int_race_dict[str(val)]})
-        results.append(group_metrics)
-    return pd.DataFrame(results)[['group', 'n', 'mae', 'mse', 'r2']]
+        stats = bootstrap_metrics(y_test[mask], y_pred[mask], n_bootstraps=n_bootstraps, seed=seed)
+        stats.update({"group": int_race_dict[str(val)]})
+        results.append(stats)
+    return pd.DataFrame(results)[[
+        'group', 'n',
+        'mae', 'mae_ci_lower', 'mae_ci_upper',
+        'mse', 'mse_ci_lower', 'mse_ci_upper',
+        'r2', 'r2_ci_lower', 'r2_ci_upper'
+    ]]
 
 def process_data(data_dir, cohort):
     path = os.path.join(data_dir, f'{cohort}/{cohort}_ref.csv')
@@ -94,7 +136,7 @@ def get_data_dict(data_dir, features, targets, race_col, train_cohort='ukb', tes
         tests[cohort] = df_dict[cohort]
     return train_df, tests
 
-def run_experiment(train_df, test_dfs, features, target, race_col, save_path=None, seed=42):
+def run_experiment(train_df, test_dfs, features, target, race_col, save_path=None, seed=42, n_bootstraps=1000):
     all_results = pd.DataFrame()
 
     for i in range(len(features)):
@@ -109,7 +151,7 @@ def run_experiment(train_df, test_dfs, features, target, race_col, save_path=Non
                 X_test = df[curr_feats].values
                 y_test = df[target].values
                 groups = df[race_col].values
-                eval_df = evaluate(model, X_test, y_test, groups=groups)
+                eval_df = evaluate(model, X_test, y_test, groups=groups, n_bootstraps=n_bootstraps, seed=seed)
                 eval_df["set"] = name
                 eval_df["target"] = target
                 eval_df["n_cov"] = len(curr_feats)
@@ -121,14 +163,14 @@ def run_experiment(train_df, test_dfs, features, target, race_col, save_path=Non
 
 
 def main(args):
-    train_cohort = ['ukb', 'nh', 'nh3', 'nh4']
+    train_cohorts = ['ukb', 'nh', 'nh3', 'nh4']
     feats = ['height', 'sit_height', 'waist_circ', 'immigrant', 'inc_pov_bin', 'hs_grad', 'smoke_exposure']
-    for train_cohort in train_cohort:
+    for train_cohort in train_cohorts:
         train_df, test_dfs = get_data_dict(args.data_dir, features=feats, targets=args.targets, race_col=args.race_col, train_cohort=train_cohort)
         all_targets_results = []
         for target in args.targets:
             results = run_experiment(train_df, test_dfs, features=feats, target=target,
-                                    race_col=args.race_col)
+                                    race_col=args.race_col, seed=args.seed, n_bootstraps=args.n_bootstraps)
             all_targets_results.append(results)
 
         summary_df = pd.concat(all_targets_results, ignore_index=True)
@@ -143,5 +185,6 @@ if __name__ == "__main__":
     parser.add_argument("--targets", nargs="+", default=["fvc", "fev1"])
     parser.add_argument("--race_col", type=str, default="race")
     parser.add_argument("--seed", type=int, default=42)
+    parser.add_argument("--n_bootstraps", type=int, default=1000)
     args = parser.parse_args()
     main(args)
