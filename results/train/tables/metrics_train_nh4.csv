@@ -1,617 +1,617 @@
-group,n,mae,mse,r2,set,target,n_cov,cov,race_adj
-All,536,453.51,336151.47,0.62,nh4_val,fvc,4,Height,True
-white,190,496.86,384239.28,0.61,nh4_val,fvc,4,Height,True
-black,112,449.37,357290.99,0.52,nh4_val,fvc,4,Height,True
-asian,26,489.91,391826.98,0.51,nh4_val,fvc,4,Height,True
-hispanic,189,412.60,276081.41,0.64,nh4_val,fvc,4,Height,True
-other,19,401.67,252012.85,0.44,nh4_val,fvc,4,Height,True
-All,144198,502.00,425495.04,0.50,ukb,fvc,4,Height,True
-white,136520,499.48,422557.82,0.49,ukb,fvc,4,Height,True
-black,1963,485.73,379839.89,0.38,ukb,fvc,4,Height,True
-asian,3389,571.81,506479.52,0.17,ukb,fvc,4,Height,True
-other,2326,561.60,518424.70,0.35,ukb,fvc,4,Height,True
-All,3354,335.98,227501.02,0.76,nh,fvc,4,Height,True
-white,1330,341.54,234802.58,0.77,nh,fvc,4,Height,True
-black,739,360.48,270272.01,0.64,nh,fvc,4,Height,True
-asian,88,232.75,134446.34,0.82,nh,fvc,4,Height,True
-hispanic,1049,308.63,186482.55,0.77,nh,fvc,4,Height,True
-other,148,419.02,294381.80,0.61,nh,fvc,4,Height,True
-All,1569,454.53,344094.37,0.64,nh3,fvc,4,Height,True
-white,697,442.48,327976.75,0.67,nh3,fvc,4,Height,True
-black,367,476.65,401602.39,0.53,nh3,fvc,4,Height,True
-hispanic,420,436.81,303693.38,0.61,nh3,fvc,4,Height,True
-other,85,545.46,427587.88,0.43,nh3,fvc,4,Height,True
-All,536,508.52,418435.46,0.53,nh4_val,fvc,3,Height,False
-white,190,533.05,444866.92,0.55,nh4_val,fvc,3,Height,False
-black,112,570.90,527989.81,0.29,nh4_val,fvc,3,Height,False
-asian,26,583.25,567099.91,0.29,nh4_val,fvc,3,Height,False
-hispanic,189,444.52,322930.89,0.57,nh4_val,fvc,3,Height,False
-other,19,429.87,254910.55,0.44,nh4_val,fvc,3,Height,False
-All,144198,495.54,421273.46,0.50,ukb,fvc,3,Height,False
-white,136520,485.72,406818.51,0.51,ukb,fvc,3,Height,False
-black,1963,739.62,795936.25,-0.30,ukb,fvc,3,Height,False
-asian,3389,717.93,742783.19,-0.21,ukb,fvc,3,Height,False
-other,2326,542.14,485044.17,0.39,ukb,fvc,3,Height,False
-All,3354,390.83,296106.47,0.69,nh,fvc,3,Height,False
-white,1330,393.22,294310.58,0.72,nh,fvc,3,Height,False
-black,739,478.57,433822.13,0.42,nh,fvc,3,Height,False
-asian,88,308.73,207194.41,0.73,nh,fvc,3,Height,False
-hispanic,1049,328.95,208789.42,0.74,nh,fvc,3,Height,False
-other,148,418.62,296353.19,0.60,nh,fvc,3,Height,False
-All,1569,518.06,442247.23,0.53,nh3,fvc,3,Height,False
-white,697,503.35,409918.93,0.59,nh3,fvc,3,Height,False
-black,367,627.22,644094.09,0.25,nh3,fvc,3,Height,False
-hispanic,420,445.18,322989.71,0.59,nh3,fvc,3,Height,False
-other,85,527.37,425108.23,0.43,nh3,fvc,3,Height,False
-All,536,447.12,339612.61,0.62,nh4_val,fvc,5,Sit Height,True
-white,190,487.15,382445.14,0.61,nh4_val,fvc,5,Sit Height,True
-black,112,390.11,293735.71,0.60,nh4_val,fvc,5,Sit Height,True
-asian,26,532.45,494118.72,0.38,nh4_val,fvc,5,Sit Height,True
-hispanic,189,419.74,292210.82,0.62,nh4_val,fvc,5,Sit Height,True
-other,19,538.51,441813.23,0.02,nh4_val,fvc,5,Sit Height,True
-All,144198,518.80,448628.89,0.47,ukb,fvc,5,Sit Height,True
-white,136520,517.60,447311.66,0.46,ukb,fvc,5,Sit Height,True
-black,1963,465.34,356795.26,0.42,ukb,fvc,5,Sit Height,True
-asian,3389,551.43,476546.40,0.22,ukb,fvc,5,Sit Height,True
-other,2326,586.48,562767.26,0.30,ukb,fvc,5,Sit Height,True
-All,3354,322.74,225912.54,0.76,nh,fvc,5,Sit Height,True
-white,1330,330.79,235534.13,0.77,nh,fvc,5,Sit Height,True
-black,739,335.45,240411.32,0.68,nh,fvc,5,Sit Height,True
-asian,88,210.22,152871.06,0.80,nh,fvc,5,Sit Height,True
-hispanic,1049,296.62,193313.41,0.76,nh,fvc,5,Sit Height,True
-other,148,438.99,341539.68,0.54,nh,fvc,5,Sit Height,True
-All,1569,465.54,355244.24,0.62,nh3,fvc,5,Sit Height,True
-white,697,446.21,337210.27,0.66,nh3,fvc,5,Sit Height,True
-black,367,489.80,383214.72,0.55,nh3,fvc,5,Sit Height,True
-hispanic,420,453.90,334990.87,0.57,nh3,fvc,5,Sit Height,True
-other,85,576.78,482431.63,0.35,nh3,fvc,5,Sit Height,True
-All,536,515.51,424285.42,0.52,nh4_val,fvc,4,Sit Height,False
-white,190,527.78,428244.92,0.56,nh4_val,fvc,4,Sit Height,False
-black,112,556.23,513032.61,0.31,nh4_val,fvc,4,Sit Height,False
-asian,26,617.19,625962.45,0.22,nh4_val,fvc,4,Sit Height,False
-hispanic,189,469.44,345525.26,0.55,nh4_val,fvc,4,Sit Height,False
-other,19,471.92,369026.33,0.18,nh4_val,fvc,4,Sit Height,False
-All,144198,511.98,439184.54,0.48,ukb,fvc,4,Sit Height,False
-white,136520,503.99,426827.23,0.49,ukb,fvc,4,Sit Height,False
-black,1963,662.13,678577.91,-0.11,ukb,fvc,4,Sit Height,False
-asian,3389,719.81,755879.67,-0.23,ukb,fvc,4,Sit Height,False
-other,2326,551.37,501011.97,0.37,ukb,fvc,4,Sit Height,False
-All,3354,355.11,267337.89,0.72,nh,fvc,4,Sit Height,False
-white,1330,354.20,259662.77,0.75,nh,fvc,4,Sit Height,False
-black,739,411.11,358211.54,0.52,nh,fvc,4,Sit Height,False
-asian,88,262.74,199822.06,0.74,nh,fvc,4,Sit Height,False
-hispanic,1049,316.34,212635.72,0.74,nh,fvc,4,Sit Height,False
-other,148,413.35,310420.57,0.58,nh,fvc,4,Sit Height,False
-All,1569,498.16,409769.72,0.57,nh3,fvc,4,Sit Height,False
-white,697,472.71,367921.85,0.63,nh3,fvc,4,Sit Height,False
-black,367,567.86,544282.56,0.37,nh3,fvc,4,Sit Height,False
-hispanic,420,468.99,354498.23,0.55,nh3,fvc,4,Sit Height,False
-other,85,550.14,445249.36,0.40,nh3,fvc,4,Sit Height,False
-All,536,422.97,295632.19,0.67,nh4_val,fvc,6,Waist Circumference,True
-white,190,448.50,317555.64,0.68,nh4_val,fvc,6,Waist Circumference,True
-black,112,408.84,282277.13,0.62,nh4_val,fvc,6,Waist Circumference,True
-asian,26,486.61,384516.50,0.52,nh4_val,fvc,6,Waist Circumference,True
-hispanic,189,382.84,253363.58,0.67,nh4_val,fvc,6,Waist Circumference,True
-other,19,563.13,453952.59,-0.01,nh4_val,fvc,6,Waist Circumference,True
-All,144198,526.77,452238.66,0.47,ukb,fvc,6,Waist Circumference,True
-white,136520,525.81,450973.80,0.46,ukb,fvc,6,Waist Circumference,True
-black,1963,486.15,382838.85,0.37,ukb,fvc,6,Waist Circumference,True
-asian,3389,538.95,459398.16,0.25,ukb,fvc,6,Waist Circumference,True
-other,2326,599.56,574614.55,0.28,ukb,fvc,6,Waist Circumference,True
-All,3354,305.48,205180.79,0.78,nh,fvc,6,Waist Circumference,True
-white,1330,320.59,215352.80,0.79,nh,fvc,6,Waist Circumference,True
-black,739,310.37,217663.08,0.71,nh,fvc,6,Waist Circumference,True
-asian,88,191.99,119931.59,0.84,nh,fvc,6,Waist Circumference,True
-hispanic,1049,276.23,173059.58,0.79,nh,fvc,6,Waist Circumference,True
-other,148,420.03,329801.61,0.56,nh,fvc,6,Waist Circumference,True
-All,1569,449.84,329589.39,0.65,nh3,fvc,6,Waist Circumference,True
-white,697,445.12,318474.76,0.68,nh3,fvc,6,Waist Circumference,True
-black,367,448.01,345116.93,0.60,nh3,fvc,6,Waist Circumference,True
-hispanic,420,437.76,307202.80,0.61,nh3,fvc,6,Waist Circumference,True
-other,85,556.10,464303.03,0.38,nh3,fvc,6,Waist Circumference,True
-All,536,476.90,381632.82,0.57,nh4_val,fvc,5,Waist Circumference,False
-white,190,501.04,396641.58,0.59,nh4_val,fvc,5,Waist Circumference,False
-black,112,494.73,425646.25,0.43,nh4_val,fvc,5,Waist Circumference,False
-asian,26,594.42,583020.18,0.27,nh4_val,fvc,5,Waist Circumference,False
-hispanic,189,427.87,315750.95,0.58,nh4_val,fvc,5,Waist Circumference,False
-other,19,457.18,351866.04,0.22,nh4_val,fvc,5,Waist Circumference,False
-All,144198,516.84,444059.12,0.48,ukb,fvc,5,Waist Circumference,False
-white,136520,508.04,430310.72,0.48,ukb,fvc,5,Waist Circumference,False
-black,1963,686.80,716836.91,-0.17,ukb,fvc,5,Waist Circumference,False
-asian,3389,741.25,794481.04,-0.30,ukb,fvc,5,Waist Circumference,False
-other,2326,562.37,510219.50,0.36,ukb,fvc,5,Waist Circumference,False
-All,3354,330.25,243216.83,0.74,nh,fvc,5,Waist Circumference,False
-white,1330,334.69,240488.73,0.77,nh,fvc,5,Waist Circumference,False
-black,739,384.27,319763.20,0.57,nh,fvc,5,Waist Circumference,False
-asian,88,235.20,181267.56,0.76,nh,fvc,5,Waist Circumference,False
-hispanic,1049,284.09,186684.51,0.77,nh,fvc,5,Waist Circumference,False
-other,148,404.36,323044.93,0.57,nh,fvc,5,Waist Circumference,False
-All,1569,475.39,378542.91,0.60,nh3,fvc,5,Waist Circumference,False
-white,697,450.23,342657.91,0.66,nh3,fvc,5,Waist Circumference,False
-black,367,554.14,500767.72,0.42,nh3,fvc,5,Waist Circumference,False
-hispanic,420,430.90,311149.46,0.60,nh3,fvc,5,Waist Circumference,False
-other,85,561.51,478079.28,0.36,nh3,fvc,5,Waist Circumference,False
-All,536,427.44,303198.57,0.66,nh4_val,fvc,7,Immigrant,True
-white,190,433.96,311029.75,0.68,nh4_val,fvc,7,Immigrant,True
-black,112,416.72,301222.69,0.59,nh4_val,fvc,7,Immigrant,True
-asian,26,475.94,402802.27,0.50,nh4_val,fvc,7,Immigrant,True
-hispanic,189,401.58,262670.62,0.65,nh4_val,fvc,7,Immigrant,True
-other,19,616.36,503380.79,-0.11,nh4_val,fvc,7,Immigrant,True
-All,144198,523.23,447532.68,0.47,ukb,fvc,7,Immigrant,True
-white,136520,522.41,446489.01,0.46,ukb,fvc,7,Immigrant,True
-black,1963,476.71,374979.69,0.39,ukb,fvc,7,Immigrant,True
-asian,3389,537.72,458239.69,0.25,ukb,fvc,7,Immigrant,True
-other,2326,589.71,554419.20,0.31,ukb,fvc,7,Immigrant,True
-All,3354,300.57,204359.05,0.78,nh,fvc,7,Immigrant,True
-white,1330,311.02,211621.27,0.80,nh,fvc,7,Immigrant,True
-black,739,312.52,223869.62,0.70,nh,fvc,7,Immigrant,True
-asian,88,180.45,123034.32,0.84,nh,fvc,7,Immigrant,True
-hispanic,1049,272.34,171852.74,0.79,nh,fvc,7,Immigrant,True
-other,148,418.58,320430.95,0.57,nh,fvc,7,Immigrant,True
-All,1569,447.79,327677.39,0.65,nh3,fvc,7,Immigrant,True
-white,697,440.28,315380.16,0.68,nh3,fvc,7,Immigrant,True
-black,367,459.39,353804.25,0.59,nh3,fvc,7,Immigrant,True
-hispanic,420,429.65,302593.72,0.61,nh3,fvc,7,Immigrant,True
-other,85,548.94,439650.95,0.41,nh3,fvc,7,Immigrant,True
-All,536,484.99,390928.88,0.56,nh4_val,fvc,6,Immigrant,False
-white,190,519.88,416161.62,0.57,nh4_val,fvc,6,Immigrant,False
-black,112,516.86,453474.56,0.39,nh4_val,fvc,6,Immigrant,False
-asian,26,588.34,574513.27,0.28,nh4_val,fvc,6,Immigrant,False
-hispanic,189,419.44,305991.42,0.60,nh4_val,fvc,6,Immigrant,False
-other,19,458.79,363594.48,0.19,nh4_val,fvc,6,Immigrant,False
-All,144198,503.03,422110.88,0.50,ukb,fvc,6,Immigrant,False
-white,136520,493.50,407516.14,0.51,ukb,fvc,6,Immigrant,False
-black,1963,697.86,737289.80,-0.21,ukb,fvc,6,Immigrant,False
-asian,3389,741.85,783219.70,-0.28,ukb,fvc,6,Immigrant,False
-other,2326,549.68,486590.41,0.39,ukb,fvc,6,Immigrant,False
-All,3354,332.51,246763.33,0.74,nh,fvc,6,Immigrant,False
-white,1330,332.95,239092.89,0.77,nh,fvc,6,Immigrant,False
-black,739,397.56,341882.95,0.54,nh,fvc,6,Immigrant,False
-asian,88,237.02,179930.41,0.76,nh,fvc,6,Immigrant,False
-hispanic,1049,285.89,187946.43,0.77,nh,fvc,6,Immigrant,False
-other,148,391.03,297361.48,0.60,nh,fvc,6,Immigrant,False
-All,1569,480.13,383676.31,0.59,nh3,fvc,6,Immigrant,False
-white,697,446.01,335533.32,0.66,nh3,fvc,6,Immigrant,False
-black,367,575.66,538111.33,0.37,nh3,fvc,6,Immigrant,False
-hispanic,420,442.58,319360.50,0.59,nh3,fvc,6,Immigrant,False
-other,85,532.99,429448.61,0.42,nh3,fvc,6,Immigrant,False
-All,536,431.82,316283.70,0.64,nh4_val,fvc,8,Income:Poverty,True
-white,190,452.07,331017.72,0.66,nh4_val,fvc,8,Income:Poverty,True
-black,112,399.43,277002.20,0.63,nh4_val,fvc,8,Income:Poverty,True
-asian,26,420.67,340023.79,0.58,nh4_val,fvc,8,Income:Poverty,True
-hispanic,189,417.15,298958.88,0.61,nh4_val,fvc,8,Income:Poverty,True
-other,19,581.33,540347.58,-0.20,nh4_val,fvc,8,Income:Poverty,True
-All,144198,519.93,445311.97,0.47,ukb,fvc,8,Income:Poverty,True
-white,136520,519.05,444456.51,0.47,ukb,fvc,8,Income:Poverty,True
-black,1963,475.63,369080.03,0.40,ukb,fvc,8,Income:Poverty,True
-asian,3389,533.25,451432.48,0.26,ukb,fvc,8,Income:Poverty,True
-other,2326,589.25,550938.75,0.31,ukb,fvc,8,Income:Poverty,True
-All,3354,301.43,203964.40,0.78,nh,fvc,8,Income:Poverty,True
-white,1330,310.42,209684.89,0.80,nh,fvc,8,Income:Poverty,True
-black,739,304.54,211894.62,0.72,nh,fvc,8,Income:Poverty,True
-asian,88,170.59,106205.78,0.86,nh,fvc,8,Income:Poverty,True
-hispanic,1049,284.06,184723.99,0.77,nh,fvc,8,Income:Poverty,True
-other,148,406.05,307459.35,0.59,nh,fvc,8,Income:Poverty,True
-All,1569,443.97,321094.20,0.66,nh3,fvc,8,Income:Poverty,True
-white,697,429.75,304956.07,0.69,nh3,fvc,8,Income:Poverty,True
-black,367,442.32,335604.51,0.61,nh3,fvc,8,Income:Poverty,True
-hispanic,420,450.05,317499.26,0.60,nh3,fvc,8,Income:Poverty,True
-other,85,537.78,408539.76,0.45,nh3,fvc,8,Income:Poverty,True
-All,536,469.35,377807.67,0.57,nh4_val,fvc,7,Income:Poverty,False
-white,190,488.36,394354.63,0.60,nh4_val,fvc,7,Income:Poverty,False
-black,112,494.53,438670.34,0.41,nh4_val,fvc,7,Income:Poverty,False
-asian,26,597.52,558046.49,0.30,nh4_val,fvc,7,Income:Poverty,False
-hispanic,189,417.48,304102.40,0.60,nh4_val,fvc,7,Income:Poverty,False
-other,19,471.40,340099.59,0.25,nh4_val,fvc,7,Income:Poverty,False
-All,144198,505.22,425066.59,0.50,ukb,fvc,7,Income:Poverty,False
-white,136520,496.03,410618.74,0.51,ukb,fvc,7,Income:Poverty,False
-black,1963,687.76,725097.58,-0.19,ukb,fvc,7,Income:Poverty,False
-asian,3389,740.34,789290.76,-0.29,ukb,fvc,7,Income:Poverty,False
-other,2326,548.30,489169.94,0.39,ukb,fvc,7,Income:Poverty,False
-All,3354,327.63,240511.71,0.74,nh,fvc,7,Income:Poverty,False
-white,1330,330.96,236568.67,0.77,nh,fvc,7,Income:Poverty,False
-black,739,387.57,326315.44,0.56,nh,fvc,7,Income:Poverty,False
-asian,88,233.52,175551.40,0.77,nh,fvc,7,Income:Poverty,False
-hispanic,1049,281.38,183130.25,0.77,nh,fvc,7,Income:Poverty,False
-other,148,382.12,292842.42,0.61,nh,fvc,7,Income:Poverty,False
-All,1569,478.52,375918.90,0.60,nh3,fvc,7,Income:Poverty,False
-white,697,451.29,337139.59,0.66,nh3,fvc,7,Income:Poverty,False
-black,367,568.42,512866.77,0.40,nh3,fvc,7,Income:Poverty,False
-hispanic,420,434.02,309425.99,0.61,nh3,fvc,7,Income:Poverty,False
-other,85,533.67,431169.93,0.42,nh3,fvc,7,Income:Poverty,False
-All,536,435.46,311519.39,0.65,nh4_val,fvc,9,High School Graduate,True
-white,190,447.72,316325.25,0.68,nh4_val,fvc,9,High School Graduate,True
-black,112,415.23,292706.00,0.60,nh4_val,fvc,9,High School Graduate,True
-asian,26,489.05,392692.89,0.51,nh4_val,fvc,9,High School Graduate,True
-hispanic,189,412.78,285884.34,0.62,nh4_val,fvc,9,High School Graduate,True
-other,19,584.49,518282.63,-0.15,nh4_val,fvc,9,High School Graduate,True
-All,144198,516.83,438840.95,0.48,ukb,fvc,9,High School Graduate,True
-white,136520,515.23,436842.08,0.48,ukb,fvc,9,High School Graduate,True
-black,1963,491.51,392221.88,0.36,ukb,fvc,9,High School Graduate,True
-asian,3389,545.68,467967.92,0.24,ukb,fvc,9,High School Graduate,True
-other,2326,589.84,553066.56,0.31,ukb,fvc,9,High School Graduate,True
-All,3354,298.04,204347.73,0.78,nh,fvc,9,High School Graduate,True
-white,1330,306.25,206554.66,0.80,nh,fvc,9,High School Graduate,True
-black,739,307.62,220088.03,0.70,nh,fvc,9,High School Graduate,True
-asian,88,176.48,118775.62,0.84,nh,fvc,9,High School Graduate,True
-hispanic,1049,274.72,179282.68,0.78,nh,fvc,9,High School Graduate,True
-other,148,413.97,334457.84,0.55,nh,fvc,9,High School Graduate,True
-All,1569,444.94,325837.36,0.65,nh3,fvc,9,High School Graduate,True
-white,697,427.05,304073.12,0.70,nh3,fvc,9,High School Graduate,True
-black,367,453.17,349639.95,0.59,nh3,fvc,9,High School Graduate,True
-hispanic,420,444.26,313471.11,0.60,nh3,fvc,9,High School Graduate,True
-other,85,559.52,462636.66,0.38,nh3,fvc,9,High School Graduate,True
-All,536,473.20,385575.21,0.56,nh4_val,fvc,8,High School Graduate,False
-white,190,502.11,408484.50,0.58,nh4_val,fvc,8,High School Graduate,False
-black,112,474.82,405914.99,0.45,nh4_val,fvc,8,High School Graduate,False
-asian,26,626.51,609557.94,0.24,nh4_val,fvc,8,High School Graduate,False
-hispanic,189,430.30,328688.50,0.57,nh4_val,fvc,8,High School Graduate,False
-other,19,391.48,295954.91,0.34,nh4_val,fvc,8,High School Graduate,False
-All,144198,509.31,432859.41,0.49,ukb,fvc,8,High School Graduate,False
-white,136520,499.85,418156.62,0.50,ukb,fvc,8,High School Graduate,False
-black,1963,699.92,740675.70,-0.21,ukb,fvc,8,High School Graduate,False
-asian,3389,748.80,800475.63,-0.30,ukb,fvc,8,High School Graduate,False
-other,2326,554.66,500413.14,0.38,ukb,fvc,8,High School Graduate,False
-All,3354,331.97,249297.52,0.74,nh,fvc,8,High School Graduate,False
-white,1330,340.20,253994.80,0.76,nh,fvc,8,High School Graduate,False
-black,739,382.52,324187.45,0.56,nh,fvc,8,High School Graduate,False
-asian,88,240.50,188384.01,0.75,nh,fvc,8,High School Graduate,False
-hispanic,1049,286.18,189787.49,0.77,nh,fvc,8,High School Graduate,False
-other,148,384.57,291158.21,0.61,nh,fvc,8,High School Graduate,False
-All,1569,488.32,392427.38,0.58,nh3,fvc,8,High School Graduate,False
-white,697,466.70,366786.88,0.63,nh3,fvc,8,High School Graduate,False
-black,367,563.79,518485.44,0.40,nh3,fvc,8,High School Graduate,False
-hispanic,420,446.86,315878.89,0.60,nh3,fvc,8,High School Graduate,False
-other,85,544.61,436644.82,0.41,nh3,fvc,8,High School Graduate,False
-All,536,437.58,316212.99,0.64,nh4_val,fvc,10,Smoke Exposure,True
-white,190,459.39,330852.53,0.66,nh4_val,fvc,10,Smoke Exposure,True
-black,112,423.82,310152.08,0.58,nh4_val,fvc,10,Smoke Exposure,True
-asian,26,504.88,422824.39,0.47,nh4_val,fvc,10,Smoke Exposure,True
-hispanic,189,399.67,274393.31,0.64,nh4_val,fvc,10,Smoke Exposure,True
-other,19,585.63,475651.47,-0.05,nh4_val,fvc,10,Smoke Exposure,True
-All,144198,515.68,437680.13,0.48,ukb,fvc,10,Smoke Exposure,True
-white,136520,514.00,435562.18,0.48,ukb,fvc,10,Smoke Exposure,True
-black,1963,493.11,393122.14,0.36,ukb,fvc,10,Smoke Exposure,True
-asian,3389,541.45,461869.41,0.25,ukb,fvc,10,Smoke Exposure,True
-other,2326,595.65,564349.49,0.30,ukb,fvc,10,Smoke Exposure,True
-All,3354,300.50,206757.39,0.78,nh,fvc,10,Smoke Exposure,True
-white,1330,312.14,214307.56,0.79,nh,fvc,10,Smoke Exposure,True
-black,739,305.34,221513.68,0.70,nh,fvc,10,Smoke Exposure,True
-asian,88,192.82,129946.67,0.83,nh,fvc,10,Smoke Exposure,True
-hispanic,1049,275.41,177495.68,0.78,nh,fvc,10,Smoke Exposure,True
-other,148,413.65,318299.66,0.57,nh,fvc,10,Smoke Exposure,True
-All,1569,446.60,328729.38,0.65,nh3,fvc,10,Smoke Exposure,True
-white,697,436.66,315234.40,0.68,nh3,fvc,10,Smoke Exposure,True
-black,367,445.07,346951.73,0.60,nh3,fvc,10,Smoke Exposure,True
-hispanic,420,443.10,312143.61,0.60,nh3,fvc,10,Smoke Exposure,True
-other,85,552.06,442663.70,0.41,nh3,fvc,10,Smoke Exposure,True
-All,536,481.60,391934.17,0.56,nh4_val,fvc,9,Smoke Exposure,False
-white,190,505.44,408789.11,0.58,nh4_val,fvc,9,Smoke Exposure,False
-black,112,503.18,450528.06,0.39,nh4_val,fvc,9,Smoke Exposure,False
-asian,26,638.25,640499.43,0.20,nh4_val,fvc,9,Smoke Exposure,False
-hispanic,189,424.75,306293.49,0.60,nh4_val,fvc,9,Smoke Exposure,False
-other,19,467.20,389746.63,0.14,nh4_val,fvc,9,Smoke Exposure,False
-All,144198,522.33,452025.82,0.47,ukb,fvc,9,Smoke Exposure,False
-white,136520,513.14,437337.19,0.48,ukb,fvc,9,Smoke Exposure,False
-black,1963,697.32,743453.14,-0.22,ukb,fvc,9,Smoke Exposure,False
-asian,3389,761.65,831686.12,-0.36,ukb,fvc,9,Smoke Exposure,False
-other,2326,565.54,515031.23,0.36,ukb,fvc,9,Smoke Exposure,False
-All,3354,329.42,244024.64,0.74,nh,fvc,9,Smoke Exposure,False
-white,1330,339.93,253487.73,0.76,nh,fvc,9,Smoke Exposure,False
-black,739,374.97,306853.98,0.59,nh,fvc,9,Smoke Exposure,False
-asian,88,241.84,196846.85,0.74,nh,fvc,9,Smoke Exposure,False
-hispanic,1049,281.49,181186.63,0.78,nh,fvc,9,Smoke Exposure,False
-other,148,399.36,318699.77,0.57,nh,fvc,9,Smoke Exposure,False
-All,1569,482.08,379960.00,0.60,nh3,fvc,9,Smoke Exposure,False
-white,697,466.09,366233.13,0.63,nh3,fvc,9,Smoke Exposure,False
-black,367,543.73,471861.43,0.45,nh3,fvc,9,Smoke Exposure,False
-hispanic,420,438.69,305317.21,0.61,nh3,fvc,9,Smoke Exposure,False
-other,85,561.31,464545.63,0.38,nh3,fvc,9,Smoke Exposure,False
-All,536,373.73,227532.21,0.59,nh4_val,fev1,4,Height,True
-white,190,393.26,245878.16,0.61,nh4_val,fev1,4,Height,True
-black,112,359.49,217905.18,0.54,nh4_val,fev1,4,Height,True
-asian,26,415.40,312227.93,0.37,nh4_val,fev1,4,Height,True
-hispanic,189,354.76,202174.36,0.59,nh4_val,fev1,4,Height,True
-other,19,394.06,237165.96,0.15,nh4_val,fev1,4,Height,True
-All,144198,393.19,258087.58,0.50,ukb,fev1,4,Height,True
-white,136520,390.47,255175.03,0.50,ukb,fev1,4,Height,True
-black,1963,405.97,262459.97,0.34,ukb,fev1,4,Height,True
-asian,3389,451.37,318277.70,0.18,ukb,fev1,4,Height,True
-other,2326,457.06,337646.41,0.32,ukb,fev1,4,Height,True
-All,3354,265.89,143657.93,0.75,nh,fev1,4,Height,True
-white,1330,270.16,147187.72,0.77,nh,fev1,4,Height,True
-black,739,289.35,169997.10,0.64,nh,fev1,4,Height,True
-asian,88,181.05,101597.98,0.78,nh,fev1,4,Height,True
-hispanic,1049,240.06,114266.20,0.78,nh,fev1,4,Height,True
-other,148,343.95,213752.04,0.56,nh,fev1,4,Height,True
-All,1569,357.39,212965.52,0.63,nh3,fev1,4,Height,True
-white,697,347.18,203319.28,0.67,nh3,fev1,4,Height,True
-black,367,389.28,255236.91,0.52,nh3,fev1,4,Height,True
-hispanic,420,331.05,174563.37,0.65,nh3,fev1,4,Height,True
-other,85,433.59,299303.62,0.39,nh3,fev1,4,Height,True
-All,536,396.17,256182.20,0.54,nh4_val,fev1,3,Height,False
-white,190,389.09,250094.40,0.60,nh4_val,fev1,3,Height,False
-black,112,433.78,307517.35,0.35,nh4_val,fev1,3,Height,False
-asian,26,443.75,381000.09,0.23,nh4_val,fev1,3,Height,False
-hispanic,189,378.85,222444.39,0.55,nh4_val,fev1,3,Height,False
-other,19,352.39,179251.97,0.36,nh4_val,fev1,3,Height,False
-All,144198,392.76,264369.00,0.49,ukb,fev1,3,Height,False
-white,136520,384.67,254752.77,0.50,ukb,fev1,3,Height,False
-black,1963,587.00,508213.96,-0.28,ukb,fev1,3,Height,False
-asian,3389,578.16,479973.06,-0.23,ukb,fev1,3,Height,False
-other,2326,433.56,308847.95,0.38,ukb,fev1,3,Height,False
-All,3354,301.41,175879.28,0.70,nh,fev1,3,Height,False
-white,1330,301.30,174829.06,0.73,nh,fev1,3,Height,False
-black,739,360.50,244520.33,0.48,nh,fev1,3,Height,False
-asian,88,229.45,134299.69,0.71,nh,fev1,3,Height,False
-hispanic,1049,260.91,129102.31,0.75,nh,fev1,3,Height,False
-other,148,337.29,198846.29,0.59,nh,fev1,3,Height,False
-All,1569,399.04,260194.71,0.55,nh3,fev1,3,Height,False
-white,697,390.29,247105.06,0.60,nh3,fev1,3,Height,False
-black,367,472.95,360245.53,0.32,nh3,fev1,3,Height,False
-hispanic,420,345.20,190783.90,0.62,nh3,fev1,3,Height,False
-other,85,417.82,278516.82,0.44,nh3,fev1,3,Height,False
-All,536,370.08,221883.69,0.60,nh4_val,fev1,5,Sit Height,True
-white,190,375.00,226127.93,0.64,nh4_val,fev1,5,Sit Height,True
-black,112,337.10,196511.58,0.59,nh4_val,fev1,5,Sit Height,True
-asian,26,432.77,331270.31,0.33,nh4_val,fev1,5,Sit Height,True
-hispanic,189,369.81,212822.72,0.57,nh4_val,fev1,5,Sit Height,True
-other,19,432.18,269449.08,0.03,nh4_val,fev1,5,Sit Height,True
-All,144198,405.40,274122.34,0.47,ukb,fev1,5,Sit Height,True
-white,136520,403.37,272084.17,0.47,ukb,fev1,5,Sit Height,True
-black,1963,407.71,268466.92,0.32,ukb,fev1,5,Sit Height,True
-asian,3389,440.42,304669.98,0.22,ukb,fev1,5,Sit Height,True
-other,2326,471.62,354012.85,0.29,ukb,fev1,5,Sit Height,True
-All,3354,252.04,137364.48,0.76,nh,fev1,5,Sit Height,True
-white,1330,252.41,136774.67,0.79,nh,fev1,5,Sit Height,True
-black,739,267.58,151992.40,0.68,nh,fev1,5,Sit Height,True
-asian,88,175.98,103638.25,0.77,nh,fev1,5,Sit Height,True
-hispanic,1049,234.35,120795.65,0.76,nh,fev1,5,Sit Height,True
-other,148,341.84,207114.62,0.58,nh,fev1,5,Sit Height,True
-All,1569,356.26,210662.54,0.64,nh3,fev1,5,Sit Height,True
-white,697,340.80,195142.37,0.69,nh3,fev1,5,Sit Height,True
-black,367,380.98,238742.52,0.55,nh3,fev1,5,Sit Height,True
-hispanic,420,342.55,195872.51,0.61,nh3,fev1,5,Sit Height,True
-other,85,444.05,289768.69,0.41,nh3,fev1,5,Sit Height,True
-All,536,415.64,277463.21,0.50,nh4_val,fev1,4,Sit Height,False
-white,190,418.40,279849.42,0.55,nh4_val,fev1,4,Sit Height,False
-black,112,426.55,304531.78,0.36,nh4_val,fev1,4,Sit Height,False
-asian,26,480.48,432716.92,0.13,nh4_val,fev1,4,Sit Height,False
-hispanic,189,395.67,237075.17,0.52,nh4_val,fev1,4,Sit Height,False
-other,19,433.67,283341.21,-0.02,nh4_val,fev1,4,Sit Height,False
-All,144198,403.59,272700.61,0.48,ukb,fev1,4,Sit Height,False
-white,136520,397.54,265348.16,0.48,ukb,fev1,4,Sit Height,False
-black,1963,525.94,431627.41,-0.09,ukb,fev1,4,Sit Height,False
-asian,3389,557.93,455076.46,-0.17,ukb,fev1,4,Sit Height,False
-other,2326,430.78,304390.60,0.39,ukb,fev1,4,Sit Height,False
-All,3354,275.90,159888.75,0.72,nh,fev1,4,Sit Height,False
-white,1330,274.25,158691.27,0.75,nh,fev1,4,Sit Height,False
-black,739,309.78,191571.27,0.60,nh,fev1,4,Sit Height,False
-asian,88,210.07,138870.68,0.70,nh,fev1,4,Sit Height,False
-hispanic,1049,253.76,137820.39,0.73,nh,fev1,4,Sit Height,False
-other,148,317.47,181365.59,0.63,nh,fev1,4,Sit Height,False
-All,1569,377.00,235366.66,0.60,nh3,fev1,4,Sit Height,False
-white,697,357.25,218762.89,0.65,nh3,fev1,4,Sit Height,False
-black,367,420.42,278980.21,0.48,nh3,fev1,4,Sit Height,False
-hispanic,420,366.59,223203.95,0.55,nh3,fev1,4,Sit Height,False
-other,85,402.84,243307.81,0.51,nh3,fev1,4,Sit Height,False
-All,536,357.11,205499.52,0.63,nh4_val,fev1,6,Waist Circumference,True
-white,190,350.93,203209.18,0.67,nh4_val,fev1,6,Waist Circumference,True
-black,112,350.73,209310.44,0.56,nh4_val,fev1,6,Waist Circumference,True
-asian,26,382.60,241489.81,0.51,nh4_val,fev1,6,Waist Circumference,True
-hispanic,189,347.72,186199.89,0.63,nh4_val,fev1,6,Waist Circumference,True
-other,19,515.16,348669.29,-0.25,nh4_val,fev1,6,Waist Circumference,True
-All,144198,404.45,270681.97,0.48,ukb,fev1,6,Waist Circumference,True
-white,136520,402.09,267972.74,0.48,ukb,fev1,6,Waist Circumference,True
-black,1963,407.31,272114.04,0.31,ukb,fev1,6,Waist Circumference,True
-asian,3389,451.29,321357.51,0.18,ukb,fev1,6,Waist Circumference,True
-other,2326,472.35,354652.03,0.29,ukb,fev1,6,Waist Circumference,True
-All,3354,238.40,125742.80,0.78,nh,fev1,6,Waist Circumference,True
-white,1330,238.94,121810.54,0.81,nh,fev1,6,Waist Circumference,True
-black,739,256.21,145051.18,0.69,nh,fev1,6,Waist Circumference,True
-asian,88,145.47,74390.77,0.84,nh,fev1,6,Waist Circumference,True
-hispanic,1049,221.83,112613.06,0.78,nh,fev1,6,Waist Circumference,True
-other,148,317.34,188263.81,0.62,nh,fev1,6,Waist Circumference,True
-All,1569,345.37,194397.11,0.67,nh3,fev1,6,Waist Circumference,True
-white,697,326.66,173629.42,0.72,nh3,fev1,6,Waist Circumference,True
-black,367,371.42,224548.77,0.58,nh3,fev1,6,Waist Circumference,True
-hispanic,420,341.96,192084.49,0.61,nh3,fev1,6,Waist Circumference,True
-other,85,403.16,245935.00,0.50,nh3,fev1,6,Waist Circumference,True
-All,536,395.60,252059.46,0.55,nh4_val,fev1,5,Waist Circumference,False
-white,190,392.42,246510.00,0.60,nh4_val,fev1,5,Waist Circumference,False
-black,112,416.22,284909.50,0.40,nh4_val,fev1,5,Waist Circumference,False
-asian,26,475.29,375958.72,0.24,nh4_val,fev1,5,Waist Circumference,False
-hispanic,189,371.24,214682.57,0.57,nh4_val,fev1,5,Waist Circumference,False
-other,19,439.10,316167.13,-0.14,nh4_val,fev1,5,Waist Circumference,False
-All,144198,411.07,285797.98,0.45,ukb,fev1,5,Waist Circumference,False
-white,136520,404.38,277446.52,0.46,ukb,fev1,5,Waist Circumference,False
-black,1963,548.28,461917.24,-0.17,ukb,fev1,5,Waist Circumference,False
-asian,3389,579.15,495317.88,-0.27,ukb,fev1,5,Waist Circumference,False
-other,2326,442.91,322064.91,0.35,ukb,fev1,5,Waist Circumference,False
-All,3354,261.13,147179.66,0.75,nh,fev1,5,Waist Circumference,False
-white,1330,263.61,145497.03,0.77,nh,fev1,5,Waist Circumference,False
-black,739,290.06,182628.31,0.61,nh,fev1,5,Waist Circumference,False
-asian,88,196.65,119262.11,0.74,nh,fev1,5,Waist Circumference,False
-hispanic,1049,233.80,118938.96,0.77,nh,fev1,5,Waist Circumference,False
-other,148,326.40,202061.90,0.59,nh,fev1,5,Waist Circumference,False
-All,1569,371.31,221937.82,0.62,nh3,fev1,5,Waist Circumference,False
-white,697,357.78,205741.22,0.67,nh3,fev1,5,Waist Circumference,False
-black,367,407.67,273863.10,0.48,nh3,fev1,5,Waist Circumference,False
-hispanic,420,349.87,192482.17,0.61,nh3,fev1,5,Waist Circumference,False
-other,85,431.22,276100.37,0.44,nh3,fev1,5,Waist Circumference,False
-All,536,353.57,209080.90,0.63,nh4_val,fev1,7,Immigrant,True
-white,190,354.53,214546.75,0.66,nh4_val,fev1,7,Immigrant,True
-black,112,338.29,206503.47,0.56,nh4_val,fev1,7,Immigrant,True
-asian,26,386.03,245952.34,0.51,nh4_val,fev1,7,Immigrant,True
-hispanic,189,340.42,185795.34,0.63,nh4_val,fev1,7,Immigrant,True
-other,19,520.49,350789.90,-0.26,nh4_val,fev1,7,Immigrant,True
-All,144198,419.57,292334.60,0.44,ukb,fev1,7,Immigrant,True
-white,136520,418.05,290522.59,0.43,ukb,fev1,7,Immigrant,True
-black,1963,411.69,282123.13,0.29,ukb,fev1,7,Immigrant,True
-asian,3389,446.80,321866.41,0.17,ukb,fev1,7,Immigrant,True
-other,2326,475.89,364276.28,0.27,ukb,fev1,7,Immigrant,True
-All,3354,236.23,127624.49,0.78,nh,fev1,7,Immigrant,True
-white,1330,240.41,125969.94,0.80,nh,fev1,7,Immigrant,True
-black,739,248.50,142923.37,0.70,nh,fev1,7,Immigrant,True
-asian,88,151.09,76122.77,0.83,nh,fev1,7,Immigrant,True
-hispanic,1049,217.10,112616.80,0.78,nh,fev1,7,Immigrant,True
-other,148,323.48,203096.87,0.59,nh,fev1,7,Immigrant,True
-All,1569,345.85,197882.54,0.66,nh3,fev1,7,Immigrant,True
-white,697,332.61,179336.95,0.71,nh3,fev1,7,Immigrant,True
-black,367,363.01,221460.77,0.58,nh3,fev1,7,Immigrant,True
-hispanic,420,338.58,193138.41,0.61,nh3,fev1,7,Immigrant,True
-other,85,416.16,271595.52,0.45,nh3,fev1,7,Immigrant,True
-All,536,388.07,249009.16,0.56,nh4_val,fev1,6,Immigrant,False
-white,190,382.96,241251.39,0.61,nh4_val,fev1,6,Immigrant,False
-black,112,406.44,278162.51,0.41,nh4_val,fev1,6,Immigrant,False
-asian,26,472.71,410363.81,0.17,nh4_val,fev1,6,Immigrant,False
-hispanic,189,367.20,216627.74,0.57,nh4_val,fev1,6,Immigrant,False
-other,19,422.73,256044.22,0.08,nh4_val,fev1,6,Immigrant,False
-All,144198,400.67,268992.50,0.48,ukb,fev1,6,Immigrant,False
-white,136520,393.61,260306.49,0.49,ukb,fev1,6,Immigrant,False
-black,1963,552.75,462573.61,-0.17,ukb,fev1,6,Immigrant,False
-asian,3389,575.36,483779.17,-0.24,ukb,fev1,6,Immigrant,False
-other,2326,432.19,302484.15,0.39,ukb,fev1,6,Immigrant,False
-All,3354,253.97,142999.13,0.75,nh,fev1,6,Immigrant,False
-white,1330,256.41,142362.19,0.78,nh,fev1,6,Immigrant,False
-black,739,285.80,178463.19,0.62,nh,fev1,6,Immigrant,False
-asian,88,185.91,127103.20,0.72,nh,fev1,6,Immigrant,False
-hispanic,1049,227.60,115831.16,0.77,nh,fev1,6,Immigrant,False
-other,148,300.51,173656.21,0.65,nh,fev1,6,Immigrant,False
-All,1569,361.58,214845.69,0.63,nh3,fev1,6,Immigrant,False
-white,697,348.31,201684.81,0.68,nh3,fev1,6,Immigrant,False
-black,367,404.17,268276.43,0.50,nh3,fev1,6,Immigrant,False
-hispanic,420,339.37,184673.69,0.63,nh3,fev1,6,Immigrant,False
-other,85,396.23,241155.03,0.51,nh3,fev1,6,Immigrant,False
-All,536,354.28,211921.69,0.62,nh4_val,fev1,8,Income:Poverty,True
-white,190,350.57,211930.31,0.66,nh4_val,fev1,8,Income:Poverty,True
-black,112,339.19,209314.85,0.56,nh4_val,fev1,8,Income:Poverty,True
-asian,26,401.16,257165.15,0.48,nh4_val,fev1,8,Income:Poverty,True
-hispanic,189,339.12,188290.03,0.62,nh4_val,fev1,8,Income:Poverty,True
-other,19,567.14,400362.87,-0.44,nh4_val,fev1,8,Income:Poverty,True
-All,144198,419.82,291055.18,0.44,ukb,fev1,8,Income:Poverty,True
-white,136520,418.35,289351.70,0.44,ukb,fev1,8,Income:Poverty,True
-black,1963,408.65,275743.30,0.30,ukb,fev1,8,Income:Poverty,True
-asian,3389,447.72,320542.97,0.18,ukb,fev1,8,Income:Poverty,True
-other,2326,475.15,360996.41,0.27,ukb,fev1,8,Income:Poverty,True
-All,3354,235.02,127699.48,0.78,nh,fev1,8,Income:Poverty,True
-white,1330,236.72,124526.61,0.81,nh,fev1,8,Income:Poverty,True
-black,739,251.44,146100.27,0.69,nh,fev1,8,Income:Poverty,True
-asian,88,148.50,78540.55,0.83,nh,fev1,8,Income:Poverty,True
-hispanic,1049,214.74,111898.78,0.78,nh,fev1,8,Income:Poverty,True
-other,148,332.85,205555.22,0.58,nh,fev1,8,Income:Poverty,True
-All,1569,344.15,197185.27,0.66,nh3,fev1,8,Income:Poverty,True
-white,697,325.94,177056.34,0.71,nh3,fev1,8,Income:Poverty,True
-black,367,370.92,227539.85,0.57,nh3,fev1,8,Income:Poverty,True
-hispanic,420,334.12,190168.25,0.62,nh3,fev1,8,Income:Poverty,True
-other,85,427.42,265854.35,0.46,nh3,fev1,8,Income:Poverty,True
-All,536,394.16,260209.93,0.54,nh4_val,fev1,7,Income:Poverty,False
-white,190,387.08,247995.09,0.60,nh4_val,fev1,7,Income:Poverty,False
-black,112,424.19,309135.09,0.35,nh4_val,fev1,7,Income:Poverty,False
-asian,26,497.87,417918.54,0.16,nh4_val,fev1,7,Income:Poverty,False
-hispanic,189,366.51,221165.70,0.56,nh4_val,fev1,7,Income:Poverty,False
-other,19,420.97,266532.95,0.04,nh4_val,fev1,7,Income:Poverty,False
-All,144198,390.44,254909.22,0.51,ukb,fev1,7,Income:Poverty,False
-white,136520,383.32,246304.43,0.52,ukb,fev1,7,Income:Poverty,False
-black,1963,542.56,445732.55,-0.13,ukb,fev1,7,Income:Poverty,False
-asian,3389,565.98,466854.32,-0.20,ukb,fev1,7,Income:Poverty,False
-other,2326,424.49,290101.63,0.42,ukb,fev1,7,Income:Poverty,False
-All,3354,259.68,147806.65,0.74,nh,fev1,7,Income:Poverty,False
-white,1330,260.13,144123.77,0.77,nh,fev1,7,Income:Poverty,False
-black,739,293.23,184127.01,0.61,nh,fev1,7,Income:Poverty,False
-asian,88,197.72,130571.88,0.71,nh,fev1,7,Income:Poverty,False
-hispanic,1049,234.32,124503.54,0.76,nh,fev1,7,Income:Poverty,False
-other,148,304.75,174962.78,0.64,nh,fev1,7,Income:Poverty,False
-All,1569,366.07,219980.36,0.62,nh3,fev1,7,Income:Poverty,False
-white,697,349.51,202016.70,0.67,nh3,fev1,7,Income:Poverty,False
-black,367,408.60,269402.55,0.49,nh3,fev1,7,Income:Poverty,False
-hispanic,420,348.93,202302.02,0.59,nh3,fev1,7,Income:Poverty,False
-other,85,402.91,241246.64,0.51,nh3,fev1,7,Income:Poverty,False
-All,536,352.81,206735.92,0.63,nh4_val,fev1,9,High School Graduate,True
-white,190,354.92,213954.24,0.66,nh4_val,fev1,9,High School Graduate,True
-black,112,329.80,186783.90,0.61,nh4_val,fev1,9,High School Graduate,True
-asian,26,405.49,259227.61,0.48,nh4_val,fev1,9,High School Graduate,True
-hispanic,189,337.94,186540.15,0.63,nh4_val,fev1,9,High School Graduate,True
-other,19,543.08,381228.71,-0.37,nh4_val,fev1,9,High School Graduate,True
-All,144198,419.45,291738.79,0.44,ukb,fev1,9,High School Graduate,True
-white,136520,418.07,290183.00,0.44,ukb,fev1,9,High School Graduate,True
-black,1963,412.97,279922.10,0.29,ukb,fev1,9,High School Graduate,True
-asian,3389,444.66,318578.10,0.18,ukb,fev1,9,High School Graduate,True
-other,2326,468.70,353920.18,0.29,ukb,fev1,9,High School Graduate,True
-All,3354,235.13,124682.97,0.78,nh,fev1,9,High School Graduate,True
-white,1330,237.80,122866.30,0.81,nh,fev1,9,High School Graduate,True
-black,739,249.71,138668.30,0.71,nh,fev1,9,High School Graduate,True
-asian,88,154.40,79967.17,0.82,nh,fev1,9,High School Graduate,True
-hispanic,1049,214.75,109630.04,0.79,nh,fev1,9,High School Graduate,True
-other,148,330.70,204456.75,0.58,nh,fev1,9,High School Graduate,True
-All,1569,341.63,191991.63,0.67,nh3,fev1,9,High School Graduate,True
-white,697,325.07,173133.63,0.72,nh3,fev1,9,High School Graduate,True
-black,367,364.31,218341.72,0.59,nh3,fev1,9,High School Graduate,True
-hispanic,420,332.31,185002.61,0.63,nh3,fev1,9,High School Graduate,True
-other,85,425.63,267390.85,0.46,nh3,fev1,9,High School Graduate,True
-All,536,387.80,248651.87,0.56,nh4_val,fev1,8,High School Graduate,False
-white,190,378.34,240073.93,0.61,nh4_val,fev1,8,High School Graduate,False
-black,112,402.66,279186.74,0.41,nh4_val,fev1,8,High School Graduate,False
-asian,26,486.78,394688.82,0.21,nh4_val,fev1,8,High School Graduate,False
-hispanic,189,371.30,215537.00,0.57,nh4_val,fev1,8,High School Graduate,False
-other,19,423.48,284002.22,-0.02,nh4_val,fev1,8,High School Graduate,False
-All,144198,396.62,263499.88,0.49,ukb,fev1,8,High School Graduate,False
-white,136520,389.14,254178.99,0.51,ukb,fev1,8,High School Graduate,False
-black,1963,552.09,463902.66,-0.17,ukb,fev1,8,High School Graduate,False
-asian,3389,583.23,495512.31,-0.27,ukb,fev1,8,High School Graduate,False
-other,2326,432.87,303399.51,0.39,ukb,fev1,8,High School Graduate,False
-All,3354,253.71,142051.58,0.75,nh,fev1,8,High School Graduate,False
-white,1330,255.69,140635.65,0.78,nh,fev1,8,High School Graduate,False
-black,739,281.72,174152.18,0.63,nh,fev1,8,High School Graduate,False
-asian,88,194.79,123522.07,0.73,nh,fev1,8,High School Graduate,False
-hispanic,1049,228.62,117527.83,0.77,nh,fev1,8,High School Graduate,False
-other,148,309.01,179327.70,0.63,nh,fev1,8,High School Graduate,False
-All,1569,363.20,213424.26,0.63,nh3,fev1,8,High School Graduate,False
-white,697,349.83,199232.10,0.68,nh3,fev1,8,High School Graduate,False
-black,367,398.03,259549.44,0.51,nh3,fev1,8,High School Graduate,False
-hispanic,420,344.75,190175.79,0.62,nh3,fev1,8,High School Graduate,False
-other,85,413.59,245522.55,0.50,nh3,fev1,8,High School Graduate,False
-All,536,363.11,213234.04,0.62,nh4_val,fev1,10,Smoke Exposure,True
-white,190,361.93,210914.71,0.66,nh4_val,fev1,10,Smoke Exposure,True
-black,112,343.61,201505.99,0.58,nh4_val,fev1,10,Smoke Exposure,True
-asian,26,408.53,254861.47,0.49,nh4_val,fev1,10,Smoke Exposure,True
-hispanic,189,356.86,206513.12,0.59,nh4_val,fev1,10,Smoke Exposure,True
-other,19,489.94,315452.61,-0.13,nh4_val,fev1,10,Smoke Exposure,True
-All,144198,399.42,263119.99,0.50,ukb,fev1,10,Smoke Exposure,True
-white,136520,396.68,260149.32,0.49,ukb,fev1,10,Smoke Exposure,True
-black,1963,417.51,279068.21,0.29,ukb,fev1,10,Smoke Exposure,True
-asian,3389,450.39,315483.43,0.19,ukb,fev1,10,Smoke Exposure,True
-other,2326,470.69,347724.40,0.30,ukb,fev1,10,Smoke Exposure,True
-All,3354,240.02,128433.28,0.78,nh,fev1,10,Smoke Exposure,True
-white,1330,243.86,126630.08,0.80,nh,fev1,10,Smoke Exposure,True
-black,739,254.76,143234.74,0.70,nh,fev1,10,Smoke Exposure,True
-asian,88,155.37,78616.17,0.83,nh,fev1,10,Smoke Exposure,True
-hispanic,1049,219.47,114456.47,0.78,nh,fev1,10,Smoke Exposure,True
-other,148,327.93,199416.72,0.59,nh,fev1,10,Smoke Exposure,True
-All,1569,347.98,197604.52,0.66,nh3,fev1,10,Smoke Exposure,True
-white,697,332.01,180455.50,0.71,nh3,fev1,10,Smoke Exposure,True
-black,367,372.71,223566.64,0.58,nh3,fev1,10,Smoke Exposure,True
-hispanic,420,335.54,187920.78,0.62,nh3,fev1,10,Smoke Exposure,True
-other,85,433.59,273980.29,0.44,nh3,fev1,10,Smoke Exposure,True
-All,536,385.17,248238.68,0.56,nh4_val,fev1,9,Smoke Exposure,False
-white,190,381.16,236340.26,0.62,nh4_val,fev1,9,Smoke Exposure,False
-black,112,411.07,287481.64,0.39,nh4_val,fev1,9,Smoke Exposure,False
-asian,26,475.71,420326.26,0.15,nh4_val,fev1,9,Smoke Exposure,False
-hispanic,189,358.32,213195.40,0.57,nh4_val,fev1,9,Smoke Exposure,False
-other,19,415.82,248996.13,0.11,nh4_val,fev1,9,Smoke Exposure,False
-All,144198,397.22,264253.99,0.49,ukb,fev1,9,Smoke Exposure,False
-white,136520,390.75,256567.97,0.50,ukb,fev1,9,Smoke Exposure,False
-black,1963,535.24,435193.10,-0.10,ukb,fev1,9,Smoke Exposure,False
-asian,3389,560.83,456448.39,-0.17,ukb,fev1,9,Smoke Exposure,False
-other,2326,422.02,291079.09,0.41,ukb,fev1,9,Smoke Exposure,False
-All,3354,259.21,148995.05,0.74,nh,fev1,9,Smoke Exposure,False
-white,1330,267.41,153539.26,0.76,nh,fev1,9,Smoke Exposure,False
-black,739,280.59,170418.85,0.64,nh,fev1,9,Smoke Exposure,False
-asian,88,194.58,132187.45,0.71,nh,fev1,9,Smoke Exposure,False
-hispanic,1049,230.64,122196.05,0.76,nh,fev1,9,Smoke Exposure,False
-other,148,319.65,201124.93,0.59,nh,fev1,9,Smoke Exposure,False
-All,1569,373.90,227989.22,0.61,nh3,fev1,9,Smoke Exposure,False
-white,697,368.53,224340.48,0.64,nh3,fev1,9,Smoke Exposure,False
-black,367,395.17,249766.99,0.53,nh3,fev1,9,Smoke Exposure,False
-hispanic,420,352.35,202276.83,0.59,nh3,fev1,9,Smoke Exposure,False
-other,85,432.60,290929.55,0.41,nh3,fev1,9,Smoke Exposure,False
+group,n,mae,mae_ci_lower,mae_ci_upper,mse,mse_ci_lower,mse_ci_upper,r2,r2_ci_lower,r2_ci_upper,set,target,n_cov,cov,race_adj
+All,536,452.95,423.12,482.55,335343.63,292672.09,379034.82,0.62,0.56,0.67,nh4_val,fvc,4,Height,True
+white,190,496.03,446.71,549.38,383328.13,312044.48,468251.30,0.60,0.50,0.69,nh4_val,fvc,4,Height,True
+black,112,449.93,377.50,526.06,359277.48,244388.47,494725.28,0.51,0.33,0.65,nh4_val,fvc,4,Height,True
+asian,26,491.77,351.68,643.52,391932.42,208053.06,612785.52,0.43,-0.17,0.72,nh4_val,fvc,4,Height,True
+hispanic,189,412.16,365.57,459.05,275080.97,219090.69,333623.23,0.63,0.53,0.72,nh4_val,fvc,4,Height,True
+other,19,403.80,273.12,541.43,255027.73,121357.86,408758.16,0.37,-0.19,0.71,nh4_val,fvc,4,Height,True
+All,144198,501.94,499.88,504.16,425429.16,421529.49,429220.38,0.50,0.49,0.50,ukb,fvc,4,Height,True
+white,136520,499.50,497.18,501.66,422572.66,418625.39,426652.63,0.49,0.49,0.50,ukb,fvc,4,Height,True
+black,1963,486.15,470.53,502.70,380282.83,356193.18,407906.72,0.38,0.33,0.42,ukb,fvc,4,Height,True
+asian,3389,571.75,557.84,585.52,506668.08,482299.13,532008.48,0.17,0.12,0.23,ukb,fvc,4,Height,True
+other,2326,561.22,543.14,579.56,517894.96,487449.26,550090.62,0.35,0.30,0.40,ukb,fvc,4,Height,True
+All,3354,336.14,324.66,347.24,227604.27,211712.86,243016.83,0.76,0.74,0.77,nh,fvc,4,Height,True
+white,1330,342.08,323.72,363.03,235705.75,209985.47,262987.34,0.77,0.74,0.80,nh,fvc,4,Height,True
+black,739,360.77,334.33,389.17,270585.92,232579.85,312405.34,0.64,0.59,0.68,nh,fvc,4,Height,True
+asian,88,233.35,177.52,297.31,135102.58,70687.48,212884.45,0.82,0.70,0.91,nh,fvc,4,Height,True
+hispanic,1049,309.37,291.14,327.66,187341.12,166291.76,208230.34,0.77,0.74,0.80,nh,fvc,4,Height,True
+other,148,418.65,365.94,476.10,293999.04,230496.28,367635.18,0.60,0.45,0.71,nh,fvc,4,Height,True
+All,1569,454.68,437.14,472.76,344318.13,318029.59,370631.76,0.63,0.60,0.66,nh3,fvc,4,Height,True
+white,697,443.08,415.83,470.67,329086.84,291051.53,370690.24,0.67,0.62,0.71,nh3,fvc,4,Height,True
+black,367,476.22,436.04,518.11,401244.13,339519.91,464478.73,0.53,0.45,0.60,nh3,fvc,4,Height,True
+hispanic,420,437.15,406.70,469.52,303937.59,264589.19,349402.38,0.61,0.54,0.67,nh3,fvc,4,Height,True
+other,85,545.79,474.07,618.34,428077.86,335500.86,528734.14,0.40,0.10,0.62,nh3,fvc,4,Height,True
+All,536,508.31,474.29,541.81,417632.38,363925.16,474984.13,0.52,0.45,0.59,nh4_val,fvc,3,Height,False
+white,190,531.81,479.76,590.73,442229.74,357259.52,538213.10,0.54,0.43,0.63,nh4_val,fvc,3,Height,False
+black,112,571.34,489.77,653.38,529183.06,383137.93,700950.89,0.27,-0.07,0.50,nh4_val,fvc,3,Height,False
+asian,26,580.72,410.13,784.76,563520.08,273167.69,926870.72,0.16,-1.05,0.67,nh4_val,fvc,3,Height,False
+hispanic,189,443.86,394.38,495.25,322017.30,253052.65,395521.32,0.57,0.46,0.68,nh4_val,fvc,3,Height,False
+other,19,429.44,318.88,570.09,257888.28,134013.71,453565.04,0.37,-0.21,0.69,nh4_val,fvc,3,Height,False
+All,144198,495.50,493.40,497.58,421199.06,417480.25,425055.08,0.50,0.50,0.51,ukb,fvc,3,Height,False
+white,136520,485.74,483.67,487.86,406843.33,403145.62,410746.16,0.51,0.51,0.52,ukb,fvc,3,Height,False
+black,1963,740.15,718.57,761.55,796864.55,750663.91,844925.93,-0.31,-0.43,-0.19,ukb,fvc,3,Height,False
+asian,3389,717.94,701.51,734.36,743179.00,710907.25,776350.84,-0.21,-0.29,-0.13,ukb,fvc,3,Height,False
+other,2326,541.80,525.62,558.95,484697.55,455804.74,516229.78,0.39,0.35,0.44,ukb,fvc,3,Height,False
+All,3354,390.79,378.64,403.06,296020.14,275717.67,316334.80,0.69,0.66,0.71,nh,fvc,3,Height,False
+white,1330,393.43,374.24,413.81,294635.08,267634.50,325191.32,0.72,0.68,0.74,nh,fvc,3,Height,False
+black,739,478.78,447.51,511.28,433999.97,373137.18,496024.48,0.41,0.31,0.51,nh,fvc,3,Height,False
+asian,88,309.91,247.60,382.36,208839.51,111070.50,327976.91,0.72,0.51,0.87,nh,fvc,3,Height,False
+hispanic,1049,329.54,310.42,349.22,209736.46,184820.67,235291.78,0.74,0.70,0.77,nh,fvc,3,Height,False
+other,148,418.39,365.75,477.88,296066.24,230059.51,376014.25,0.59,0.45,0.70,nh,fvc,3,Height,False
+All,1569,518.13,498.22,537.98,442245.59,406849.47,478061.40,0.53,0.49,0.57,nh3,fvc,3,Height,False
+white,697,503.77,474.59,534.79,410507.58,364741.60,457093.18,0.59,0.53,0.63,nh3,fvc,3,Height,False
+black,367,626.54,576.03,678.13,644150.75,536837.75,751218.68,0.24,0.08,0.38,nh3,fvc,3,Height,False
+hispanic,420,445.57,414.79,478.84,323552.54,278872.36,374099.48,0.59,0.52,0.65,nh3,fvc,3,Height,False
+other,85,528.58,451.02,616.18,426884.52,317497.45,547510.89,0.40,0.14,0.60,nh3,fvc,3,Height,False
+All,536,446.53,414.09,477.73,338698.24,292578.51,386564.58,0.61,0.55,0.67,nh4_val,fvc,5,Sit Height,True
+white,190,486.85,435.21,546.12,381700.76,302974.04,472774.96,0.60,0.50,0.70,nh4_val,fvc,5,Sit Height,True
+black,112,391.44,327.11,459.58,296083.11,200083.30,411230.22,0.60,0.46,0.71,nh4_val,fvc,5,Sit Height,True
+asian,26,532.63,372.70,720.69,492027.56,241277.04,792543.11,0.29,-0.43,0.65,nh4_val,fvc,5,Sit Height,True
+hispanic,189,418.19,369.81,464.95,290363.33,232737.68,351440.31,0.61,0.51,0.71,nh4_val,fvc,5,Sit Height,True
+other,19,541.87,377.02,730.53,448856.91,225743.12,722488.45,-0.12,-1.12,0.49,nh4_val,fvc,5,Sit Height,True
+All,144198,518.77,516.68,520.86,448585.22,444912.10,452455.69,0.47,0.47,0.48,ukb,fvc,5,Sit Height,True
+white,136520,517.66,515.32,519.97,447377.79,443149.35,451634.51,0.46,0.46,0.47,ukb,fvc,5,Sit Height,True
+black,1963,465.49,449.26,481.89,356743.88,331300.17,383247.85,0.42,0.37,0.46,ukb,fvc,5,Sit Height,True
+asian,3389,551.38,537.81,565.25,476853.90,452148.09,504326.65,0.22,0.17,0.27,ukb,fvc,5,Sit Height,True
+other,2326,585.88,566.60,604.28,562011.58,527929.27,599122.08,0.30,0.24,0.35,ukb,fvc,5,Sit Height,True
+All,3354,322.71,310.34,334.17,225795.95,209957.11,241341.77,0.76,0.74,0.78,nh,fvc,5,Sit Height,True
+white,1330,331.22,311.88,350.01,236161.81,209684.63,262446.80,0.77,0.74,0.80,nh,fvc,5,Sit Height,True
+black,739,335.36,310.00,362.30,240216.61,205945.15,276141.42,0.68,0.64,0.71,nh,fvc,5,Sit Height,True
+asian,88,211.00,145.40,285.21,154400.76,67991.92,260265.05,0.79,0.64,0.91,nh,fvc,5,Sit Height,True
+hispanic,1049,297.22,277.54,316.78,194189.43,170923.53,220692.42,0.76,0.72,0.79,nh,fvc,5,Sit Height,True
+other,148,437.95,380.26,506.62,339805.65,258093.34,434029.73,0.53,0.33,0.67,nh,fvc,5,Sit Height,True
+All,1569,465.50,447.43,483.47,355229.52,328304.76,382594.23,0.62,0.59,0.65,nh3,fvc,5,Sit Height,True
+white,697,446.91,417.03,475.58,338507.92,293607.43,383928.10,0.66,0.61,0.70,nh3,fvc,5,Sit Height,True
+black,367,488.90,450.88,526.19,382208.22,328060.76,436769.65,0.55,0.49,0.61,nh3,fvc,5,Sit Height,True
+hispanic,420,453.96,420.94,488.21,335011.02,287470.15,383941.46,0.57,0.50,0.64,nh3,fvc,5,Sit Height,True
+other,85,575.65,503.35,658.38,481390.22,370308.83,626587.39,0.32,-0.05,0.57,nh3,fvc,5,Sit Height,True
+All,536,515.49,480.66,548.29,424337.38,372706.48,477527.65,0.52,0.44,0.59,nh4_val,fvc,4,Sit Height,False
+white,190,527.02,473.61,587.00,427130.68,348409.83,513917.25,0.56,0.44,0.65,nh4_val,fvc,4,Sit Height,False
+black,112,557.26,477.41,644.33,514946.33,381169.89,677832.26,0.29,-0.03,0.50,nh4_val,fvc,4,Sit Height,False
+asian,26,618.78,445.23,819.13,627992.15,326925.65,1000342.89,0.06,-1.16,0.65,nh4_val,fvc,4,Sit Height,False
+hispanic,189,468.74,414.68,519.81,344629.81,271689.38,416178.36,0.54,0.43,0.64,nh4_val,fvc,4,Sit Height,False
+other,19,475.20,318.63,671.61,375857.64,163126.71,686001.82,0.08,-0.80,0.62,nh4_val,fvc,4,Sit Height,False
+All,144198,511.92,509.64,514.11,439073.72,435123.90,442861.71,0.48,0.48,0.49,ukb,fvc,4,Sit Height,False
+white,136520,504.03,501.95,506.39,426887.22,423298.92,431014.03,0.49,0.48,0.49,ukb,fvc,4,Sit Height,False
+black,1963,662.19,640.40,682.77,678568.20,638818.24,719490.89,-0.11,-0.22,-0.01,ukb,fvc,4,Sit Height,False
+asian,3389,719.72,702.70,735.39,756158.96,722912.18,789859.49,-0.23,-0.32,-0.15,ukb,fvc,4,Sit Height,False
+other,2326,551.03,533.55,569.42,500666.62,469803.49,533497.55,0.37,0.32,0.42,ukb,fvc,4,Sit Height,False
+All,3354,355.16,343.21,367.79,267217.89,248717.91,286258.60,0.72,0.69,0.74,nh,fvc,4,Sit Height,False
+white,1330,354.69,335.05,374.68,260327.52,233117.56,287744.03,0.75,0.72,0.78,nh,fvc,4,Sit Height,False
+black,739,411.08,381.61,443.94,358110.66,306858.36,414180.13,0.52,0.43,0.59,nh,fvc,4,Sit Height,False
+asian,88,263.50,189.21,343.15,201354.47,88549.80,330292.47,0.73,0.51,0.89,nh,fvc,4,Sit Height,False
+hispanic,1049,317.25,297.17,337.65,213961.83,188020.29,241454.02,0.74,0.70,0.77,nh,fvc,4,Sit Height,False
+other,148,412.75,353.22,474.39,308859.56,230086.41,395751.53,0.58,0.40,0.71,nh,fvc,4,Sit Height,False
+All,1569,498.53,479.91,518.07,409985.64,377854.14,441715.72,0.56,0.53,0.60,nh3,fvc,4,Sit Height,False
+white,697,473.26,445.82,504.17,368955.71,326099.08,413887.29,0.63,0.57,0.68,nh3,fvc,4,Sit Height,False
+black,367,566.85,518.94,614.18,543051.85,460148.30,628979.13,0.36,0.22,0.48,nh3,fvc,4,Sit Height,False
+hispanic,420,469.77,436.13,506.08,355596.52,305380.92,411800.97,0.55,0.47,0.62,nh3,fvc,4,Sit Height,False
+other,85,550.57,471.06,632.44,444632.64,337470.34,570882.34,0.37,0.05,0.62,nh3,fvc,4,Sit Height,False
+All,536,422.82,392.89,454.21,295249.94,257070.30,335260.66,0.66,0.61,0.71,nh4_val,fvc,6,Waist Circumference,True
+white,190,448.38,402.06,497.11,317136.17,258893.43,385234.49,0.67,0.58,0.74,nh4_val,fvc,6,Waist Circumference,True
+black,112,409.74,351.91,474.89,284085.62,205491.16,378273.99,0.61,0.50,0.71,nh4_val,fvc,6,Waist Circumference,True
+asian,26,487.61,349.33,649.80,384459.64,189667.25,638796.65,0.43,-0.31,0.76,nh4_val,fvc,6,Waist Circumference,True
+hispanic,189,381.43,334.13,429.33,251803.46,195880.84,314599.40,0.67,0.57,0.75,nh4_val,fvc,6,Waist Circumference,True
+other,19,566.69,404.94,738.92,461728.79,248749.32,704866.24,-0.16,-1.35,0.47,nh4_val,fvc,6,Waist Circumference,True
+All,144198,526.72,524.60,528.74,452156.50,448426.21,455891.92,0.47,0.46,0.47,ukb,fvc,6,Waist Circumference,True
+white,136520,525.87,523.78,528.02,451050.91,447282.22,454874.63,0.46,0.45,0.46,ukb,fvc,6,Waist Circumference,True
+black,1963,486.25,469.20,503.05,382924.12,356979.76,411238.74,0.37,0.32,0.43,ukb,fvc,6,Waist Circumference,True
+asian,3389,539.05,524.93,552.33,459849.11,436764.28,487514.07,0.25,0.20,0.30,ukb,fvc,6,Waist Circumference,True
+other,2326,599.00,580.80,617.76,573672.43,541061.07,609327.79,0.28,0.22,0.34,ukb,fvc,6,Waist Circumference,True
+All,3354,305.40,294.25,316.26,204972.33,190907.46,219367.60,0.78,0.77,0.80,nh,fvc,6,Waist Circumference,True
+white,1330,320.99,303.17,339.02,215875.05,194824.13,238912.19,0.79,0.77,0.81,nh,fvc,6,Waist Circumference,True
+black,739,310.45,285.95,335.80,217831.76,186179.48,251708.87,0.71,0.67,0.74,nh,fvc,6,Waist Circumference,True
+asian,88,192.65,135.21,257.28,121092.39,55398.81,210123.36,0.84,0.69,0.93,nh,fvc,6,Waist Circumference,True
+hispanic,1049,276.76,258.29,295.05,173789.71,152685.63,195470.15,0.78,0.75,0.81,nh,fvc,6,Waist Circumference,True
+other,148,419.32,357.03,487.84,328654.93,247612.30,419585.65,0.55,0.34,0.68,nh,fvc,6,Waist Circumference,True
+All,1569,450.00,433.14,466.29,329732.06,304874.25,353996.67,0.65,0.62,0.68,nh3,fvc,6,Waist Circumference,True
+white,697,445.12,418.78,470.60,318678.70,284109.21,353636.32,0.68,0.64,0.72,nh3,fvc,6,Waist Circumference,True
+black,367,447.75,408.93,484.86,344812.03,291352.16,398933.95,0.60,0.53,0.65,nh3,fvc,6,Waist Circumference,True
+hispanic,420,438.07,405.88,470.78,307662.62,263884.78,352031.14,0.61,0.54,0.67,nh3,fvc,6,Waist Circumference,True
+other,85,554.50,477.59,645.84,462959.21,350228.22,610143.36,0.34,-0.03,0.59,nh3,fvc,6,Waist Circumference,True
+All,536,476.74,442.57,511.09,381082.09,330651.14,434182.37,0.57,0.50,0.63,nh4_val,fvc,5,Waist Circumference,False
+white,190,500.67,448.03,555.82,395627.77,323551.69,471711.63,0.59,0.48,0.68,nh4_val,fvc,5,Waist Circumference,False
+black,112,495.73,418.11,581.89,427376.23,310483.54,571578.44,0.41,0.17,0.59,nh4_val,fvc,5,Waist Circumference,False
+asian,26,594.58,421.53,776.44,584234.24,285252.43,979279.73,0.13,-1.01,0.66,nh4_val,fvc,5,Waist Circumference,False
+hispanic,189,426.91,377.95,478.96,314658.10,245176.56,397628.58,0.58,0.49,0.67,nh4_val,fvc,5,Waist Circumference,False
+other,19,460.45,300.42,646.02,358005.05,147659.03,618300.37,0.09,-0.92,0.66,nh4_val,fvc,5,Waist Circumference,False
+All,144198,516.77,514.61,518.74,443920.20,440099.86,447563.34,0.48,0.47,0.48,ukb,fvc,5,Waist Circumference,False
+white,136520,508.07,505.97,510.33,430387.60,426655.17,434523.91,0.48,0.48,0.49,ukb,fvc,5,Waist Circumference,False
+black,1963,686.61,664.57,707.67,716707.50,671827.38,758653.56,-0.18,-0.28,-0.07,ukb,fvc,5,Waist Circumference,False
+asian,3389,741.22,724.81,757.83,794768.97,761020.44,831124.93,-0.30,-0.38,-0.21,ukb,fvc,5,Waist Circumference,False
+other,2326,562.05,544.80,579.34,509945.72,477931.24,543941.05,0.36,0.31,0.41,ukb,fvc,5,Waist Circumference,False
+All,3354,330.03,318.21,342.66,242725.92,226130.21,261566.81,0.74,0.72,0.76,nh,fvc,5,Waist Circumference,False
+white,1330,334.76,315.83,353.65,240715.41,215890.81,265680.21,0.77,0.74,0.79,nh,fvc,5,Waist Circumference,False
+black,739,384.23,355.71,415.20,319386.53,274632.52,370027.65,0.57,0.49,0.63,nh,fvc,5,Waist Circumference,False
+asian,88,235.53,166.75,315.18,182691.28,79895.69,316698.98,0.75,0.53,0.89,nh,fvc,5,Waist Circumference,False
+hispanic,1049,284.77,264.97,305.04,187586.52,163533.87,213516.78,0.77,0.74,0.80,nh,fvc,5,Waist Circumference,False
+other,148,402.89,341.90,468.24,320141.71,229417.36,423769.09,0.56,0.35,0.71,nh,fvc,5,Waist Circumference,False
+All,1569,475.75,457.14,494.60,378666.10,348467.73,407125.77,0.60,0.56,0.63,nh3,fvc,5,Waist Circumference,False
+white,697,450.10,422.91,478.85,342792.59,304553.46,384699.11,0.66,0.61,0.70,nh3,fvc,5,Waist Circumference,False
+black,367,553.59,509.76,598.49,499804.98,419840.01,583947.17,0.41,0.28,0.52,nh3,fvc,5,Waist Circumference,False
+hispanic,420,431.30,399.12,465.09,311378.47,266809.97,360597.73,0.60,0.53,0.66,nh3,fvc,5,Waist Circumference,False
+other,85,561.19,483.19,655.53,476321.63,342433.40,651971.46,0.33,-0.08,0.60,nh3,fvc,5,Waist Circumference,False
+All,536,427.34,397.80,457.63,302829.93,262944.26,347677.25,0.66,0.60,0.71,nh4_val,fvc,7,Immigrant,True
+white,190,433.76,385.44,483.89,310475.09,249059.32,381911.13,0.68,0.58,0.75,nh4_val,fvc,7,Immigrant,True
+black,112,417.53,355.43,487.87,302998.17,218329.12,407952.92,0.59,0.46,0.69,nh4_val,fvc,7,Immigrant,True
+asian,26,475.99,325.98,652.11,402088.51,176511.25,711440.13,0.41,-0.43,0.76,nh4_val,fvc,7,Immigrant,True
+hispanic,189,400.53,358.76,446.50,261408.33,211045.22,319055.77,0.65,0.57,0.73,nh4_val,fvc,7,Immigrant,True
+other,19,618.55,461.91,779.58,508727.28,291954.72,739367.89,-0.29,-1.70,0.43,nh4_val,fvc,7,Immigrant,True
+All,144198,523.18,521.07,525.22,447459.13,443844.09,451267.26,0.47,0.47,0.48,ukb,fvc,7,Immigrant,True
+white,136520,522.47,520.34,524.67,446569.08,442777.33,450723.69,0.46,0.46,0.47,ukb,fvc,7,Immigrant,True
+black,1963,476.52,459.88,494.07,374651.06,348580.16,402444.73,0.39,0.33,0.44,ukb,fvc,7,Immigrant,True
+asian,3389,537.72,523.14,551.41,458567.35,434590.04,486132.45,0.25,0.20,0.30,ukb,fvc,7,Immigrant,True
+other,2326,589.21,571.20,607.20,553691.71,521570.05,586806.08,0.31,0.25,0.36,ukb,fvc,7,Immigrant,True
+All,3354,300.50,288.96,310.90,204182.09,189585.38,217418.50,0.78,0.77,0.80,nh,fvc,7,Immigrant,True
+white,1330,311.39,293.44,329.68,212060.98,190306.13,236041.70,0.80,0.77,0.82,nh,fvc,7,Immigrant,True
+black,739,312.63,286.91,338.53,224093.31,189951.17,257905.48,0.70,0.65,0.74,nh,fvc,7,Immigrant,True
+asian,88,181.00,122.61,251.61,124168.30,48811.47,229767.53,0.83,0.67,0.93,nh,fvc,7,Immigrant,True
+hispanic,1049,272.76,254.35,291.01,172545.83,150563.76,195060.97,0.79,0.76,0.82,nh,fvc,7,Immigrant,True
+other,148,418.32,358.28,487.56,319822.91,242300.62,416819.94,0.56,0.36,0.70,nh,fvc,7,Immigrant,True
+All,1569,447.84,430.18,463.67,327811.56,303711.69,350956.46,0.65,0.62,0.68,nh3,fvc,7,Immigrant,True
+white,697,440.54,414.20,466.86,315885.68,278910.22,353556.91,0.68,0.64,0.72,nh3,fvc,7,Immigrant,True
+black,367,458.71,419.57,495.54,353114.13,299665.06,407449.52,0.59,0.52,0.65,nh3,fvc,7,Immigrant,True
+hispanic,420,429.95,396.55,464.89,302895.26,258543.42,351152.56,0.61,0.54,0.68,nh3,fvc,7,Immigrant,True
+other,85,548.15,476.12,631.19,439065.61,332405.18,578234.24,0.38,0.02,0.62,nh3,fvc,7,Immigrant,True
+All,536,485.01,450.74,517.99,390455.48,337274.25,443746.42,0.56,0.49,0.62,nh4_val,fvc,6,Immigrant,False
+white,190,519.16,464.97,576.78,415344.18,338193.48,504058.26,0.57,0.44,0.67,nh4_val,fvc,6,Immigrant,False
+black,112,517.60,436.83,600.21,454636.57,327874.91,604401.20,0.38,0.10,0.57,nh4_val,fvc,6,Immigrant,False
+asian,26,587.32,416.32,786.14,574728.23,278702.61,1005074.34,0.15,-1.08,0.67,nh4_val,fvc,6,Immigrant,False
+hispanic,189,418.97,367.20,470.82,305256.57,229537.57,386560.36,0.60,0.50,0.69,nh4_val,fvc,6,Immigrant,False
+other,19,462.53,300.24,650.57,371501.82,156385.62,648904.21,0.07,-0.95,0.65,nh4_val,fvc,6,Immigrant,False
+All,144198,502.96,500.74,505.04,421953.30,418390.93,425783.39,0.50,0.50,0.51,ukb,fvc,6,Immigrant,False
+white,136520,493.54,491.47,495.80,407584.40,403846.78,411516.98,0.51,0.51,0.52,ukb,fvc,6,Immigrant,False
+black,1963,698.05,675.13,720.01,737606.98,689355.94,783404.53,-0.21,-0.32,-0.10,ukb,fvc,6,Immigrant,False
+asian,3389,741.82,725.53,757.79,783491.59,752500.58,816335.30,-0.28,-0.36,-0.19,ukb,fvc,6,Immigrant,False
+other,2326,549.28,532.82,566.61,486263.94,457529.03,518115.09,0.39,0.34,0.44,ukb,fvc,6,Immigrant,False
+All,3354,332.31,319.84,344.70,246349.28,228454.36,264405.38,0.74,0.72,0.76,nh,fvc,6,Immigrant,False
+white,1330,332.84,313.24,352.58,239062.93,214836.70,263656.54,0.77,0.74,0.79,nh,fvc,6,Immigrant,False
+black,739,397.61,368.32,429.88,341564.48,293803.99,394705.25,0.54,0.46,0.61,nh,fvc,6,Immigrant,False
+asian,88,237.70,169.07,316.44,181382.53,75755.23,317523.87,0.75,0.53,0.90,nh,fvc,6,Immigrant,False
+hispanic,1049,286.52,267.75,306.14,188874.25,163885.07,215627.06,0.77,0.73,0.80,nh,fvc,6,Immigrant,False
+other,148,389.63,330.05,449.56,295105.53,214732.82,387720.22,0.59,0.41,0.72,nh,fvc,6,Immigrant,False
+All,1569,480.55,461.81,499.37,383873.28,353883.84,413118.49,0.59,0.55,0.63,nh3,fvc,6,Immigrant,False
+white,697,446.00,419.09,474.55,335782.88,296513.46,378036.25,0.66,0.61,0.71,nh3,fvc,6,Immigrant,False
+black,367,574.83,529.99,621.94,536790.94,450931.09,623145.44,0.37,0.24,0.49,nh3,fvc,6,Immigrant,False
+hispanic,420,443.17,411.62,479.97,319928.14,275218.90,372555.14,0.59,0.52,0.66,nh3,fvc,6,Immigrant,False
+other,85,532.02,457.37,622.10,427738.79,316428.59,569553.89,0.39,0.04,0.63,nh3,fvc,6,Immigrant,False
+All,536,431.53,399.93,463.93,315605.88,274193.69,360480.64,0.64,0.58,0.70,nh4_val,fvc,8,Income:Poverty,True
+white,190,451.95,403.65,503.14,330258.20,266958.26,402718.12,0.66,0.56,0.74,nh4_val,fvc,8,Income:Poverty,True
+black,112,400.33,340.50,467.29,278498.25,202063.91,366857.25,0.62,0.50,0.71,nh4_val,fvc,8,Income:Poverty,True
+asian,26,423.15,281.66,589.49,341008.56,140641.15,639991.36,0.49,-0.23,0.82,nh4_val,fvc,8,Income:Poverty,True
+hispanic,189,415.94,366.00,467.90,297742.42,232261.27,364790.84,0.60,0.50,0.70,nh4_val,fvc,8,Income:Poverty,True
+other,19,586.20,389.13,797.34,551981.44,257900.51,905166.67,-0.40,-1.99,0.46,nh4_val,fvc,8,Income:Poverty,True
+All,144198,519.87,517.70,521.96,445232.36,441706.68,448909.05,0.47,0.47,0.48,ukb,fvc,8,Income:Poverty,True
+white,136520,519.09,517.05,521.32,444531.72,440775.94,448581.58,0.47,0.46,0.47,ukb,fvc,8,Income:Poverty,True
+black,1963,475.70,458.31,492.63,369138.35,343750.41,397895.22,0.39,0.34,0.45,ukb,fvc,8,Income:Poverty,True
+asian,3389,533.13,519.30,547.06,451710.53,427341.31,478270.72,0.26,0.21,0.31,ukb,fvc,8,Income:Poverty,True
+other,2326,588.91,570.38,607.46,550446.43,518101.60,583776.84,0.31,0.25,0.36,ukb,fvc,8,Income:Poverty,True
+All,3354,301.36,289.88,312.16,203874.03,189171.14,217785.80,0.78,0.77,0.80,nh,fvc,8,Income:Poverty,True
+white,1330,310.84,292.81,329.85,210202.35,187955.69,233610.49,0.80,0.77,0.82,nh,fvc,8,Income:Poverty,True
+black,739,304.63,279.89,331.18,211937.90,179344.96,247158.28,0.71,0.67,0.75,nh,fvc,8,Income:Poverty,True
+asian,88,171.05,116.19,237.88,107379.00,40249.65,207555.30,0.85,0.71,0.95,nh,fvc,8,Income:Poverty,True
+hispanic,1049,284.61,265.11,303.43,185499.39,161225.01,210050.97,0.77,0.74,0.80,nh,fvc,8,Income:Poverty,True
+other,148,405.11,344.69,468.67,305818.29,226415.01,393028.88,0.58,0.39,0.71,nh,fvc,8,Income:Poverty,True
+All,1569,444.13,426.39,460.85,321237.42,295141.07,344367.35,0.66,0.63,0.69,nh3,fvc,8,Income:Poverty,True
+white,697,430.20,403.02,455.39,305654.65,270464.26,343055.57,0.69,0.65,0.73,nh3,fvc,8,Income:Poverty,True
+black,367,441.82,405.01,477.76,335010.82,284754.79,387959.02,0.61,0.54,0.67,nh3,fvc,8,Income:Poverty,True
+hispanic,420,450.37,419.86,484.50,317848.63,274990.19,367514.44,0.59,0.52,0.66,nh3,fvc,8,Income:Poverty,True
+other,85,536.15,468.31,616.04,406675.60,310016.72,524066.53,0.42,0.10,0.64,nh3,fvc,8,Income:Poverty,True
+All,536,469.15,434.60,502.54,377239.12,324003.85,429684.94,0.57,0.50,0.63,nh4_val,fvc,7,Income:Poverty,False
+white,190,487.68,432.51,544.93,393222.94,318557.15,481727.76,0.59,0.48,0.69,nh4_val,fvc,7,Income:Poverty,False
+black,112,495.42,412.95,582.84,439733.03,309555.83,597245.35,0.40,0.12,0.59,nh4_val,fvc,7,Income:Poverty,False
+asian,26,597.75,439.80,777.70,559214.29,284075.99,910109.79,0.17,-0.88,0.66,nh4_val,fvc,7,Income:Poverty,False
+hispanic,189,417.02,366.90,470.18,303495.93,233437.45,376988.73,0.60,0.50,0.69,nh4_val,fvc,7,Income:Poverty,False
+other,19,475.04,325.23,639.50,345606.53,169382.45,571278.50,0.12,-0.79,0.65,nh4_val,fvc,7,Income:Poverty,False
+All,144198,505.16,502.94,507.32,424943.81,421131.70,428706.77,0.50,0.49,0.50,ukb,fvc,7,Income:Poverty,False
+white,136520,496.06,494.01,498.23,410676.37,406940.47,414415.23,0.51,0.50,0.51,ukb,fvc,7,Income:Poverty,False
+black,1963,687.71,666.07,709.68,725032.61,681548.56,769627.72,-0.19,-0.30,-0.08,ukb,fvc,7,Income:Poverty,False
+asian,3389,740.36,724.25,756.84,789682.17,756928.12,823666.10,-0.29,-0.37,-0.21,ukb,fvc,7,Income:Poverty,False
+other,2326,547.96,530.80,565.76,488895.76,459550.28,520925.22,0.39,0.34,0.44,ukb,fvc,7,Income:Poverty,False
+All,3354,327.39,315.11,340.40,240084.39,223014.28,258500.18,0.74,0.72,0.77,nh,fvc,7,Income:Poverty,False
+white,1330,330.82,312.45,350.17,236538.88,211874.81,260985.90,0.77,0.75,0.80,nh,fvc,7,Income:Poverty,False
+black,739,387.56,359.49,419.03,326160.37,281914.17,377773.24,0.56,0.48,0.63,nh,fvc,7,Income:Poverty,False
+asian,88,234.05,166.69,314.74,176771.16,81925.76,292757.51,0.76,0.57,0.90,nh,fvc,7,Income:Poverty,False
+hispanic,1049,282.14,262.45,301.79,184082.43,160346.62,209346.89,0.77,0.74,0.80,nh,fvc,7,Income:Poverty,False
+other,148,379.97,317.43,441.85,289776.02,209147.50,377180.81,0.60,0.42,0.73,nh,fvc,7,Income:Poverty,False
+All,1569,478.89,460.53,496.64,376125.66,347169.01,402961.89,0.60,0.56,0.63,nh3,fvc,7,Income:Poverty,False
+white,697,451.29,424.62,479.65,337526.57,299882.87,378118.82,0.66,0.61,0.70,nh3,fvc,7,Income:Poverty,False
+black,367,567.57,525.67,613.40,512090.30,432731.77,595874.69,0.40,0.27,0.51,nh3,fvc,7,Income:Poverty,False
+hispanic,420,434.64,401.76,467.76,310099.33,267139.00,360078.28,0.60,0.54,0.67,nh3,fvc,7,Income:Poverty,False
+other,85,532.93,455.55,613.22,428998.41,315207.52,560696.26,0.39,0.07,0.62,nh3,fvc,7,Income:Poverty,False
+All,536,435.22,404.24,466.81,310922.25,270044.61,353961.81,0.65,0.59,0.70,nh4_val,fvc,9,High School Graduate,True
+white,190,447.88,401.09,496.80,316080.83,254846.60,386002.12,0.67,0.58,0.75,nh4_val,fvc,9,High School Graduate,True
+black,112,415.93,353.87,480.40,293875.70,214026.65,383470.04,0.60,0.48,0.69,nh4_val,fvc,9,High School Graduate,True
+asian,26,490.79,349.33,649.07,393280.98,190223.04,657980.73,0.42,-0.27,0.75,nh4_val,fvc,9,High School Graduate,True
+hispanic,189,411.86,363.38,462.15,284999.98,222893.13,353508.96,0.62,0.52,0.72,nh4_val,fvc,9,High School Graduate,True
+other,19,587.16,398.08,785.35,525330.13,288174.76,787793.05,-0.32,-1.63,0.40,nh4_val,fvc,9,High School Graduate,True
+All,144198,516.78,514.60,518.83,438778.13,434989.33,442243.91,0.48,0.48,0.49,ukb,fvc,9,High School Graduate,True
+white,136520,515.28,513.11,517.40,436922.40,433084.79,440600.11,0.48,0.47,0.48,ukb,fvc,9,High School Graduate,True
+black,1963,491.57,474.54,509.58,392279.83,365521.93,421842.06,0.36,0.30,0.41,ukb,fvc,9,High School Graduate,True
+asian,3389,545.64,531.57,559.50,468421.05,445864.46,495420.51,0.24,0.18,0.29,ukb,fvc,9,High School Graduate,True
+other,2326,589.37,571.24,607.97,552368.91,521675.39,585636.39,0.31,0.25,0.36,ukb,fvc,9,High School Graduate,True
+All,3354,297.99,285.73,308.29,204285.52,188430.26,218003.31,0.78,0.77,0.80,nh,fvc,9,High School Graduate,True
+white,1330,306.82,288.02,325.36,207166.32,185038.69,231956.81,0.80,0.77,0.82,nh,fvc,9,High School Graduate,True
+black,739,307.69,282.42,333.64,220143.55,186858.17,254467.91,0.70,0.66,0.74,nh,fvc,9,High School Graduate,True
+asian,88,177.38,118.64,244.96,120000.79,50319.88,214041.74,0.84,0.69,0.93,nh,fvc,9,High School Graduate,True
+hispanic,1049,275.38,255.80,294.07,180269.77,156725.67,203698.67,0.78,0.75,0.81,nh,fvc,9,High School Graduate,True
+other,148,413.08,346.69,486.71,333088.39,250645.66,427870.80,0.54,0.35,0.68,nh,fvc,9,High School Graduate,True
+All,1569,445.13,427.76,462.05,326067.62,302522.60,349208.02,0.65,0.62,0.68,nh3,fvc,9,High School Graduate,True
+white,697,427.70,401.33,454.00,305219.96,268860.94,344381.98,0.69,0.65,0.73,nh3,fvc,9,High School Graduate,True
+black,367,452.62,415.99,488.41,349020.46,296359.70,400840.33,0.59,0.52,0.65,nh3,fvc,9,High School Graduate,True
+hispanic,420,444.58,411.90,479.20,313950.61,272232.71,363342.06,0.60,0.53,0.66,nh3,fvc,9,High School Graduate,True
+other,85,558.44,482.10,640.18,462246.02,347676.29,591899.94,0.35,-0.02,0.60,nh3,fvc,9,High School Graduate,True
+All,536,473.00,437.99,505.73,385106.70,331480.15,438193.67,0.56,0.50,0.63,nh4_val,fvc,8,High School Graduate,False
+white,190,501.44,445.28,558.83,407240.82,327974.90,499051.42,0.58,0.46,0.67,nh4_val,fvc,8,High School Graduate,False
+black,112,475.26,396.62,557.06,406432.40,292418.57,544380.75,0.44,0.19,0.62,nh4_val,fvc,8,High School Graduate,False
+asian,26,625.19,456.88,809.36,608320.72,327039.90,962808.93,0.10,-1.08,0.62,nh4_val,fvc,8,High School Graduate,False
+hispanic,189,429.84,376.77,484.88,327893.49,248795.82,415389.07,0.57,0.46,0.66,nh4_val,fvc,8,High School Graduate,False
+other,19,396.56,242.84,581.25,304026.62,105886.56,572247.21,0.24,-0.63,0.76,nh4_val,fvc,8,High School Graduate,False
+All,144198,509.25,507.08,511.40,432733.20,428988.33,436495.94,0.49,0.48,0.49,ukb,fvc,8,High School Graduate,False
+white,136520,499.90,497.81,502.13,418243.69,414611.98,422081.86,0.50,0.49,0.50,ukb,fvc,8,High School Graduate,False
+black,1963,700.15,677.32,721.87,741126.83,696183.73,786520.58,-0.22,-0.33,-0.10,ukb,fvc,8,High School Graduate,False
+asian,3389,748.91,732.47,765.73,800873.82,768424.92,836649.18,-0.31,-0.40,-0.22,ukb,fvc,8,High School Graduate,False
+other,2326,554.41,536.54,573.56,500229.64,469105.45,535310.67,0.37,0.32,0.42,ukb,fvc,8,High School Graduate,False
+All,3354,331.74,319.10,344.58,248780.91,231295.82,267586.63,0.74,0.71,0.76,nh,fvc,8,High School Graduate,False
+white,1330,340.05,320.86,361.81,253904.48,228064.73,283964.19,0.76,0.72,0.78,nh,fvc,8,High School Graduate,False
+black,739,382.51,353.76,413.96,324030.78,277773.27,373416.41,0.56,0.48,0.63,nh,fvc,8,High School Graduate,False
+asian,88,241.40,171.38,322.01,189863.03,90819.84,314090.94,0.74,0.53,0.88,nh,fvc,8,High School Graduate,False
+hispanic,1049,286.78,266.50,306.02,190571.64,166792.41,217195.42,0.76,0.73,0.80,nh,fvc,8,High School Graduate,False
+other,148,383.24,323.07,443.52,289322.66,209456.77,379487.27,0.60,0.42,0.73,nh,fvc,8,High School Graduate,False
+All,1569,488.63,469.39,506.67,392567.99,362829.63,421622.78,0.58,0.54,0.62,nh3,fvc,8,High School Graduate,False
+white,697,466.67,438.04,497.57,367003.14,324166.54,412734.99,0.63,0.58,0.68,nh3,fvc,8,High School Graduate,False
+black,367,563.12,519.29,608.66,517581.24,435089.91,601010.59,0.39,0.27,0.51,nh3,fvc,8,High School Graduate,False
+hispanic,420,447.17,415.45,479.31,316344.24,273339.31,364333.88,0.60,0.53,0.66,nh3,fvc,8,High School Graduate,False
+other,85,544.74,470.10,626.81,436785.41,328662.18,574795.45,0.38,0.02,0.62,nh3,fvc,8,High School Graduate,False
+All,536,437.27,406.24,468.91,315477.87,274175.85,358896.67,0.64,0.58,0.69,nh4_val,fvc,10,Smoke Exposure,True
+white,190,459.29,412.09,509.58,330063.42,267258.73,402772.50,0.66,0.57,0.73,nh4_val,fvc,10,Smoke Exposure,True
+black,112,424.86,360.37,490.89,311504.00,227290.71,403613.76,0.58,0.44,0.69,nh4_val,fvc,10,Smoke Exposure,True
+asian,26,505.34,360.86,672.00,422967.06,205122.04,713251.83,0.38,-0.41,0.72,nh4_val,fvc,10,Smoke Exposure,True
+hispanic,189,398.85,349.89,448.81,273312.79,212056.50,340241.92,0.64,0.54,0.72,nh4_val,fvc,10,Smoke Exposure,True
+other,19,588.69,423.76,756.23,481877.73,275489.88,716100.79,-0.21,-1.37,0.42,nh4_val,fvc,10,Smoke Exposure,True
+All,144198,515.60,513.48,517.54,437577.62,433945.99,441304.81,0.48,0.48,0.49,ukb,fvc,10,Smoke Exposure,True
+white,136520,514.06,511.83,516.29,435634.43,431722.31,439474.65,0.48,0.47,0.48,ukb,fvc,10,Smoke Exposure,True
+black,1963,493.18,476.61,510.46,392963.36,366244.79,421838.88,0.36,0.30,0.41,ukb,fvc,10,Smoke Exposure,True
+asian,3389,541.45,527.38,555.48,462287.13,438318.34,490284.90,0.25,0.20,0.29,ukb,fvc,10,Smoke Exposure,True
+other,2326,595.30,576.58,613.48,563774.76,530539.05,600195.15,0.30,0.24,0.35,ukb,fvc,10,Smoke Exposure,True
+All,3354,300.36,289.21,311.57,206536.48,191604.29,221359.46,0.78,0.76,0.80,nh,fvc,10,Smoke Exposure,True
+white,1330,312.59,294.79,331.95,214910.06,191958.30,242061.65,0.79,0.77,0.82,nh,fvc,10,Smoke Exposure,True
+black,739,305.40,279.11,331.81,221468.64,188715.72,258414.15,0.70,0.66,0.75,nh,fvc,10,Smoke Exposure,True
+asian,88,193.71,134.03,267.05,131469.68,58377.95,235146.71,0.82,0.67,0.92,nh,fvc,10,Smoke Exposure,True
+hispanic,1049,275.85,256.19,294.87,178211.97,153976.13,202524.73,0.78,0.75,0.81,nh,fvc,10,Smoke Exposure,True
+other,148,412.22,349.63,480.73,316173.36,242202.76,399391.65,0.57,0.38,0.70,nh,fvc,10,Smoke Exposure,True
+All,1569,446.72,429.35,464.11,328770.71,304445.76,353946.99,0.65,0.62,0.68,nh3,fvc,10,Smoke Exposure,True
+white,697,437.19,410.86,464.68,316093.34,277538.67,356676.92,0.68,0.64,0.72,nh3,fvc,10,Smoke Exposure,True
+black,367,444.86,405.31,482.16,346785.39,288789.60,404645.84,0.59,0.52,0.66,nh3,fvc,10,Smoke Exposure,True
+hispanic,420,443.08,411.81,477.87,312350.59,268525.35,362488.10,0.60,0.53,0.66,nh3,fvc,10,Smoke Exposure,True
+other,85,550.34,477.69,629.34,441072.89,339371.16,559709.93,0.38,0.01,0.61,nh3,fvc,10,Smoke Exposure,True
+All,536,481.37,447.63,514.63,391481.14,337477.01,443417.20,0.55,0.48,0.62,nh4_val,fvc,9,Smoke Exposure,False
+white,190,504.59,448.68,562.43,407252.42,329472.37,491447.51,0.58,0.46,0.67,nh4_val,fvc,9,Smoke Exposure,False
+black,112,504.33,425.04,592.51,452260.80,319677.58,623588.11,0.38,0.10,0.57,nh4_val,fvc,9,Smoke Exposure,False
+asian,26,637.41,466.64,831.94,639406.78,322595.82,1050655.02,0.05,-1.16,0.60,nh4_val,fvc,9,Smoke Exposure,False
+hispanic,189,423.86,374.22,476.97,305162.00,234552.22,379513.74,0.60,0.50,0.69,nh4_val,fvc,9,Smoke Exposure,False
+other,19,473.40,296.83,673.56,397873.59,172028.97,674999.67,-0.02,-1.29,0.65,nh4_val,fvc,9,Smoke Exposure,False
+All,144198,522.30,520.10,524.40,451947.19,448199.41,455748.38,0.47,0.46,0.47,ukb,fvc,9,Smoke Exposure,False
+white,136520,513.16,511.01,515.38,437377.06,433737.69,441575.19,0.48,0.47,0.48,ukb,fvc,9,Smoke Exposure,False
+black,1963,697.28,674.82,719.21,743411.74,696394.81,793278.89,-0.22,-0.33,-0.11,ukb,fvc,9,Smoke Exposure,False
+asian,3389,761.56,744.97,778.44,831929.58,798451.41,868370.73,-0.36,-0.45,-0.27,ukb,fvc,9,Smoke Exposure,False
+other,2326,565.31,549.30,583.48,514691.95,485169.49,548476.83,0.36,0.30,0.40,ukb,fvc,9,Smoke Exposure,False
+All,3354,329.34,316.96,341.71,243695.09,227514.20,261444.77,0.74,0.72,0.76,nh,fvc,9,Smoke Exposure,False
+white,1330,339.85,320.88,359.08,253517.03,226770.65,280719.41,0.76,0.73,0.78,nh,fvc,9,Smoke Exposure,False
+black,739,374.81,347.21,405.22,306499.77,264980.28,354852.37,0.59,0.51,0.65,nh,fvc,9,Smoke Exposure,False
+asian,88,242.62,168.80,329.12,198332.33,84114.01,334127.21,0.73,0.50,0.89,nh,fvc,9,Smoke Exposure,False
+hispanic,1049,282.31,263.93,301.50,182147.36,159870.41,206193.06,0.77,0.74,0.80,nh,fvc,9,Smoke Exposure,False
+other,148,397.24,333.86,456.78,315431.39,235971.01,402164.55,0.57,0.39,0.70,nh,fvc,9,Smoke Exposure,False
+All,1569,482.48,464.23,500.99,380254.93,351979.16,407984.04,0.60,0.56,0.63,nh3,fvc,9,Smoke Exposure,False
+white,697,465.92,438.39,495.90,366092.94,322912.34,411723.70,0.63,0.58,0.68,nh3,fvc,9,Smoke Exposure,False
+black,367,542.87,500.11,585.74,471231.33,397717.22,551134.75,0.45,0.33,0.55,nh3,fvc,9,Smoke Exposure,False
+hispanic,420,439.35,408.21,470.52,305899.89,266284.05,349572.68,0.61,0.55,0.67,nh3,fvc,9,Smoke Exposure,False
+other,85,560.63,480.95,641.24,462488.88,345964.73,590139.64,0.35,0.02,0.57,nh3,fvc,9,Smoke Exposure,False
+All,536,373.14,347.28,396.54,226983.69,198787.30,253269.81,0.59,0.53,0.65,nh4_val,fev1,4,Height,True
+white,190,393.04,351.49,438.12,245615.33,198126.87,296974.18,0.60,0.49,0.69,nh4_val,fev1,4,Height,True
+black,112,359.56,305.27,417.38,218316.86,158983.76,291972.11,0.53,0.38,0.65,nh4_val,fev1,4,Height,True
+asian,26,415.33,272.65,565.41,311681.04,148856.93,508849.46,0.26,-0.64,0.68,nh4_val,fev1,4,Height,True
+hispanic,189,354.93,315.89,394.20,202307.59,160696.25,246968.36,0.59,0.48,0.69,nh4_val,fev1,4,Height,True
+other,19,399.20,276.89,531.26,240419.16,125394.61,381369.59,0.01,-0.81,0.58,nh4_val,fev1,4,Height,True
+All,144198,393.19,391.64,394.80,258094.34,255733.68,260236.16,0.50,0.50,0.51,ukb,fev1,4,Height,True
+white,136520,390.48,388.81,392.23,255186.18,252922.29,257586.12,0.50,0.50,0.51,ukb,fev1,4,Height,True
+black,1963,406.19,393.26,420.32,262546.00,245312.14,282104.37,0.34,0.28,0.38,ukb,fev1,4,Height,True
+asian,3389,451.38,439.89,462.46,318464.11,301805.71,336394.25,0.18,0.13,0.23,ukb,fev1,4,Height,True
+other,2326,456.80,442.09,470.70,337349.97,316609.47,358181.07,0.32,0.27,0.37,ukb,fev1,4,Height,True
+All,3354,265.91,257.25,274.59,143684.98,133453.34,153669.68,0.75,0.73,0.77,nh,fev1,4,Height,True
+white,1330,270.33,257.04,284.74,147474.37,132125.16,163352.63,0.77,0.74,0.79,nh,fev1,4,Height,True
+black,739,289.45,268.41,310.54,170116.44,146038.28,195905.22,0.64,0.59,0.69,nh,fev1,4,Height,True
+asian,88,181.57,127.94,241.59,102353.91,46974.00,167362.34,0.77,0.60,0.90,nh,fev1,4,Height,True
+hispanic,1049,240.62,227.19,255.48,114824.91,102156.91,128290.71,0.78,0.75,0.80,nh,fev1,4,Height,True
+other,148,343.49,295.10,394.49,212830.75,159516.92,274522.45,0.55,0.40,0.66,nh,fev1,4,Height,True
+All,1569,357.32,343.38,371.07,212941.39,197375.44,229866.46,0.63,0.60,0.66,nh3,fev1,4,Height,True
+white,697,347.82,326.79,370.23,204155.51,178979.77,230838.19,0.67,0.62,0.71,nh3,fev1,4,Height,True
+black,367,388.85,354.51,421.68,255104.61,213376.05,299844.39,0.52,0.43,0.59,nh3,fev1,4,Height,True
+hispanic,420,330.85,307.82,355.49,174412.88,152218.50,199252.61,0.65,0.59,0.70,nh3,fev1,4,Height,True
+other,85,433.55,369.07,501.13,298166.94,215779.65,390238.51,0.36,0.07,0.56,nh3,fev1,4,Height,True
+All,536,395.90,369.29,421.35,255699.50,222249.26,291104.81,0.54,0.47,0.61,nh4_val,fev1,3,Height,False
+white,190,388.70,346.26,437.23,249111.44,199758.03,315060.68,0.59,0.50,0.68,nh4_val,fev1,3,Height,False
+black,112,434.80,368.70,500.07,308166.35,218487.94,416147.94,0.34,0.02,0.56,nh4_val,fev1,3,Height,False
+asian,26,442.11,283.00,623.78,379202.64,146951.54,661611.17,0.08,-1.20,0.70,nh4_val,fev1,3,Height,False
+hispanic,189,379.10,339.76,418.09,222518.60,180049.37,268701.08,0.55,0.43,0.65,nh4_val,fev1,3,Height,False
+other,19,354.81,254.80,463.49,181056.05,102703.10,283074.42,0.26,-0.33,0.65,nh4_val,fev1,3,Height,False
+All,144198,392.76,391.17,394.38,264365.38,262046.32,266601.18,0.49,0.49,0.50,ukb,fev1,3,Height,False
+white,136520,384.68,382.97,386.34,254764.24,252317.95,257456.36,0.50,0.50,0.51,ukb,fev1,3,Height,False
+black,1963,587.46,570.12,605.16,508993.00,478869.85,539643.41,-0.29,-0.41,-0.18,ukb,fev1,3,Height,False
+asian,3389,578.14,565.37,590.77,480087.76,460717.41,501861.89,-0.23,-0.31,-0.16,ukb,fev1,3,Height,False
+other,2326,433.54,419.73,447.23,308917.31,289558.86,328398.80,0.38,0.33,0.42,ukb,fev1,3,Height,False
+All,3354,301.29,291.80,311.42,175837.44,164345.24,188479.90,0.70,0.67,0.72,nh,fev1,3,Height,False
+white,1330,301.50,286.78,316.48,175008.62,157634.38,193288.30,0.73,0.70,0.75,nh,fev1,3,Height,False
+black,739,360.54,335.98,384.84,244612.13,212674.85,279973.45,0.48,0.40,0.56,nh,fev1,3,Height,False
+asian,88,230.32,174.07,294.64,135546.12,62659.59,222029.14,0.69,0.45,0.87,nh,fev1,3,Height,False
+hispanic,1049,261.23,246.43,276.24,129497.14,115200.60,143330.96,0.75,0.72,0.78,nh,fev1,3,Height,False
+other,148,337.20,293.53,387.52,198381.15,148273.28,263236.54,0.58,0.46,0.68,nh,fev1,3,Height,False
+All,1569,399.25,383.75,414.65,260544.01,239877.36,282449.83,0.55,0.51,0.59,nh3,fev1,3,Height,False
+white,697,390.86,368.39,414.19,247719.28,219800.03,277696.92,0.60,0.55,0.64,nh3,fev1,3,Height,False
+black,367,472.39,434.97,509.26,360007.23,304054.68,419029.85,0.32,0.18,0.45,nh3,fev1,3,Height,False
+hispanic,420,345.19,320.06,372.15,190971.66,165342.78,219261.27,0.61,0.55,0.67,nh3,fev1,3,Height,False
+other,85,418.87,354.65,489.57,278267.20,192856.54,377004.87,0.41,0.16,0.57,nh3,fev1,3,Height,False
+All,536,369.63,344.65,394.00,221338.36,194022.65,250535.74,0.60,0.54,0.66,nh4_val,fev1,5,Sit Height,True
+white,190,374.72,335.73,419.47,225780.71,183040.33,274549.08,0.63,0.53,0.71,nh4_val,fev1,5,Sit Height,True
+black,112,338.38,285.67,393.85,197569.97,142742.33,262592.54,0.58,0.43,0.69,nh4_val,fev1,5,Sit Height,True
+asian,26,430.87,292.13,587.61,329524.93,156086.05,529734.00,0.23,-0.69,0.65,nh4_val,fev1,5,Sit Height,True
+hispanic,189,369.52,332.06,407.01,212653.30,171012.23,255872.85,0.57,0.45,0.67,nh4_val,fev1,5,Sit Height,True
+other,19,436.70,312.93,569.31,273509.83,150910.19,411988.04,-0.15,-1.40,0.49,nh4_val,fev1,5,Sit Height,True
+All,144198,405.37,403.68,407.06,274088.26,271705.94,276351.35,0.47,0.47,0.48,ukb,fev1,5,Sit Height,True
+white,136520,403.40,401.74,405.21,272133.75,269712.95,274688.86,0.47,0.47,0.48,ukb,fev1,5,Sit Height,True
+black,1963,407.78,394.69,422.10,268274.51,250345.66,288601.45,0.32,0.27,0.37,ukb,fev1,5,Sit Height,True
+asian,3389,440.51,429.67,451.64,305113.28,289044.74,323605.10,0.22,0.17,0.26,ukb,fev1,5,Sit Height,True
+other,2326,471.43,457.08,485.57,353754.05,331924.45,375365.14,0.29,0.23,0.34,ukb,fev1,5,Sit Height,True
+All,3354,251.94,242.57,261.17,137296.57,127528.96,146985.86,0.76,0.74,0.78,nh,fev1,5,Sit Height,True
+white,1330,252.53,239.20,266.77,136940.14,122812.92,151361.44,0.79,0.76,0.81,nh,fev1,5,Sit Height,True
+black,739,267.68,248.43,288.49,152033.44,129527.19,175388.44,0.68,0.63,0.72,nh,fev1,5,Sit Height,True
+asian,88,176.40,124.56,235.52,104426.12,47038.19,175464.77,0.76,0.59,0.89,nh,fev1,5,Sit Height,True
+hispanic,1049,234.85,219.84,249.52,121306.73,106693.79,136124.56,0.76,0.73,0.80,nh,fev1,5,Sit Height,True
+other,148,340.58,293.40,391.78,205392.08,160650.91,256119.56,0.57,0.39,0.69,nh,fev1,5,Sit Height,True
+All,1569,356.23,341.99,369.86,210630.04,195096.26,227122.24,0.64,0.61,0.67,nh3,fev1,5,Sit Height,True
+white,697,341.27,320.41,363.22,195806.80,173074.16,219631.73,0.68,0.64,0.72,nh3,fev1,5,Sit Height,True
+black,367,380.26,351.14,411.24,238467.03,199312.16,277562.24,0.55,0.47,0.61,nh3,fev1,5,Sit Height,True
+hispanic,420,342.24,315.23,372.78,195684.28,166785.87,229042.62,0.60,0.53,0.67,nh3,fev1,5,Sit Height,True
+other,85,442.93,382.17,508.78,288158.18,227042.18,363070.25,0.37,0.02,0.61,nh3,fev1,5,Sit Height,True
+All,536,414.84,388.37,440.91,276645.27,242902.88,311827.41,0.50,0.42,0.58,nh4_val,fev1,4,Sit Height,False
+white,190,418.64,375.06,463.24,279889.73,228497.82,332704.08,0.54,0.43,0.64,nh4_val,fev1,4,Sit Height,False
+black,112,427.73,363.95,496.12,305221.21,219315.92,403006.88,0.34,0.06,0.55,nh4_val,fev1,4,Sit Height,False
+asian,26,479.04,308.44,673.54,430841.57,176160.82,747789.68,-0.04,-1.54,0.64,nh4_val,fev1,4,Sit Height,False
+hispanic,189,395.58,357.01,436.82,237061.78,195998.04,282197.77,0.52,0.41,0.62,nh4_val,fev1,4,Sit Height,False
+other,19,438.25,304.83,588.76,288254.54,146666.39,459813.54,-0.20,-1.43,0.50,nh4_val,fev1,4,Sit Height,False
+All,144198,403.58,401.87,405.25,272672.63,270299.16,275006.49,0.48,0.47,0.48,ukb,fev1,4,Sit Height,False
+white,136520,397.55,395.91,399.47,265397.57,263030.49,267804.50,0.48,0.48,0.49,ukb,fev1,4,Sit Height,False
+black,1963,525.94,508.68,542.47,431568.53,403754.14,459944.69,-0.09,-0.19,0.01,ukb,fev1,4,Sit Height,False
+asian,3389,558.05,545.14,570.25,455578.87,434830.82,476237.67,-0.17,-0.25,-0.10,ukb,fev1,4,Sit Height,False
+other,2326,430.50,417.64,443.58,304062.45,285438.46,323936.99,0.39,0.33,0.43,ukb,fev1,4,Sit Height,False
+All,3354,275.88,266.25,285.30,159964.73,149440.71,170588.90,0.72,0.70,0.74,nh,fev1,4,Sit Height,False
+white,1330,274.44,259.97,289.64,158782.11,142985.39,175502.04,0.75,0.72,0.78,nh,fev1,4,Sit Height,False
+black,739,309.64,287.51,332.34,191403.77,166372.46,217947.58,0.59,0.52,0.66,nh,fev1,4,Sit Height,False
+asian,88,210.30,150.62,280.29,139928.19,55822.36,238101.33,0.68,0.40,0.87,nh,fev1,4,Sit Height,False
+hispanic,1049,254.45,238.49,270.59,138588.40,121387.59,156027.13,0.73,0.69,0.76,nh,fev1,4,Sit Height,False
+other,148,317.19,271.04,363.01,180581.17,136274.25,227232.94,0.62,0.47,0.73,nh,fev1,4,Sit Height,False
+All,1569,377.12,362.00,392.21,235538.72,217386.44,254050.17,0.59,0.56,0.63,nh3,fev1,4,Sit Height,False
+white,697,357.61,334.79,381.09,219111.57,193498.55,248718.55,0.65,0.60,0.69,nh3,fev1,4,Sit Height,False
+black,367,419.62,386.08,454.41,278261.68,237509.57,320118.63,0.47,0.37,0.56,nh3,fev1,4,Sit Height,False
+hispanic,420,366.63,337.47,396.60,223318.79,190798.37,260384.94,0.55,0.47,0.62,nh3,fev1,4,Sit Height,False
+other,85,402.21,344.69,465.41,241988.05,183408.99,313849.68,0.47,0.19,0.67,nh3,fev1,4,Sit Height,False
+All,536,356.91,332.08,379.74,205246.25,180185.27,229916.70,0.63,0.57,0.68,nh4_val,fev1,6,Waist Circumference,True
+white,190,350.69,311.00,391.90,202631.72,160999.46,248037.63,0.67,0.58,0.74,nh4_val,fev1,6,Waist Circumference,True
+black,112,350.74,298.13,412.74,209459.49,150592.86,283760.89,0.55,0.39,0.67,nh4_val,fev1,6,Waist Circumference,True
+asian,26,381.75,269.79,508.45,240300.68,111860.54,407070.22,0.42,-0.34,0.77,nh4_val,fev1,6,Waist Circumference,True
+hispanic,189,348.22,312.46,383.29,186436.90,150118.33,222382.62,0.62,0.52,0.71,nh4_val,fev1,6,Waist Circumference,True
+other,19,518.74,385.05,658.32,353039.75,204066.58,521762.16,-0.50,-2.05,0.37,nh4_val,fev1,6,Waist Circumference,True
+All,144198,404.44,402.79,406.08,270666.86,268381.93,273013.21,0.48,0.48,0.49,ukb,fev1,6,Waist Circumference,True
+white,136520,402.12,400.47,403.91,268035.16,265705.05,270480.33,0.48,0.47,0.48,ukb,fev1,6,Waist Circumference,True
+black,1963,407.26,393.68,421.58,272028.81,253576.02,293113.84,0.31,0.25,0.37,ukb,fev1,6,Waist Circumference,True
+asian,3389,451.23,439.94,462.70,321603.52,303902.03,339924.51,0.18,0.13,0.23,ukb,fev1,6,Waist Circumference,True
+other,2326,471.96,457.53,486.86,354225.63,333924.45,376054.59,0.29,0.22,0.34,ukb,fev1,6,Waist Circumference,True
+All,3354,238.38,229.62,247.41,125727.77,116512.98,134461.98,0.78,0.77,0.80,nh,fev1,6,Waist Circumference,True
+white,1330,239.13,225.35,252.76,121946.80,109741.80,134110.06,0.81,0.79,0.83,nh,fev1,6,Waist Circumference,True
+black,739,256.26,236.21,277.54,144998.56,123760.91,167598.64,0.69,0.65,0.73,nh,fev1,6,Waist Circumference,True
+asian,88,146.15,99.64,197.85,75167.38,32276.20,128824.28,0.83,0.69,0.93,nh,fev1,6,Waist Circumference,True
+hispanic,1049,222.26,207.42,237.43,113025.27,98457.54,127504.29,0.78,0.75,0.81,nh,fev1,6,Waist Circumference,True
+other,148,316.61,268.86,367.15,187114.86,140328.93,241227.62,0.61,0.45,0.72,nh,fev1,6,Waist Circumference,True
+All,1569,345.68,333.30,359.02,194666.85,180830.21,209040.48,0.66,0.64,0.69,nh3,fev1,6,Waist Circumference,True
+white,697,326.87,309.31,346.79,173838.95,156752.33,192446.99,0.72,0.68,0.75,nh3,fev1,6,Waist Circumference,True
+black,367,370.39,340.45,400.86,223850.35,188715.26,262617.81,0.58,0.51,0.64,nh3,fev1,6,Waist Circumference,True
+hispanic,420,342.09,315.95,369.55,192261.71,162301.12,225029.09,0.61,0.54,0.68,nh3,fev1,6,Waist Circumference,True
+other,85,402.26,342.90,465.57,244351.62,178326.02,323034.74,0.47,0.19,0.65,nh3,fev1,6,Waist Circumference,True
+All,536,394.93,368.37,420.93,251274.07,220534.61,284292.19,0.55,0.48,0.61,nh4_val,fev1,5,Waist Circumference,False
+white,190,392.16,350.93,436.14,246007.88,200050.09,296124.26,0.60,0.49,0.69,nh4_val,fev1,5,Waist Circumference,False
+black,112,416.46,355.58,481.15,285051.89,205852.13,375880.60,0.39,0.11,0.57,nh4_val,fev1,5,Waist Circumference,False
+asian,26,473.33,330.29,631.15,374704.26,166049.89,642853.76,0.09,-1.13,0.66,nh4_val,fev1,5,Waist Circumference,False
+hispanic,189,371.95,329.98,412.65,215328.56,168355.29,264135.88,0.57,0.47,0.65,nh4_val,fev1,5,Waist Circumference,False
+other,19,445.04,282.27,610.72,323219.82,141931.58,531018.02,-0.38,-2.13,0.52,nh4_val,fev1,5,Waist Circumference,False
+All,144198,411.06,409.43,412.74,285757.69,283301.98,288221.38,0.45,0.45,0.46,ukb,fev1,5,Waist Circumference,False
+white,136520,404.40,402.60,406.25,277502.65,275005.62,280163.57,0.46,0.45,0.47,ukb,fev1,5,Waist Circumference,False
+black,1963,548.23,530.13,565.92,461904.79,432084.77,492524.56,-0.17,-0.28,-0.07,ukb,fev1,5,Waist Circumference,False
+asian,3389,579.22,565.09,592.75,495652.83,473005.97,519002.77,-0.27,-0.35,-0.19,ukb,fev1,5,Waist Circumference,False
+other,2326,442.57,428.55,457.08,321705.47,300851.41,343709.36,0.35,0.29,0.40,ukb,fev1,5,Waist Circumference,False
+All,3354,260.98,251.15,270.68,147056.13,136797.48,156946.78,0.75,0.73,0.76,nh,fev1,5,Waist Circumference,False
+white,1330,263.49,249.41,277.99,145448.23,131435.78,159924.26,0.77,0.75,0.80,nh,fev1,5,Waist Circumference,False
+black,739,290.02,266.96,313.68,182544.11,155727.64,209745.25,0.61,0.55,0.67,nh,fev1,5,Waist Circumference,False
+asian,88,197.50,141.57,264.02,120474.59,52068.69,206916.54,0.73,0.48,0.89,nh,fev1,5,Waist Circumference,False
+hispanic,1049,234.33,219.05,249.60,119432.53,103853.28,133746.56,0.77,0.73,0.80,nh,fev1,5,Waist Circumference,False
+other,148,325.89,277.68,374.22,201077.06,147659.96,258307.78,0.57,0.39,0.71,nh,fev1,5,Waist Circumference,False
+All,1569,371.58,358.12,385.92,222222.82,206642.91,238711.23,0.62,0.58,0.65,nh3,fev1,5,Waist Circumference,False
+white,697,357.84,336.92,378.78,205942.14,183800.66,229409.23,0.67,0.63,0.71,nh3,fev1,5,Waist Circumference,False
+black,367,407.11,372.98,439.99,273349.55,233887.26,314962.72,0.48,0.39,0.57,nh3,fev1,5,Waist Circumference,False
+hispanic,420,349.90,324.81,376.16,192635.56,167847.62,222047.88,0.61,0.54,0.67,nh3,fev1,5,Waist Circumference,False
+other,85,430.98,373.77,499.63,274903.62,199890.30,368217.19,0.40,0.04,0.66,nh3,fev1,5,Waist Circumference,False
+All,536,353.11,328.73,377.00,208508.36,182721.00,235180.72,0.63,0.56,0.68,nh4_val,fev1,7,Immigrant,True
+white,190,354.35,314.21,397.21,213935.43,167869.35,267820.72,0.65,0.56,0.74,nh4_val,fev1,7,Immigrant,True
+black,112,338.57,284.11,397.34,206733.23,148688.61,286111.89,0.56,0.39,0.68,nh4_val,fev1,7,Immigrant,True
+asian,26,385.93,268.08,515.31,245585.49,117029.98,400305.81,0.42,-0.28,0.74,nh4_val,fev1,7,Immigrant,True
+hispanic,189,341.10,302.66,377.01,186301.99,150899.42,222507.55,0.62,0.52,0.71,nh4_val,fev1,7,Immigrant,True
+other,19,522.77,397.70,648.91,354176.97,222127.95,501764.18,-0.50,-1.98,0.32,nh4_val,fev1,7,Immigrant,True
+All,144198,419.57,417.78,421.26,292319.99,289787.35,294831.11,0.44,0.43,0.44,ukb,fev1,7,Immigrant,True
+white,136520,418.06,416.34,419.82,290564.97,288013.51,293133.49,0.43,0.43,0.44,ukb,fev1,7,Immigrant,True
+black,1963,411.69,397.35,426.26,281979.17,262053.07,303325.49,0.29,0.22,0.35,ukb,fev1,7,Immigrant,True
+asian,3389,446.98,434.90,458.40,322340.60,303338.09,343118.39,0.17,0.12,0.23,ukb,fev1,7,Immigrant,True
+other,2326,475.48,460.14,490.75,363823.13,342318.84,387533.09,0.27,0.20,0.32,ukb,fev1,7,Immigrant,True
+All,3354,236.23,227.24,245.19,127589.63,118478.42,136477.38,0.78,0.76,0.80,nh,fev1,7,Immigrant,True
+white,1330,240.50,227.62,254.10,125998.93,113956.09,139486.04,0.80,0.78,0.82,nh,fev1,7,Immigrant,True
+black,739,248.56,229.14,268.64,142856.17,121448.65,164678.28,0.70,0.65,0.74,nh,fev1,7,Immigrant,True
+asian,88,151.60,104.93,203.20,76817.08,34393.96,131799.12,0.83,0.68,0.93,nh,fev1,7,Immigrant,True
+hispanic,1049,217.56,202.56,233.11,113119.08,99062.04,128007.89,0.78,0.75,0.81,nh,fev1,7,Immigrant,True
+other,148,322.57,270.39,377.57,201626.32,145405.35,258877.39,0.58,0.41,0.70,nh,fev1,7,Immigrant,True
+All,1569,346.13,333.23,359.90,198131.53,183889.05,213307.29,0.66,0.63,0.69,nh3,fev1,7,Immigrant,True
+white,697,332.53,312.52,353.30,179360.91,160044.94,199694.96,0.71,0.67,0.75,nh3,fev1,7,Immigrant,True
+black,367,362.01,331.50,391.37,220864.16,186050.26,257467.73,0.58,0.51,0.65,nh3,fev1,7,Immigrant,True
+hispanic,420,338.64,313.25,365.79,193293.63,164959.38,223992.26,0.61,0.53,0.68,nh3,fev1,7,Immigrant,True
+other,85,414.06,351.24,483.05,268523.84,189487.33,364157.72,0.42,0.12,0.62,nh3,fev1,7,Immigrant,True
+All,536,387.63,360.51,413.54,248520.47,216571.74,282757.80,0.55,0.48,0.62,nh4_val,fev1,6,Immigrant,False
+white,190,382.89,341.15,426.34,240715.53,191862.36,291567.36,0.61,0.50,0.69,nh4_val,fev1,6,Immigrant,False
+black,112,407.26,346.28,477.14,278762.74,196717.90,378869.15,0.40,0.13,0.59,nh4_val,fev1,6,Immigrant,False
+asian,26,469.39,295.55,650.95,408417.06,183290.63,684684.58,0.01,-1.34,0.64,nh4_val,fev1,6,Immigrant,False
+hispanic,189,368.30,326.05,410.63,217808.22,172340.27,268325.23,0.56,0.45,0.65,nh4_val,fev1,6,Immigrant,False
+other,19,427.81,307.55,558.61,260769.08,142854.40,403068.31,-0.12,-1.55,0.56,nh4_val,fev1,6,Immigrant,False
+All,144198,400.68,398.97,402.44,268998.02,266529.44,271298.03,0.48,0.48,0.49,ukb,fev1,6,Immigrant,False
+white,136520,393.64,391.96,395.36,260361.02,257940.20,262777.79,0.49,0.49,0.50,ukb,fev1,6,Immigrant,False
+black,1963,552.65,535.97,569.81,462523.43,434686.78,490583.84,-0.17,-0.28,-0.07,ukb,fev1,6,Immigrant,False
+asian,3389,575.41,562.60,588.62,484084.13,461912.09,507066.27,-0.24,-0.32,-0.16,ukb,fev1,6,Immigrant,False
+other,2326,431.83,418.77,445.47,302166.45,284014.11,321659.40,0.39,0.34,0.44,ukb,fev1,6,Immigrant,False
+All,3354,254.00,245.01,263.18,143050.68,133176.82,153344.11,0.75,0.73,0.77,nh,fev1,6,Immigrant,False
+white,1330,256.22,241.52,271.72,142222.02,127637.94,157470.05,0.78,0.75,0.80,nh,fev1,6,Immigrant,False
+black,739,285.74,262.77,309.18,178334.68,154174.63,205649.19,0.62,0.55,0.68,nh,fev1,6,Immigrant,False
+asian,88,186.68,124.96,256.00,128202.47,56299.27,216237.23,0.71,0.46,0.88,nh,fev1,6,Immigrant,False
+hispanic,1049,228.15,213.43,242.84,116250.87,102409.14,129924.47,0.77,0.74,0.80,nh,fev1,6,Immigrant,False
+other,148,299.69,254.33,345.31,172107.05,127224.26,222598.29,0.64,0.50,0.74,nh,fev1,6,Immigrant,False
+All,1569,362.16,348.33,375.73,215367.13,198919.77,230711.45,0.63,0.60,0.66,nh3,fev1,6,Immigrant,False
+white,697,348.26,327.61,369.36,201713.55,181004.86,226201.21,0.67,0.63,0.72,nh3,fev1,6,Immigrant,False
+black,367,403.50,371.12,436.94,267867.98,228267.34,307338.27,0.49,0.40,0.58,nh3,fev1,6,Immigrant,False
+hispanic,420,339.67,314.91,366.53,184971.76,161127.43,212522.12,0.63,0.56,0.68,nh3,fev1,6,Immigrant,False
+other,85,395.28,335.07,456.05,238950.42,168534.14,319851.82,0.48,0.23,0.66,nh3,fev1,6,Immigrant,False
+All,536,353.88,327.25,378.01,211516.10,183930.87,238489.59,0.62,0.56,0.68,nh4_val,fev1,8,Income:Poverty,True
+white,190,350.83,311.11,394.96,211722.84,167006.27,262453.72,0.65,0.56,0.74,nh4_val,fev1,8,Income:Poverty,True
+black,112,339.23,283.98,397.98,209634.13,149447.25,285038.26,0.55,0.40,0.67,nh4_val,fev1,8,Income:Poverty,True
+asian,26,400.45,281.52,527.42,256536.51,144054.78,396003.04,0.39,-0.25,0.71,nh4_val,fev1,8,Income:Poverty,True
+hispanic,189,339.90,302.40,376.88,188965.01,151603.09,227710.93,0.62,0.52,0.71,nh4_val,fev1,8,Income:Poverty,True
+other,19,570.05,446.51,696.85,404951.00,252625.12,587237.93,-0.72,-2.57,0.23,nh4_val,fev1,8,Income:Poverty,True
+All,144198,419.83,418.12,421.57,291049.15,288568.56,293521.52,0.44,0.44,0.45,ukb,fev1,8,Income:Poverty,True
+white,136520,418.38,416.69,420.20,289406.45,286868.30,291992.76,0.44,0.43,0.44,ukb,fev1,8,Income:Poverty,True
+black,1963,408.62,394.76,423.19,275636.47,257376.79,296607.88,0.30,0.24,0.36,ukb,fev1,8,Income:Poverty,True
+asian,3389,447.81,436.54,459.34,320945.87,302592.85,341477.54,0.18,0.12,0.23,ukb,fev1,8,Income:Poverty,True
+other,2326,474.85,460.06,490.25,360763.65,339243.58,383189.95,0.27,0.21,0.33,ukb,fev1,8,Income:Poverty,True
+All,3354,235.06,225.92,244.39,127771.98,118217.41,137553.34,0.78,0.76,0.80,nh,fev1,8,Income:Poverty,True
+white,1330,236.89,222.90,251.33,124665.70,111678.81,138723.97,0.80,0.78,0.83,nh,fev1,8,Income:Poverty,True
+black,739,251.39,230.63,272.48,145990.50,123602.10,169521.66,0.69,0.64,0.73,nh,fev1,8,Income:Poverty,True
+asian,88,148.83,100.77,205.25,79134.45,39097.95,129205.23,0.82,0.69,0.91,nh,fev1,8,Income:Poverty,True
+hispanic,1049,215.18,200.03,230.44,112300.79,97901.36,126363.02,0.78,0.75,0.81,nh,fev1,8,Income:Poverty,True
+other,148,331.60,281.64,383.75,203785.62,151049.07,261884.72,0.57,0.39,0.69,nh,fev1,8,Income:Poverty,True
+All,1569,344.44,331.44,357.70,197467.03,182657.61,212820.18,0.66,0.63,0.69,nh3,fev1,8,Income:Poverty,True
+white,697,326.14,306.13,346.43,177289.38,157854.47,198064.10,0.71,0.67,0.75,nh3,fev1,8,Income:Poverty,True
+black,367,370.31,339.29,399.01,227268.44,191153.21,267818.71,0.57,0.50,0.64,nh3,fev1,8,Income:Poverty,True
+hispanic,420,334.11,307.69,362.28,190373.54,162682.49,219465.65,0.61,0.54,0.68,nh3,fev1,8,Income:Poverty,True
+other,85,425.99,367.03,488.28,263420.95,191383.45,351211.98,0.43,0.10,0.64,nh3,fev1,8,Income:Poverty,True
+All,536,393.88,366.16,420.55,259828.56,225157.25,293102.97,0.53,0.46,0.60,nh4_val,fev1,7,Income:Poverty,False
+white,190,387.15,342.10,431.37,247883.57,197895.01,298536.21,0.60,0.49,0.68,nh4_val,fev1,7,Income:Poverty,False
+black,112,424.17,357.38,495.28,309363.37,222662.14,419228.38,0.34,0.08,0.52,nh4_val,fev1,7,Income:Poverty,False
+asian,26,495.78,344.89,659.00,415934.31,194202.99,662429.89,-0.01,-1.32,0.63,nh4_val,fev1,7,Income:Poverty,False
+hispanic,189,367.58,326.01,409.56,222171.51,171475.68,277353.27,0.55,0.44,0.65,nh4_val,fev1,7,Income:Poverty,False
+other,19,423.97,293.46,570.79,269499.32,137568.37,427654.56,-0.15,-1.60,0.55,nh4_val,fev1,7,Income:Poverty,False
+All,144198,390.45,388.87,392.00,254901.76,252661.37,257061.60,0.51,0.51,0.52,ukb,fev1,7,Income:Poverty,False
+white,136520,383.32,381.74,385.00,246333.30,244096.18,248686.62,0.52,0.52,0.53,ukb,fev1,7,Income:Poverty,False
+black,1963,542.55,525.13,559.78,445765.33,418084.18,474018.27,-0.13,-0.24,-0.03,ukb,fev1,7,Income:Poverty,False
+asian,3389,565.99,553.23,578.32,467158.70,445765.26,488799.53,-0.20,-0.27,-0.12,ukb,fev1,7,Income:Poverty,False
+other,2326,424.16,411.25,438.15,289789.99,272042.31,308951.57,0.42,0.37,0.46,ukb,fev1,7,Income:Poverty,False
+All,3354,259.62,250.37,269.10,147786.40,137315.43,158190.16,0.74,0.72,0.76,nh,fev1,7,Income:Poverty,False
+white,1330,260.03,246.03,274.38,144036.85,129988.84,158649.19,0.77,0.75,0.80,nh,fev1,7,Income:Poverty,False
+black,739,293.25,270.29,316.77,184011.02,158803.84,211684.53,0.61,0.55,0.67,nh,fev1,7,Income:Poverty,False
+asian,88,198.40,137.67,267.15,131720.54,58668.52,220394.11,0.70,0.45,0.87,nh,fev1,7,Income:Poverty,False
+hispanic,1049,235.06,219.83,251.64,125121.68,107938.19,142194.11,0.76,0.72,0.79,nh,fev1,7,Income:Poverty,False
+other,148,303.57,257.20,349.36,173305.27,130430.54,221546.58,0.63,0.49,0.74,nh,fev1,7,Income:Poverty,False
+All,1569,366.44,352.68,380.60,220375.56,204267.87,236994.82,0.62,0.59,0.65,nh3,fev1,7,Income:Poverty,False
+white,697,349.64,329.65,370.30,202226.86,180541.17,227656.25,0.67,0.63,0.71,nh3,fev1,7,Income:Poverty,False
+black,367,407.77,375.23,440.34,268784.96,230367.73,309069.89,0.49,0.40,0.58,nh3,fev1,7,Income:Poverty,False
+hispanic,420,348.99,322.33,377.55,202384.44,172734.10,236472.77,0.59,0.51,0.65,nh3,fev1,7,Income:Poverty,False
+other,85,401.53,344.54,460.28,239157.29,176201.45,309140.85,0.48,0.21,0.66,nh3,fev1,7,Income:Poverty,False
+All,536,352.54,329.41,375.70,206332.40,182002.02,233206.71,0.63,0.57,0.68,nh4_val,fev1,9,High School Graduate,True
+white,190,354.65,313.84,397.90,213519.57,171630.08,262167.59,0.65,0.56,0.73,nh4_val,fev1,9,High School Graduate,True
+black,112,329.73,279.95,386.87,186736.88,136400.76,252841.81,0.60,0.44,0.71,nh4_val,fev1,9,High School Graduate,True
+asian,26,405.06,287.63,534.26,258786.86,127490.91,416984.78,0.38,-0.30,0.72,nh4_val,fev1,9,High School Graduate,True
+hispanic,189,338.22,300.17,376.45,186785.80,147020.88,227095.78,0.62,0.53,0.71,nh4_val,fev1,9,High School Graduate,True
+other,19,546.44,416.03,681.13,385609.83,236214.15,563648.51,-0.64,-2.49,0.27,nh4_val,fev1,9,High School Graduate,True
+All,144198,419.46,417.74,421.19,291753.04,289240.47,294200.31,0.44,0.43,0.45,ukb,fev1,9,High School Graduate,True
+white,136520,418.09,416.35,419.95,290231.85,287681.80,292809.52,0.44,0.43,0.44,ukb,fev1,9,High School Graduate,True
+black,1963,413.05,398.60,427.91,279916.00,260942.09,300951.82,0.29,0.23,0.35,ukb,fev1,9,High School Graduate,True
+asian,3389,444.84,432.95,455.95,319012.93,301075.17,338763.93,0.18,0.13,0.23,ukb,fev1,9,High School Graduate,True
+other,2326,468.29,453.28,484.00,353448.09,331783.89,376857.75,0.29,0.23,0.35,ukb,fev1,9,High School Graduate,True
+All,3354,235.25,226.24,244.62,124774.52,116041.70,133691.57,0.78,0.77,0.80,nh,fev1,9,High School Graduate,True
+white,1330,238.05,224.99,252.03,123071.96,111395.52,135939.80,0.81,0.78,0.83,nh,fev1,9,High School Graduate,True
+black,739,249.70,229.20,269.24,138677.05,117943.55,160150.26,0.71,0.66,0.75,nh,fev1,9,High School Graduate,True
+asian,88,155.04,106.66,211.67,80730.53,37733.26,138546.11,0.82,0.67,0.92,nh,fev1,9,High School Graduate,True
+hispanic,1049,215.42,200.35,231.04,110220.44,96725.30,124368.11,0.78,0.75,0.81,nh,fev1,9,High School Graduate,True
+other,148,329.62,279.46,381.62,202575.61,152466.36,259142.00,0.57,0.41,0.69,nh,fev1,9,High School Graduate,True
+All,1569,341.97,328.56,356.38,192325.99,177588.25,206835.95,0.67,0.64,0.69,nh3,fev1,9,High School Graduate,True
+white,697,325.16,305.87,345.31,173330.53,154955.74,193890.87,0.72,0.68,0.75,nh3,fev1,9,High School Graduate,True
+black,367,363.54,334.71,392.74,217976.36,183999.62,254857.20,0.59,0.51,0.66,nh3,fev1,9,High School Graduate,True
+hispanic,420,332.55,306.68,359.76,185295.50,157806.70,215708.05,0.62,0.56,0.69,nh3,fev1,9,High School Graduate,True
+other,85,424.36,364.65,489.33,265372.22,192255.67,351545.99,0.43,0.15,0.60,nh3,fev1,9,High School Graduate,True
+All,536,387.59,361.72,413.49,248337.91,217463.92,279205.09,0.55,0.49,0.62,nh4_val,fev1,8,High School Graduate,False
+white,190,378.31,334.59,423.90,239488.44,189487.79,292541.58,0.61,0.51,0.70,nh4_val,fev1,8,High School Graduate,False
+black,112,403.20,338.97,474.59,279870.71,200345.26,373400.59,0.40,0.16,0.57,nh4_val,fev1,8,High School Graduate,False
+asian,26,484.78,334.94,649.35,393146.80,188153.57,645152.93,0.05,-1.17,0.64,nh4_val,fev1,8,High School Graduate,False
+hispanic,189,371.94,332.11,413.62,216294.27,172592.15,264298.28,0.56,0.46,0.65,nh4_val,fev1,8,High School Graduate,False
+other,19,427.51,281.59,583.21,288679.43,131859.80,475222.81,-0.22,-1.79,0.55,nh4_val,fev1,8,High School Graduate,False
+All,144198,396.62,395.01,398.30,263482.16,261183.19,265714.75,0.49,0.49,0.50,ukb,fev1,8,High School Graduate,False
+white,136520,389.18,387.53,390.86,254232.06,252065.64,256615.11,0.51,0.50,0.51,ukb,fev1,8,High School Graduate,False
+black,1963,552.01,534.71,569.64,463729.32,434844.17,494283.62,-0.17,-0.28,-0.07,ukb,fev1,8,High School Graduate,False
+asian,3389,583.28,570.53,596.06,495849.55,472962.12,518353.83,-0.27,-0.35,-0.19,ukb,fev1,8,High School Graduate,False
+other,2326,432.60,419.38,447.27,303187.01,284394.17,323434.30,0.39,0.34,0.44,ukb,fev1,8,High School Graduate,False
+All,3354,253.70,244.34,262.67,142112.15,131815.43,152196.98,0.75,0.74,0.77,nh,fev1,8,High School Graduate,False
+white,1330,255.68,240.93,270.40,140590.43,126470.43,155316.18,0.78,0.75,0.80,nh,fev1,8,High School Graduate,False
+black,739,281.51,259.34,304.97,173766.22,149654.34,199387.46,0.63,0.57,0.68,nh,fev1,8,High School Graduate,False
+asian,88,195.45,137.87,262.83,124523.08,57199.68,208613.88,0.72,0.48,0.88,nh,fev1,8,High School Graduate,False
+hispanic,1049,229.21,214.33,244.17,118042.53,103438.19,132007.66,0.77,0.74,0.80,nh,fev1,8,High School Graduate,False
+other,148,308.08,260.50,355.70,177872.92,132431.84,227567.60,0.63,0.48,0.73,nh,fev1,8,High School Graduate,False
+All,1569,363.57,350.13,377.71,213834.04,198328.64,229982.07,0.63,0.60,0.66,nh3,fev1,8,High School Graduate,False
+white,697,349.98,329.33,370.69,199418.62,178034.17,223967.69,0.68,0.63,0.72,nh3,fev1,8,High School Graduate,False
+black,367,397.61,367.02,431.91,259325.21,220585.30,302192.91,0.51,0.41,0.59,nh3,fev1,8,High School Graduate,False
+hispanic,420,344.93,318.13,370.84,190504.27,162343.04,219984.71,0.61,0.55,0.67,nh3,fev1,8,High School Graduate,False
+other,85,411.89,358.81,471.48,243013.03,179533.34,320854.21,0.47,0.22,0.65,nh3,fev1,8,High School Graduate,False
+All,536,362.89,337.79,387.04,212824.16,186263.69,241290.84,0.62,0.56,0.67,nh4_val,fev1,10,Smoke Exposure,True
+white,190,361.94,322.43,403.17,210685.29,168045.77,260325.28,0.66,0.57,0.74,nh4_val,fev1,10,Smoke Exposure,True
+black,112,343.86,293.02,400.19,201601.03,147785.24,271474.39,0.57,0.41,0.69,nh4_val,fev1,10,Smoke Exposure,True
+asian,26,407.83,295.48,532.90,254348.36,135782.52,406610.49,0.40,-0.28,0.71,nh4_val,fev1,10,Smoke Exposure,True
+hispanic,189,357.30,317.20,395.51,206978.69,164468.46,251698.57,0.58,0.48,0.68,nh4_val,fev1,10,Smoke Exposure,True
+other,19,494.80,366.34,622.05,321250.86,183811.29,472959.91,-0.36,-1.74,0.41,nh4_val,fev1,10,Smoke Exposure,True
+All,144198,399.43,397.82,401.13,263119.59,260840.32,265413.24,0.50,0.49,0.50,ukb,fev1,10,Smoke Exposure,True
+white,136520,396.71,395.03,398.38,260206.87,257945.23,262451.39,0.49,0.49,0.50,ukb,fev1,10,Smoke Exposure,True
+black,1963,417.47,402.87,432.14,278956.59,259911.87,300065.83,0.29,0.23,0.35,ukb,fev1,10,Smoke Exposure,True
+asian,3389,450.48,439.61,461.38,315913.49,299995.63,334302.57,0.19,0.14,0.24,ukb,fev1,10,Smoke Exposure,True
+other,2326,470.29,455.78,485.10,347282.95,327037.84,368502.04,0.30,0.24,0.35,ukb,fev1,10,Smoke Exposure,True
+All,3354,239.91,231.28,249.09,128309.30,119469.06,137118.76,0.78,0.76,0.79,nh,fev1,10,Smoke Exposure,True
+white,1330,243.83,230.65,257.73,126606.42,114189.65,139929.77,0.80,0.78,0.82,nh,fev1,10,Smoke Exposure,True
+black,739,254.69,235.13,276.52,143117.76,123459.61,165166.96,0.70,0.65,0.74,nh,fev1,10,Smoke Exposure,True
+asian,88,155.78,109.88,210.38,79123.77,38943.26,131316.78,0.82,0.69,0.92,nh,fev1,10,Smoke Exposure,True
+hispanic,1049,220.06,205.49,235.34,114971.63,100700.30,129679.04,0.78,0.74,0.81,nh,fev1,10,Smoke Exposure,True
+other,148,326.43,279.70,376.40,197397.23,149446.35,252235.09,0.58,0.43,0.70,nh,fev1,10,Smoke Exposure,True
+All,1569,348.04,335.27,361.62,197632.67,183567.76,212051.71,0.66,0.63,0.69,nh3,fev1,10,Smoke Exposure,True
+white,697,332.01,313.02,351.62,180530.13,161565.69,200743.66,0.71,0.67,0.74,nh3,fev1,10,Smoke Exposure,True
+black,367,371.82,344.27,400.55,223167.08,190808.16,259532.16,0.58,0.50,0.64,nh3,fev1,10,Smoke Exposure,True
+hispanic,420,335.50,310.99,362.02,187931.24,160129.86,216599.35,0.62,0.55,0.68,nh3,fev1,10,Smoke Exposure,True
+other,85,432.18,374.95,492.86,271261.25,204244.35,352698.16,0.41,0.11,0.60,nh3,fev1,10,Smoke Exposure,True
+All,536,384.58,355.78,409.47,247535.74,215025.88,281067.86,0.56,0.49,0.62,nh4_val,fev1,9,Smoke Exposure,False
+white,190,381.27,339.79,426.79,236134.25,190403.93,286153.05,0.61,0.51,0.70,nh4_val,fev1,9,Smoke Exposure,False
+black,112,410.40,349.93,479.79,287018.68,206584.72,386540.26,0.38,0.11,0.57,nh4_val,fev1,9,Smoke Exposure,False
+asian,26,474.31,310.84,651.00,418782.26,173562.18,741368.32,-0.02,-1.48,0.66,nh4_val,fev1,9,Smoke Exposure,False
+hispanic,189,358.97,314.96,399.37,213851.45,165374.93,264825.22,0.57,0.48,0.66,nh4_val,fev1,9,Smoke Exposure,False
+other,19,418.42,298.10,550.99,251610.62,132069.15,393170.47,-0.06,-1.25,0.56,nh4_val,fev1,9,Smoke Exposure,False
+All,144198,397.21,395.59,398.90,264269.14,261937.94,266568.01,0.49,0.49,0.50,ukb,fev1,9,Smoke Exposure,False
+white,136520,390.77,389.05,392.46,256621.82,254231.72,259006.99,0.50,0.50,0.51,ukb,fev1,9,Smoke Exposure,False
+black,1963,535.24,517.38,552.82,435093.98,407018.41,462460.63,-0.10,-0.21,-0.01,ukb,fev1,9,Smoke Exposure,False
+asian,3389,560.85,548.21,573.07,456666.58,436577.86,477130.29,-0.17,-0.25,-0.10,ukb,fev1,9,Smoke Exposure,False
+other,2326,421.71,407.93,435.73,290777.62,273251.90,309118.78,0.41,0.37,0.46,ukb,fev1,9,Smoke Exposure,False
+All,3354,259.20,249.72,268.82,148925.52,137645.38,160114.79,0.74,0.72,0.76,nh,fev1,9,Smoke Exposure,False
+white,1330,267.46,252.65,282.16,153648.97,138374.65,169948.48,0.76,0.73,0.79,nh,fev1,9,Smoke Exposure,False
+black,739,280.46,258.76,302.66,170149.05,147401.37,195972.50,0.64,0.58,0.69,nh,fev1,9,Smoke Exposure,False
+asian,88,195.34,133.64,267.42,133607.92,53365.25,232225.46,0.69,0.41,0.88,nh,fev1,9,Smoke Exposure,False
+hispanic,1049,231.17,216.13,246.64,122596.68,106186.53,138762.74,0.76,0.72,0.79,nh,fev1,9,Smoke Exposure,False
+other,148,318.69,270.42,370.66,199185.76,140902.40,274567.75,0.58,0.43,0.70,nh,fev1,9,Smoke Exposure,False
+All,1569,374.25,359.51,389.41,228266.11,211903.32,246144.58,0.61,0.57,0.64,nh3,fev1,9,Smoke Exposure,False
+white,697,368.79,347.68,391.50,224674.84,201859.48,250236.56,0.64,0.59,0.68,nh3,fev1,9,Smoke Exposure,False
+black,367,394.44,363.60,427.18,249281.43,214427.72,285339.08,0.53,0.44,0.60,nh3,fev1,9,Smoke Exposure,False
+hispanic,420,352.77,324.69,381.21,202639.12,172579.59,233031.34,0.59,0.52,0.65,nh3,fev1,9,Smoke Exposure,False
+other,85,432.17,366.75,505.77,288425.67,193443.04,408377.94,0.38,0.10,0.57,nh3,fev1,9,Smoke Exposure,False

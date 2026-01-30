@@ -20,7 +20,6 @@ UKB,FEV1,Race,Hispanic,0.0,0.0,
 UKB,FEV1,Race,Other,-284.98,10.35,0.0
 UKB,FEV1,Sociodemographics,High School Graduate,71.79,2.65,0.0
 UKB,FEV1,Sociodemographics,Immigrant,-327.81,4.85,0.0
-UKB,FEV1,Sociodemographics,Income Level,55.05,1.37,0.0
 UKB,FEV1,Sociodemographics,Income:Poverty,95.61,3.64,0.0
 UKB,FEV1,Sociodemographics,Veteran,0.0,0.0,
 UKB,FVC,Anthropometrics,BMI,-130.12,1.66,0.0
@@ -44,6 +43,5 @@ UKB,FVC,Race,Hispanic,0.0,0.0,
 UKB,FVC,Race,Other,-388.36,13.37,0.0
 UKB,FVC,Sociodemographics,High School Graduate,94.54,3.43,0.0
 UKB,FVC,Sociodemographics,Immigrant,-441.02,6.27,0.0
-UKB,FVC,Sociodemographics,Income Level,71.28,1.77,0.0
 UKB,FVC,Sociodemographics,Income:Poverty,123.83,4.71,0.0
 UKB,FVC,Sociodemographics,Veteran,0.0,0.0,
