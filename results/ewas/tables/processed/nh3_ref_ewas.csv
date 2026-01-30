@@ -9,7 +9,6 @@ NH3,FEV1,Anthropometrics,Waist Circumference,-55.88,12.68,0.0
 NH3,FEV1,Anthropometrics,Weight,9.29,13.39,0.488
 NH3,FEV1,Baseline,Sex,-1030.87,26.56,0.0
 NH3,FEV1,Exposures,Smoke Exposure,-90.79,29.06,0.002
-NH3,FEV1,Exposures,Work Mask,-33.36,40.89,0.415
 NH3,FEV1,Race,Asian,0.0,0.0,
 NH3,FEV1,Race,Black,-366.21,28.15,0.0
 NH3,FEV1,Race,Hispanic,-59.37,28.28,0.036
@@ -34,7 +33,6 @@ NH3,FVC,Anthropometrics,Waist Circumference,-77.78,17.0,0.0
 NH3,FVC,Anthropometrics,Weight,10.99,17.95,0.54
 NH3,FVC,Baseline,Sex,-1336.93,35.61,0.0
 NH3,FVC,Exposures,Smoke Exposure,-114.66,38.98,0.003
-NH3,FVC,Exposures,Work Mask,-50.4,54.82,0.358
 NH3,FVC,Race,Asian,0.0,0.0,
 NH3,FVC,Race,Black,-501.82,37.65,0.0
 NH3,FVC,Race,Hispanic,-108.38,37.88,0.004

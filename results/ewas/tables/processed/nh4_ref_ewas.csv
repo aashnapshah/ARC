@@ -8,12 +8,7 @@ NH4,FEV1,Anthropometrics,Upper Leg Length,150.32,13.74,0.0
 NH4,FEV1,Anthropometrics,Waist Circumference,-8.24,11.97,0.491
 NH4,FEV1,Anthropometrics,Weight,57.15,12.41,0.0
 NH4,FEV1,Baseline,Sex,-934.68,24.22,0.0
-NH4,FEV1,Exposures,Exhaust Fumes,17.12,12.33,0.165
-NH4,FEV1,Exposures,Mineral Dust,38.56,12.33,0.002
-NH4,FEV1,Exposures,Organic Dust,18.68,11.98,0.119
-NH4,FEV1,Exposures,Other Fumes,7.92,12.07,0.512
 NH4,FEV1,Exposures,Smoke Exposure,-20.89,50.67,0.68
-NH4,FEV1,Exposures,Work Air,28.8,25.4,0.257
 NH4,FEV1,Race,Asian,-411.32,53.45,0.0
 NH4,FEV1,Race,Black,-284.21,28.16,0.0
 NH4,FEV1,Race,Hispanic,-55.31,24.66,0.025
@@ -37,12 +32,7 @@ NH4,FVC,Anthropometrics,Upper Leg Length,228.78,17.89,0.0
 NH4,FVC,Anthropometrics,Waist Circumference,-31.14,15.75,0.048
 NH4,FVC,Anthropometrics,Weight,63.41,16.37,0.0
 NH4,FVC,Baseline,Sex,-1241.64,31.89,0.0
-NH4,FVC,Exposures,Exhaust Fumes,21.4,16.23,0.188
-NH4,FVC,Exposures,Mineral Dust,59.16,16.22,0.0
-NH4,FVC,Exposures,Organic Dust,29.53,15.77,0.061
-NH4,FVC,Exposures,Other Fumes,12.14,15.9,0.445
 NH4,FVC,Exposures,Smoke Exposure,-26.09,66.72,0.696
-NH4,FVC,Exposures,Work Air,48.58,33.44,0.146
 NH4,FVC,Race,Asian,-526.01,70.45,0.0
 NH4,FVC,Race,Black,-391.97,36.98,0.0
 NH4,FVC,Race,Hispanic,-111.15,32.41,0.001
