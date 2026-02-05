@@ -242,18 +242,15 @@ def run_experiment(train_df, test_dfs, features, target, race_col, save_path=Non
             base_feats += ['race_c']
         # XGBoost: incrementally add features and re-evaluate
         # e.g., ["age"], ["age", "sex"], ["age", "sex", "height"], etc. (+ optional extra features passed in 'features')
-        feat_names = ['age', 'sex', 'height'] + [f for f in features if f not in ['age', 'sex', 'height', 'race_c']]
-        if race_adj and 'race_c' not in feat_names:
-            feat_names.append('race_c')
+        
         # For each incrementally larger feature set
-        for i in range(1, len(feat_names) + 1):
-            xgb_feats = feat_names[:i]
+        for i in range(1, len(features) + 1):
+            xgb_feats = features[:i]
+            xgb_feats += ['age', 'sex']
             # Always ensure 'race_c' is last if race_adj
             if race_adj and 'race_c' not in xgb_feats:
                 xgb_feats.append('race_c')
-            # Skip if only race_c in features (nonsense)
-            if xgb_feats == ['race_c']:
-                continue
+
             X_train = train_df[xgb_feats].values
             y_train = train_df[target].values
             xgb_model = _xgboost(X_train, y_train)
@@ -268,7 +265,7 @@ def run_experiment(train_df, test_dfs, features, target, race_col, save_path=Non
                 eval_df_xgb["set"] = name
                 eval_df_xgb["target"] = target
                 eval_df_xgb["n_cov"] = len(xgb_feats)
-                eval_df_xgb["cov"] = feat_names[i-1]
+                eval_df_xgb["cov"] = features[i-1]
                 eval_df_xgb["race_adj"] = race_adj
                 eval_df_xgb["model"] = "xgboost"
                 all_results = pd.concat([all_results, eval_df_xgb], ignore_index=True)
